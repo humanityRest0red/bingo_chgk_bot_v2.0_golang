@@ -1,0 +1,1 @@
+# bingo_chgk_bot_v2.0_golang
