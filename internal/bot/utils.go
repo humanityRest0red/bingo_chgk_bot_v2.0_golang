@@ -9,7 +9,10 @@ const helpText = `Команды:
 /help  - выводит это сообщение
 /find {выражение} - поиск статьи по выражению`
 
-const pageChangePrefix = "changePage:"
+const (
+	pageChangePrefix = "changePage:"
+	topicsPrefix     = "topic:"
+)
 
 func randomArticle() (string, error) {
 	articles, err := getArticles()

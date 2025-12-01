@@ -3,6 +3,7 @@ package bot
 import (
 	"fmt"
 	"math"
+	"slices"
 	"strings"
 
 	"bingo-chgk-bot-v2.0-golang/config"
@@ -12,13 +13,16 @@ import (
 func handleCommand(bot *tgbotapi.BotAPI, update tgbotapi.Update) error {
 	var text string
 	var err error
-	var msg tgbotapi.MessageConfig
 	const maxLength = 4000
 
 	switch update.Message.Command() {
 	case "start", "help":
 		text = helpText
+		msg := tgbotapi.NewMessage(update.Message.Chat.ID, text)
 		msg.ReplyMarkup = buildKeyboard()
+		if _, err = bot.Send(msg); err != nil {
+			return err
+		}
 	case "find":
 		text = "в работе"
 	}
@@ -61,10 +65,13 @@ func handleButtonPress(bot *tgbotapi.BotAPI, update tgbotapi.Update) error {
 	switch update.Message.Text {
 	case "Бинго":
 		response = link("Бинго", config.BingoLink)
+	case "Список статей":
+		printArticles(bot, update)
+		selectTopics(bot, update)
 	case "Рандомная статья":
 		response, _ = randomArticle()
 	case "Статьи по темам":
-		printArticles(bot, update)
+		selectTopics(bot, update)
 		return nil
 	}
 
@@ -157,24 +164,34 @@ func handleCallback(bot *tgbotapi.BotAPI, update tgbotapi.Update) error {
 			return fmt.Errorf("ошибка при извлечении номера страницы: %v", err)
 		}
 		displayPage(bot, update, pageNumber)
-		// } else if strings.HasPrefix(callbackData, "type") {
+	} else if strings.HasPrefix(callbackData, topicsPrefix) {
 
-		// 	key = call.data.split(SEP)[1]
-		// 	articles, _ = getArticles()
-		// 	for _, article := range articles {
-		// 		if article.keys != "" {
-		// 			keys = article.keys.split(',')
-		// 			// if key in keys {
-		// 			//     articles.append(article)
-		// 			// }
-		// 		}
-		// 	}
-		// 	var text string
-		// 	articles.sort()
-		// 	for i, article := range articles {
-		// 		text += fmt.Sprintf("%d. %s\n", i+1, link(article.name, article.link))
-		// 	}
-		// 	// await call.message.answer(text=text, parse_mode='Markdown')
+		key := strings.Split(callbackData, ",")[1]
+		articles, _ := getArticles()
+		filteredArticles := []Article{}
+		for _, article := range articles {
+			if article.keys.Valid {
+				keys := strings.Split(article.keys.String, ",")
+				if slices.Contains(keys, key) {
+					filteredArticles = append(filteredArticles, article)
+				}
+			}
+		}
+
+		slices.SortFunc(filteredArticles, func(a, b Article) int {
+			return strings.Compare(a.name, b.name)
+		})
+
+		var text string
+		for i, article := range filteredArticles {
+			text += fmt.Sprintf("%d. %s\n", i+1, link(article.name, article.link))
+		}
+
+		msg := tgbotapi.NewMessage(update.Message.Chat.ID, text)
+		msg.ParseMode = tgbotapi.ModeMarkdown
+
+		// msg.ReplyMarkup = &markup
+		bot.Send(msg)
 	}
 
 	return nil
@@ -187,7 +204,7 @@ func selectTopics(bot *tgbotapi.BotAPI, update tgbotapi.Update) error {
 	}
 	var buttons []tgbotapi.InlineKeyboardButton
 	for _, topic := range topics {
-		buttons = append(buttons, tgbotapi.NewInlineKeyboardButtonData(topic.name, fmt.Sprintf("type,%v", topic.key)))
+		buttons = append(buttons, tgbotapi.NewInlineKeyboardButtonData(topic.name, fmt.Sprintf("%s,%v", topicsPrefix, topic.key)))
 	}
 
 	var rows [][]tgbotapi.InlineKeyboardButton
@@ -209,7 +226,7 @@ func selectTopics(bot *tgbotapi.BotAPI, update tgbotapi.Update) error {
 }
 
 // @dp.message_handler(commands=['find'])
-// async def find_article(message: types.Message, command: Command.CommandObj):
+// async def find_article(
 //     if command.args:
 //         text = ""
 //         articles = get_articles()
