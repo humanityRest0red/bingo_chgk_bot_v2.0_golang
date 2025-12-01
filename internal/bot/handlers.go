@@ -45,19 +45,19 @@ func handleCommand(bot *tgbotapi.BotAPI, update tgbotapi.Update) error {
 }
 
 func buildKeyboard() tgbotapi.ReplyKeyboardMarkup {
-	buttonsTexts := []string{"Бинго", "Список статей", "Рандомная статья", "Статьи по темам"}
-	var buttons []tgbotapi.KeyboardButton
+	var (
+		buttonsTexts = []string{"Бинго", "Список статей", "Рандомная статья", "Статьи по темам"}
+		cols         = 2
+		rows         = len(buttonsTexts) / cols
+		buttons      = make([][]tgbotapi.KeyboardButton, rows)
+	)
 
-	for _, text := range buttonsTexts {
-		buttons = append(buttons, tgbotapi.NewKeyboardButton(text))
+	for i, text := range buttonsTexts {
+		ind := i % rows
+		buttons[ind] = append(buttons[ind], tgbotapi.NewKeyboardButton(text))
 	}
 
-	var rows [][]tgbotapi.KeyboardButton
-	if len(buttons) > 0 {
-		rows = append(rows, buttons)
-	}
-
-	return tgbotapi.NewReplyKeyboard(rows...)
+	return tgbotapi.NewReplyKeyboard(buttons...)
 }
 
 func handleButtonPress(bot *tgbotapi.BotAPI, update tgbotapi.Update) error {
@@ -67,7 +67,6 @@ func handleButtonPress(bot *tgbotapi.BotAPI, update tgbotapi.Update) error {
 		response = link("Бинго", config.BingoLink)
 	case "Список статей":
 		printArticles(bot, update)
-		selectTopics(bot, update)
 	case "Рандомная статья":
 		response, _ = randomArticle()
 	case "Статьи по темам":
@@ -83,7 +82,7 @@ func handleButtonPress(bot *tgbotapi.BotAPI, update tgbotapi.Update) error {
 }
 
 func printArticles(bot *tgbotapi.BotAPI, update tgbotapi.Update) {
-	displayPage(bot, update, 1)
+	displayPage(bot, update, 1) // pageNumber = 1
 }
 
 func displayPage(bot *tgbotapi.BotAPI, update tgbotapi.Update, pageNumber int) error {
@@ -165,8 +164,11 @@ func handleCallback(bot *tgbotapi.BotAPI, update tgbotapi.Update) error {
 		}
 		displayPage(bot, update, pageNumber)
 	} else if strings.HasPrefix(callbackData, topicsPrefix) {
-
-		key := strings.Split(callbackData, ",")[1]
+		keysStr := strings.Split(callbackData, ",")
+		// if len(keysStr) < 2 {
+		// 	return fmt.Errorf("len < 2")
+		// }
+		key := keysStr[1]
 		articles, _ := getArticles()
 		filteredArticles := []Article{}
 		for _, article := range articles {
@@ -182,16 +184,17 @@ func handleCallback(bot *tgbotapi.BotAPI, update tgbotapi.Update) error {
 			return strings.Compare(a.name, b.name)
 		})
 
-		var text string
+		var text string = "qw"
 		for i, article := range filteredArticles {
 			text += fmt.Sprintf("%d. %s\n", i+1, link(article.name, article.link))
 		}
 
 		msg := tgbotapi.NewMessage(update.Message.Chat.ID, text)
-		msg.ParseMode = tgbotapi.ModeMarkdown
+		// msg.ParseMode = tgbotapi.ModeMarkdown
 
-		// msg.ReplyMarkup = &markup
-		bot.Send(msg)
+		if _, err := bot.Send(msg); err != nil {
+			return err
+		}
 	}
 
 	return nil
@@ -202,22 +205,25 @@ func selectTopics(bot *tgbotapi.BotAPI, update tgbotapi.Update) error {
 	if err != nil {
 		return err
 	}
-	var buttons []tgbotapi.InlineKeyboardButton
-	for _, topic := range topics {
-		buttons = append(buttons, tgbotapi.NewInlineKeyboardButtonData(topic.name, fmt.Sprintf("%s,%v", topicsPrefix, topic.key)))
+
+	var (
+		cols    = 3
+		rows    = len(topics) / cols
+		buttons = make([][]tgbotapi.InlineKeyboardButton, rows)
+	)
+
+	for i, topic := range topics {
+		ind := i / cols
+		buttons[ind] = append(buttons[ind], tgbotapi.NewInlineKeyboardButtonData(topic.name, fmt.Sprintf("%s,%v", topicsPrefix, topic.key)))
 	}
 
-	var rows [][]tgbotapi.InlineKeyboardButton
-	if len(buttons) > 0 {
-		rows = append(rows, buttons)
-	}
-
-	markup := tgbotapi.InlineKeyboardMarkup{InlineKeyboard: rows}
+	markup := tgbotapi.InlineKeyboardMarkup{InlineKeyboard: buttons}
 
 	text := "Выберите тему:"
 	msg := tgbotapi.NewMessage(update.Message.Chat.ID, text)
 	msg.ParseMode = tgbotapi.ModeMarkdown
 	msg.ReplyMarkup = markup
+
 	if _, err := bot.Send(msg); err != nil {
 		return fmt.Errorf("ошибка при отправке сообщения: %v", err)
 	}
@@ -229,10 +235,12 @@ func selectTopics(bot *tgbotapi.BotAPI, update tgbotapi.Update) error {
 // async def find_article(
 //     if command.args:
 //         text = ""
-//         articles = get_articles()
-//         for article in articles:
-//             if command.args.lower() in article.name.lower():
-//                 text += f"{link(article.name, article.link)}\n"
+//         articles := getArticles()
+//         for _, article := ranfe articles {
+//             if command.args.lower() in article.name.lower() {
+//                 text += {link(article.name, article.link)} + "\n"
+// }
+// }
 //         if text:
 //             await message.answer(text, parse_mode='Markdown')
 //         else:

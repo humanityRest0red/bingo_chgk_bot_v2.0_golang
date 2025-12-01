@@ -13,7 +13,7 @@ func BotRun() {
 
 	for update := range updates {
 		if update.Message == nil && update.CallbackQuery == nil {
-			continue // Игнорируем обновления без сообщений или коллбэков
+			continue
 		}
 
 		if update.CallbackQuery != nil {
