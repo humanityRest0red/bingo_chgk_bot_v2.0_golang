@@ -3,7 +3,6 @@ package bot
 import (
 	"log"
 
-	"bingo-chgk-bot-v2.0-golang/config"
 	tgbotapi "github.com/go-telegram-bot-api/telegram-bot-api"
 )
 
@@ -36,7 +35,7 @@ func BotRun() {
 }
 
 func botInitMust() (*tgbotapi.BotAPI, tgbotapi.UpdatesChannel) {
-	bot, err := tgbotapi.NewBotAPI(config.TokenBot)
+	bot, err := tgbotapi.NewBotAPI(botToken)
 	if err != nil {
 		log.Panic(err)
 	}

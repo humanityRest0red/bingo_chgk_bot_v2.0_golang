@@ -6,7 +6,6 @@ import (
 	"slices"
 	"strings"
 
-	"bingo-chgk-bot-v2.0-golang/config"
 	tgbotapi "github.com/go-telegram-bot-api/telegram-bot-api"
 )
 
@@ -64,7 +63,7 @@ func handleButtonPress(bot *tgbotapi.BotAPI, update tgbotapi.Update) error {
 	var response string
 	switch update.Message.Text {
 	case "Бинго":
-		response = link("Бинго", config.BingoLink)
+		response = link("Бинго", bingoLink)
 	case "Список статей":
 		printArticles(bot, update)
 	case "Рандомная статья":
@@ -184,13 +183,14 @@ func handleCallback(bot *tgbotapi.BotAPI, update tgbotapi.Update) error {
 			return strings.Compare(a.name, b.name)
 		})
 
-		var text string = "qw"
+		var text string
 		for i, article := range filteredArticles {
 			text += fmt.Sprintf("%d. %s\n", i+1, link(article.name, article.link))
 		}
 
-		msg := tgbotapi.NewMessage(update.Message.Chat.ID, text)
-		// msg.ParseMode = tgbotapi.ModeMarkdown
+		callbackQuery := update.CallbackQuery
+		msg := tgbotapi.NewMessage(callbackQuery.Message.Chat.ID, text)
+		msg.ParseMode = tgbotapi.ModeMarkdown
 
 		if _, err := bot.Send(msg); err != nil {
 			return err
@@ -221,6 +221,7 @@ func selectTopics(bot *tgbotapi.BotAPI, update tgbotapi.Update) error {
 
 	text := "Выберите тему:"
 	msg := tgbotapi.NewMessage(update.Message.Chat.ID, text)
+
 	msg.ParseMode = tgbotapi.ModeMarkdown
 	msg.ReplyMarkup = markup
 
@@ -236,12 +237,12 @@ func selectTopics(bot *tgbotapi.BotAPI, update tgbotapi.Update) error {
 //     if command.args:
 //         text = ""
 //         articles := getArticles()
-//         for _, article := ranfe articles {
+//         for _, article := range articles {
 //             if command.args.lower() in article.name.lower() {
-//                 text += {link(article.name, article.link)} + "\n"
+//                 text += link(article.name, article.link)} + "\n"
 // }
 // }
-//         if text:
+//         if text != "":
 //             await message.answer(text, parse_mode='Markdown')
 //         else:
 //             await message.answer("По вашему запросу ничего не найдено")

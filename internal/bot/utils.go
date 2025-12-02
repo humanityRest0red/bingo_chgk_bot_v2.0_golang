@@ -3,6 +3,7 @@ package bot
 import (
 	"fmt"
 	"math/rand/v2"
+	"os"
 )
 
 const helpText = `Команды:
@@ -12,6 +13,11 @@ const helpText = `Команды:
 const (
 	pageChangePrefix = "changePage:"
 	topicsPrefix     = "topic:"
+)
+
+var (
+	bingoLink = os.Getenv("BINGO_BOT_LINK")
+	botToken  = os.Getenv("BINGO_BOT_TOKEN")
 )
 
 func randomArticle() (string, error) {
