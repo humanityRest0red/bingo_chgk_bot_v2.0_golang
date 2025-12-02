@@ -1,44 +1,37 @@
-package bot
+package internal
 
 import (
 	"fmt"
-	"math/rand/v2"
 	"os"
 )
 
-const helpText = `Команды:
+const HelpText = `Команды:
 /help  - выводит это сообщение
 /find {выражение} - поиск статьи по выражению`
 
 const (
 	pageChangePrefix = "changePage:"
-	topicsPrefix     = "topic:"
+	TopicsPrefix     = "topic:"
 )
 
 var (
 	bingoLink = os.Getenv("BINGO_BOT_LINK")
-	botToken  = os.Getenv("BINGO_BOT_TOKEN")
+	BotToken  = os.Getenv("BINGO_BOT_TOKEN")
 )
 
-func randomArticle() (string, error) {
-	articles, err := getArticles()
-	if err != nil {
-		return "Ошибка при отправке рандомной статьи", err
-	}
-
-	i := rand.IntN(len(articles))
-	return link(articles[i].name, articles[i].link), nil
+func BingoLink() string {
+	return Link("Бинго", bingoLink)
 }
 
-func link(text, link string) string {
+func Link(text, link string) string {
 	return fmt.Sprintf("[%s](%s)", text, link)
 }
 
-func createPageChangeCommand(pageNumber int) string {
+func CreatePageChangeCommand(pageNumber int) string {
 	return fmt.Sprintf("%s%d", pageChangePrefix, pageNumber)
 }
 
-func extractPageNumber(callbackData string) (int, error) {
+func ExtractPageNumber(callbackData string) (int, error) {
 	var pageNumber int
 	n, err := fmt.Sscanf(callbackData, "changePage:%d", &pageNumber)
 	if err != nil {

@@ -3,9 +3,10 @@ package bot
 import (
 	"fmt"
 	"math"
-	"slices"
 	"strings"
 
+	"bingo-chgk-bot-v2.0-golang/internal"
+	"bingo-chgk-bot-v2.0-golang/internal/models"
 	tgbotapi "github.com/go-telegram-bot-api/telegram-bot-api"
 )
 
@@ -23,7 +24,7 @@ func handleCommand(bot *tgbotapi.BotAPI, update tgbotapi.Update) error {
 			return err
 		}
 	case "find":
-		text = "в работе"
+		err = findArticle(bot, update)
 	}
 
 	for len(text) > 0 {
@@ -52,7 +53,7 @@ func buildKeyboard() tgbotapi.ReplyKeyboardMarkup {
 	)
 
 	for i, text := range buttonsTexts {
-		ind := i % rows
+		ind := i % cols
 		buttons[ind] = append(buttons[ind], tgbotapi.NewKeyboardButton(text))
 	}
 
@@ -63,11 +64,11 @@ func handleButtonPress(bot *tgbotapi.BotAPI, update tgbotapi.Update) error {
 	var response string
 	switch update.Message.Text {
 	case "Бинго":
-		response = link("Бинго", bingoLink)
+		response = internal.BingoLink()
 	case "Список статей":
 		printArticles(bot, update)
 	case "Рандомная статья":
-		response, _ = randomArticle()
+		response, _ = models.RandomArticle()
 	case "Статьи по темам":
 		selectTopics(bot, update)
 		return nil
@@ -88,7 +89,7 @@ func displayPage(bot *tgbotapi.BotAPI, update tgbotapi.Update, pageNumber int) e
 	var err error
 	const recordsPerPage = 30
 
-	articles, _ := getArticles()
+	articles, _ := models.GetArticles()
 	articlesCount := len(articles)
 
 	pagesCount := int(math.Ceil(float64(articlesCount)/float64(recordsPerPage))) + 1
@@ -101,7 +102,7 @@ func displayPage(bot *tgbotapi.BotAPI, update tgbotapi.Update, pageNumber int) e
 	endIndex := articlesCount - 1 - pageNumber*recordsPerPage
 	var text string
 	for i := startIndex; i > endIndex && i > 0; i-- {
-		text += fmt.Sprintf("%v. %s\n", articlesCount-i, link(articles[i].name, articles[i].link))
+		text += fmt.Sprintf("%v. %s\n", articlesCount-i, articles[i].Link())
 	}
 
 	markup := buildInlineKeyboard(pageNumber, pagesCount)
@@ -139,13 +140,13 @@ func buildInlineKeyboard(currentPage, totalPages int) tgbotapi.InlineKeyboardMar
 	keyboard := tgbotapi.InlineKeyboardMarkup{
 		InlineKeyboard: [][]tgbotapi.InlineKeyboardButton{
 			{
-				tgbotapi.NewInlineKeyboardButtonData("◀", createPageChangeCommand(currentPage-1)),
+				tgbotapi.NewInlineKeyboardButtonData("◀", internal.CreatePageChangeCommand(currentPage-1)),
 				tgbotapi.NewInlineKeyboardButtonData(fmt.Sprintf("%d/%d", currentPage, totalPages), "null"),
-				tgbotapi.NewInlineKeyboardButtonData("▶", createPageChangeCommand(currentPage+1)),
+				tgbotapi.NewInlineKeyboardButtonData("▶", internal.CreatePageChangeCommand(currentPage+1)),
 			},
 			{
-				tgbotapi.NewInlineKeyboardButtonData("⏮ В начало", createPageChangeCommand(1)),
-				tgbotapi.NewInlineKeyboardButtonData("В конец ⏭", createPageChangeCommand(totalPages)),
+				tgbotapi.NewInlineKeyboardButtonData("⏮ В начало", internal.CreatePageChangeCommand(1)),
+				tgbotapi.NewInlineKeyboardButtonData("В конец ⏭", internal.CreatePageChangeCommand(totalPages)),
 			},
 		},
 	}
@@ -157,7 +158,7 @@ func handleCallback(bot *tgbotapi.BotAPI, update tgbotapi.Update) error {
 	callbackData := update.CallbackQuery.Data
 
 	if strings.HasPrefix(callbackData, pageChangePrefix) {
-		pageNumber, err := extractPageNumber(callbackData)
+		pageNumber, err := internal.ExtractPageNumber(callbackData)
 		if err != nil {
 			return fmt.Errorf("ошибка при извлечении номера страницы: %v", err)
 		}
@@ -168,31 +169,18 @@ func handleCallback(bot *tgbotapi.BotAPI, update tgbotapi.Update) error {
 		// 	return fmt.Errorf("len < 2")
 		// }
 		key := keysStr[1]
-		articles, _ := getArticles()
-		filteredArticles := []Article{}
-		for _, article := range articles {
-			if article.keys.Valid {
-				keys := strings.Split(article.keys.String, ",")
-				if slices.Contains(keys, key) {
-					filteredArticles = append(filteredArticles, article)
-				}
-			}
-		}
-
-		slices.SortFunc(filteredArticles, func(a, b Article) int {
-			return strings.Compare(a.name, b.name)
-		})
-
+		// articles, _ := models.GetArticles()
+		var filteredArticles, err = models.FilteredArticles(key)
 		var text string
 		for i, article := range filteredArticles {
-			text += fmt.Sprintf("%d. %s\n", i+1, link(article.name, article.link))
+			text += fmt.Sprintf("%d. %s\n", i+1, article.Link())
 		}
 
 		callbackQuery := update.CallbackQuery
 		msg := tgbotapi.NewMessage(callbackQuery.Message.Chat.ID, text)
 		msg.ParseMode = tgbotapi.ModeMarkdown
 
-		if _, err := bot.Send(msg); err != nil {
+		if _, err = bot.Send(msg); err != nil {
 			return err
 		}
 	}
@@ -201,7 +189,7 @@ func handleCallback(bot *tgbotapi.BotAPI, update tgbotapi.Update) error {
 }
 
 func selectTopics(bot *tgbotapi.BotAPI, update tgbotapi.Update) error {
-	topics, err := getTopics()
+	topics, err := models.GetTopics()
 	if err != nil {
 		return err
 	}
@@ -232,19 +220,40 @@ func selectTopics(bot *tgbotapi.BotAPI, update tgbotapi.Update) error {
 	return nil
 }
 
-// @dp.message_handler(commands=['find'])
-// async def find_article(
-//     if command.args:
-//         text = ""
-//         articles := getArticles()
-//         for _, article := range articles {
-//             if command.args.lower() in article.name.lower() {
-//                 text += link(article.name, article.link)} + "\n"
+func findArticle(bot *tgbotapi.BotAPI, update tgbotapi.Update) error {
+	var (
+		command          = update.Message.Command()
+		textAfterCommand = strings.TrimSpace(strings.TrimPrefix(update.Message.Text, "/"+command))
+		response         string
+	)
+
+	if textAfterCommand != "" {
+		textAfterCommand := strings.ToLower(textAfterCommand)
+		articles, _ := models.GetArticles()
+		isFind := false
+		for _, article := range articles {
+			if strings.Contains(strings.ToLower(article.Name()), textAfterCommand) {
+				response += article.Link() + "\n"
+				isFind = true
+				// break
+			}
+		}
+
+		if !isFind {
+			response = "По вашему запросу ничего не найдено"
+		}
+
+	} else {
+		response = "Укажите выражение после команды"
+	}
+
+	msg := tgbotapi.NewMessage(update.Message.Chat.ID, response)
+	msg.ParseMode = tgbotapi.ModeMarkdown
+	_, err := bot.Send(msg)
+
+	return err
+}
+
+// func getLog(bot *tgbotapi.BotAPI, update tgbotapi.Update) error {
+// 	if
 // }
-// }
-//         if text != "":
-//             await message.answer(text, parse_mode='Markdown')
-//         else:
-//             await message.answer("По вашему запросу ничего не найдено")
-//     else:
-//         await message.answer("Укажите выражение после команды")
