@@ -1,8 +1,9 @@
 package models
 
 import (
-	"encoding/json"
+	"encoding/json/v2"
 	"io"
+ "log"
 	"math/rand/v2"
 	"os"
  "path/filepath"
@@ -63,7 +64,7 @@ func RandomArticle() (Article, error) {
 func GetArticles() ([]Article, error) {
 basePath := "../../data"
 absPath, err := filepath.Abs(filepath.Join(basePath, "test.json"))
-
+ log.Println(absPath)
 	file, err := os.OpenFile(absPath, os.O_RDONLY, 0644)
 	if err != nil {
 		return nil, err
@@ -76,6 +77,7 @@ absPath, err := filepath.Abs(filepath.Join(basePath, "test.json"))
 	}
 
 	var articles []Article
+ log.Println("before unmarshall")
 	err = json.Unmarshal(data, &articles)
 	if err != nil {
 		return nil, err
@@ -84,6 +86,6 @@ absPath, err := filepath.Abs(filepath.Join(basePath, "test.json"))
 	for i := 0; i < len(articles); i++ {
 		articles[i].Index = i + 1
 	}
-
+ log.Println(len(articles))
 	return articles, nil
 }
