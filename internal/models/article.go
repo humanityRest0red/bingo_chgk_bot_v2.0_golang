@@ -5,6 +5,7 @@ import (
 	"io"
 	"math/rand/v2"
 	"os"
+ "path/filepath"
 	"slices"
 	"strconv"
 	"strings"
@@ -60,7 +61,8 @@ func RandomArticle() (Article, error) {
 }
 
 func GetArticles() ([]Article, error) {
-	file, err := os.Open("../../data/test.json")
+absPath, err := filepath.Abs("../../data/test.json")
+	file, err := os.Open(absPath)
 	if err != nil {
 		return nil, err
 	}
