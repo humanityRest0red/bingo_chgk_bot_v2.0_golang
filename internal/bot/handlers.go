@@ -24,9 +24,8 @@ func handleCommand(bot *tgbotapi.BotAPI, update tgbotapi.Update) error {
 		text = internal.HelpText()
 		msg := tgbotapi.NewMessage(update.Message.Chat.ID, text)
 		msg.ReplyMarkup = buildKeyboard()
-		if _, err = bot.Send(msg); err != nil {
-			return err
-		}
+		_, err = bot.Send(msg)
+		return err
 	case "find":
 		err = findArticle(bot, update)
 	case "log":
