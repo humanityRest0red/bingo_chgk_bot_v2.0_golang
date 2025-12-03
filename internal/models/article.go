@@ -62,7 +62,13 @@ func RandomArticle() (Article, error) {
 }
 
 func GetArticles() ([]Article, error) {
-basePath := "../../data"
+currentDir, err := os.Getwd()
+if err != nil {
+    log.Println(err)
+}
+log.Println("Текущая рабочая директория:", currentDir)
+
+basePath := filepath.Join("..", "..", "data")
 absPath, err := filepath.Abs(filepath.Join(basePath, "test.json"))
  log.Println(absPath)
 	file, err := os.OpenFile(absPath, os.O_RDONLY, 0644)
