@@ -5,12 +5,12 @@ import (
 	"os"
 )
 
-const HelpText = `Команды:
+const helpText = `Команды:
 /help  - выводит это сообщение
 /find {выражение} - поиск статьи по выражению`
 
 const (
-	pageChangePrefix = "changePage:"
+	PageChangePrefix = "changePage:"
 	TopicsPrefix     = "topic:"
 )
 
@@ -18,6 +18,10 @@ var (
 	bingoLink = os.Getenv("BINGO_BOT_LINK")
 	BotToken  = os.Getenv("BINGO_BOT_TOKEN")
 )
+
+func HelpText() string {
+	return helpText
+}
 
 func BingoLink() string {
 	return Link("Бинго", bingoLink)
@@ -28,7 +32,7 @@ func Link(text, link string) string {
 }
 
 func CreatePageChangeCommand(pageNumber int) string {
-	return fmt.Sprintf("%s%d", pageChangePrefix, pageNumber)
+	return fmt.Sprintf("%s%d", PageChangePrefix, pageNumber)
 }
 
 func ExtractPageNumber(callbackData string) (int, error) {

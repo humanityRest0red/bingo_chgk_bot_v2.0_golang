@@ -1,8 +1,12 @@
 package bot
 
 import (
+	"bufio"
 	"fmt"
+	"log"
 	"math"
+	"os"
+	"path/filepath"
 	"strings"
 
 	"bingo-chgk-bot-v2.0-golang/internal"
@@ -17,7 +21,7 @@ func handleCommand(bot *tgbotapi.BotAPI, update tgbotapi.Update) error {
 
 	switch update.Message.Command() {
 	case "start", "help":
-		text = helpText
+		text = internal.HelpText()
 		msg := tgbotapi.NewMessage(update.Message.Chat.ID, text)
 		msg.ReplyMarkup = buildKeyboard()
 		if _, err = bot.Send(msg); err != nil {
@@ -25,6 +29,8 @@ func handleCommand(bot *tgbotapi.BotAPI, update tgbotapi.Update) error {
 		}
 	case "find":
 		err = findArticle(bot, update)
+	case "log":
+		err = sendLog(bot, update)
 	}
 
 	for len(text) > 0 {
@@ -157,13 +163,13 @@ func buildInlineKeyboard(currentPage, totalPages int) tgbotapi.InlineKeyboardMar
 func handleCallback(bot *tgbotapi.BotAPI, update tgbotapi.Update) error {
 	callbackData := update.CallbackQuery.Data
 
-	if strings.HasPrefix(callbackData, pageChangePrefix) {
+	if strings.HasPrefix(callbackData, internal.PageChangePrefix) {
 		pageNumber, err := internal.ExtractPageNumber(callbackData)
 		if err != nil {
 			return fmt.Errorf("ошибка при извлечении номера страницы: %v", err)
 		}
 		displayPage(bot, update, pageNumber)
-	} else if strings.HasPrefix(callbackData, topicsPrefix) {
+	} else if strings.HasPrefix(callbackData, internal.TopicsPrefix) {
 		keysStr := strings.Split(callbackData, ",")
 		// if len(keysStr) < 2 {
 		// 	return fmt.Errorf("len < 2")
@@ -176,8 +182,7 @@ func handleCallback(bot *tgbotapi.BotAPI, update tgbotapi.Update) error {
 			text += fmt.Sprintf("%d. %s\n", i+1, article.Link())
 		}
 
-		callbackQuery := update.CallbackQuery
-		msg := tgbotapi.NewMessage(callbackQuery.Message.Chat.ID, text)
+		msg := tgbotapi.NewMessage(update.CallbackQuery.Message.Chat.ID, text)
 		msg.ParseMode = tgbotapi.ModeMarkdown
 
 		if _, err = bot.Send(msg); err != nil {
@@ -202,7 +207,7 @@ func selectTopics(bot *tgbotapi.BotAPI, update tgbotapi.Update) error {
 
 	for i, topic := range topics {
 		ind := i / cols
-		buttons[ind] = append(buttons[ind], tgbotapi.NewInlineKeyboardButtonData(topic.name, fmt.Sprintf("%s,%v", topicsPrefix, topic.key)))
+		buttons[ind] = append(buttons[ind], tgbotapi.NewInlineKeyboardButtonData(topic.Name(), fmt.Sprintf("%s,%v", internal.TopicsPrefix, topic.Key())))
 	}
 
 	markup := tgbotapi.InlineKeyboardMarkup{InlineKeyboard: buttons}
@@ -254,6 +259,45 @@ func findArticle(bot *tgbotapi.BotAPI, update tgbotapi.Update) error {
 	return err
 }
 
-// func getLog(bot *tgbotapi.BotAPI, update tgbotapi.Update) error {
-// 	if
-// }
+func sendLog(bot *tgbotapi.BotAPI, update tgbotapi.Update) error {
+	if update.Message.Chat.ID != 1077924714 {
+		return nil
+	}
+
+	logFilePath, err := filepath.Abs("../../logs/app.log")
+	if err != nil {
+		log.Printf("Error determining log file path: %v", err)
+		return err
+	}
+
+	file, err := os.Open(logFilePath)
+	if err != nil {
+		log.Printf("Error opening log file: %v", err)
+		return err
+	}
+	defer file.Close()
+
+	var lines []string
+	scanner := bufio.NewScanner(file)
+
+	for scanner.Scan() {
+		lines = append(lines, scanner.Text())
+	}
+
+	if err := scanner.Err(); err != nil {
+		log.Printf("Error reading log file: %v\n", err)
+		return err
+	}
+
+	const maxLines = 100
+	if len(lines) > maxLines {
+		lines = lines[len(lines)-maxLines:]
+	}
+
+	text := strings.Join(lines, "\n")
+
+	msg := tgbotapi.NewMessage(update.Message.Chat.ID, text)
+	_, err = bot.Send(msg)
+
+	return err
+}

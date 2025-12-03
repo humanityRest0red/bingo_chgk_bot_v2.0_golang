@@ -57,32 +57,31 @@ func RandomArticle() (string, error) {
 }
 
 func GetArticles() ([]Article, error) {
-	var records []Article
-
 	db, err := sql.Open("sqlite3", TABLE_NAME)
 	if err != nil {
-		return records, err
+		return nil, err
 	}
 	defer db.Close()
 
 	rows, err := db.Query("SELECT * FROM Articles")
 	if err != nil {
-		return records, err
+		return nil, err
 	}
 	defer rows.Close()
 
+	var records []Article
+	var record Article
 	for rows.Next() {
-		var record Article
 		err = rows.Scan(&record.name, &record.link, &record.keys)
 		if err != nil {
-			return []Article{}, err
+			return nil, err
 		}
 		records = append(records, record)
 	}
 
 	err = rows.Err()
 	if err != nil {
-		return []Article{}, err
+		return nil, err
 	}
 
 	return records, nil
