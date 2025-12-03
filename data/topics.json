@@ -1,0 +1,62 @@
+[
+	{
+		"name": "Христианство",
+		"key": "rel"
+	},
+	{
+		"name": "Книги",
+		"key": "book"
+	},
+	{
+		"name": "Картины",
+		"key": "paint"
+	},
+	{
+		"name": "Фильмы",
+		"key": "film"
+	},
+	{
+		"name": "Музыка",
+		"key": "music"
+	},
+	{
+		"name": "История",
+		"key": "hist"
+	},
+	{
+		"name": "Математика",
+		"key": "math"
+	},
+	{
+		"name": "Космос",
+		"key": "space"
+	},
+	{
+		"name": "Физика",
+		"key": "phys"
+	},
+	{
+		"name": "География",
+		"key": "geo"
+	},
+	{
+		"name": "Мифы",
+		"key": "myth"
+	},
+	{
+		"name": "Спорт",
+		"key": "sport"
+	},
+	{
+		"name": "Психология",
+		"key": "psycho"
+	},
+	{
+		"name": "Философия",
+		"key": "phil"
+	},
+	{
+		"name": "Цитаты",
+		"key": "quote"
+	}
+]

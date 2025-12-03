@@ -5,8 +5,10 @@ import (
 	"fmt"
 	"log"
 	"math"
+	"net/url"
 	"os"
 	"path/filepath"
+	"strconv"
 	"strings"
 
 	"bingo-chgk-bot-v2.0-golang/internal"
@@ -30,6 +32,22 @@ func handleCommand(bot *tgbotapi.BotAPI, update tgbotapi.Update) error {
 		err = findArticle(bot, update)
 	case "log":
 		err = sendLog(bot, update)
+	default:
+		n, err := strconv.Atoi(update.Message.Command())
+		if err != nil {
+			return err
+		}
+		// articles, _ := models.GetArticles()
+		// if n <= len(articles) {
+		// 	text = articles[n-1].Full()
+		// }
+
+		article, exists := Articles[n-1]
+		if !exists {
+			return fmt.Errorf("статьи с указаннным номером нет")
+		}
+
+		return sendArticle(bot, update, article)
 	}
 
 	for len(text) > 0 {
@@ -47,6 +65,29 @@ func handleCommand(bot *tgbotapi.BotAPI, update tgbotapi.Update) error {
 	}
 
 	return err
+}
+
+func sendArticle(bot *tgbotapi.BotAPI, update tgbotapi.Update, article models.Article) error {
+	text := article.Full()
+
+	markup := tgbotapi.InlineKeyboardMarkup{
+		InlineKeyboard: [][]tgbotapi.InlineKeyboardButton{
+			{
+				tgbotapi.NewInlineKeyboardButtonData("Google", "google:"+article.Name),
+				tgbotapi.NewInlineKeyboardButtonData("Вики", "wiki:"+article.Name),
+				tgbotapi.NewInlineKeyboardButtonData("Вопросы", "questions:"+article.Name),
+			},
+		},
+	}
+
+	msg := tgbotapi.NewMessage(update.Message.Chat.ID, text)
+	msg.ParseMode = tgbotapi.ModeMarkdown
+	msg.ReplyMarkup = markup
+	if _, err := bot.Send(msg); err != nil {
+		return fmt.Errorf("ошибка при отправке сообщения: %v", err)
+	}
+
+	return nil
 }
 
 func buildKeyboard() tgbotapi.ReplyKeyboardMarkup {
@@ -73,7 +114,10 @@ func handleButtonPress(bot *tgbotapi.BotAPI, update tgbotapi.Update) error {
 	case "Список статей":
 		printArticles(bot, update)
 	case "Рандомная статья":
-		response, _ = models.RandomArticle()
+		article, err := models.RandomArticle()
+		if err == nil {
+			sendArticle(bot, update, article)
+		}
 	case "Статьи по темам":
 		selectTopics(bot, update)
 		return nil
@@ -168,25 +212,50 @@ func handleCallback(bot *tgbotapi.BotAPI, update tgbotapi.Update) error {
 			return fmt.Errorf("ошибка при извлечении номера страницы: %v", err)
 		}
 		displayPage(bot, update, pageNumber)
-	} else if strings.HasPrefix(callbackData, internal.TopicsPrefix) {
+		return nil
+	}
+
+	var text string
+	if strings.HasPrefix(callbackData, internal.TopicsPrefix) {
 		keysStr := strings.Split(callbackData, ",")
 		// if len(keysStr) < 2 {
 		// 	return fmt.Errorf("len < 2")
 		// }
 		key := keysStr[1]
-		// articles, _ := models.GetArticles()
 		var filteredArticles, err = models.FilteredArticles(key)
-		var text string
+		if err != nil {
+			return err
+		}
 		for i, article := range filteredArticles {
 			text += fmt.Sprintf("%d. %s\n", i+1, article.Link())
 		}
 
+	} else if strings.HasPrefix(callbackData, "google:") {
+		buf := "https://www.google.com/search?q=" + callbackData[len("google:"):]
+		text = strings.ReplaceAll(buf, " ", "+")
+	} else if strings.HasPrefix(callbackData, "wiki:") {
+		buf := "https://ru.wikipedia.org/wiki/" + url.QueryEscape(strings.ReplaceAll(callbackData[len("wiki:"):], " ", "_"))
+		text = strings.ReplaceAll(buf, " ", "_")
 		msg := tgbotapi.NewMessage(update.CallbackQuery.Message.Chat.ID, text)
-		msg.ParseMode = tgbotapi.ModeMarkdown
 
-		if _, err = bot.Send(msg); err != nil {
+		if _, err := bot.Send(msg); err != nil {
 			return err
 		}
+		return nil
+		// text = "https://ru.wikipedia.org/wiki/" + url.QueryEscape(strings.ReplaceAll(callbackData[len("wiki:"):], " ", "_"))
+	} else if strings.HasPrefix(callbackData, "questions:") {
+		text = "В разработке"
+	}
+
+	if text == "" {
+		return nil
+	}
+
+	msg := tgbotapi.NewMessage(update.CallbackQuery.Message.Chat.ID, text)
+	msg.ParseMode = tgbotapi.ModeMarkdown
+
+	if _, err := bot.Send(msg); err != nil {
+		return err
 	}
 
 	return nil
@@ -194,6 +263,7 @@ func handleCallback(bot *tgbotapi.BotAPI, update tgbotapi.Update) error {
 
 func selectTopics(bot *tgbotapi.BotAPI, update tgbotapi.Update) error {
 	topics, err := models.GetTopics()
+	fmt.Println(topics)
 	if err != nil {
 		return err
 	}
@@ -206,7 +276,7 @@ func selectTopics(bot *tgbotapi.BotAPI, update tgbotapi.Update) error {
 
 	for i, topic := range topics {
 		ind := i / cols
-		buttons[ind] = append(buttons[ind], tgbotapi.NewInlineKeyboardButtonData(topic.Name(), fmt.Sprintf("%s,%v", internal.TopicsPrefix, topic.Key())))
+		buttons[ind] = append(buttons[ind], tgbotapi.NewInlineKeyboardButtonData(topic.Name, fmt.Sprintf("%s,%v", internal.TopicsPrefix, topic.Key)))
 	}
 
 	markup := tgbotapi.InlineKeyboardMarkup{InlineKeyboard: buttons}
@@ -236,10 +306,9 @@ func findArticle(bot *tgbotapi.BotAPI, update tgbotapi.Update) error {
 		articles, _ := models.GetArticles()
 		isFind := false
 		for _, article := range articles {
-			if strings.Contains(strings.ToLower(article.Name()), textAfterCommand) {
-				response += article.Link() + "\n"
+			if strings.Contains(strings.ToLower(article.Name), textAfterCommand) {
+				response += article.Full() + "\n"
 				isFind = true
-				// break
 			}
 		}
 

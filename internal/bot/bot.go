@@ -7,8 +7,22 @@ import (
 	"path/filepath"
 
 	"bingo-chgk-bot-v2.0-golang/internal"
+	"bingo-chgk-bot-v2.0-golang/internal/models"
 	tgbotapi "github.com/go-telegram-bot-api/telegram-bot-api"
 )
+
+var Articles = mapArticles()
+
+func mapArticles() map[int]models.Article {
+	var articles, _ = models.GetArticles()
+
+	result := make(map[int]models.Article, len(articles))
+	for i, a := range articles {
+		result[i] = a
+	}
+
+	return result
+}
 
 func BotRun() {
 	bot, updates := botInitMust()

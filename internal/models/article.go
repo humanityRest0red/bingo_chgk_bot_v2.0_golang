@@ -1,27 +1,33 @@
 package models
 
 import (
-	"database/sql"
+	"encoding/json"
+	"io"
 	"math/rand/v2"
+	"os"
 	"slices"
+	"strconv"
 	"strings"
-
-	"bingo-chgk-bot-v2.0-golang/internal"
 )
 
 type Article struct {
-	name string
-	link string
-	keys sql.NullString
+	Index       int
+	Name        string   `json:"name"`
+	Description string   `json:"description"`
+	Keys        []string `json:"keys"`
 }
 
 func (a *Article) Link() string {
-	return internal.Link(a.name, a.link)
+	return a.Name + " /" + strconv.Itoa(a.Index)
 }
 
-func (a *Article) Name() string {
-	return a.name
+func (a *Article) Full() string {
+	return a.Name + "\n\n" + a.Description
 }
+
+// func (a *Article) Name() string {
+// 	return a.name
+// }
 
 func FilteredArticles(key string) ([]Article, error) {
 	articles, err := GetArticles()
@@ -31,58 +37,49 @@ func FilteredArticles(key string) ([]Article, error) {
 
 	filteredArticles := []Article{}
 	for _, article := range articles {
-		if article.keys.Valid {
-			keys := strings.Split(article.keys.String, ",")
-			if slices.Contains(keys, key) {
-				filteredArticles = append(filteredArticles, article)
-			}
+		if slices.Contains(article.Keys, key) {
+			filteredArticles = append(filteredArticles, article)
 		}
 	}
 
 	slices.SortFunc(filteredArticles, func(a, b Article) int {
-		return strings.Compare(a.name, b.name)
+		return strings.Compare(a.Name, b.Name)
 	})
 
 	return filteredArticles, nil
 }
 
-func RandomArticle() (string, error) {
+func RandomArticle() (Article, error) {
 	articles, err := GetArticles()
 	if err != nil {
-		return "Ошибка при отправке рандомной статьи", err
+		return Article{}, err
 	}
 
 	i := rand.IntN(len(articles))
-	return articles[i].Link(), nil
+	return articles[i], nil
 }
 
 func GetArticles() ([]Article, error) {
-	db, err := sql.Open("sqlite3", TABLE_NAME)
+	file, err := os.Open("../../data/test.json")
 	if err != nil {
 		return nil, err
 	}
-	defer db.Close()
+	defer file.Close()
 
-	rows, err := db.Query("SELECT * FROM Articles")
-	if err != nil {
-		return nil, err
-	}
-	defer rows.Close()
-
-	var records []Article
-	var record Article
-	for rows.Next() {
-		err = rows.Scan(&record.name, &record.link, &record.keys)
-		if err != nil {
-			return nil, err
-		}
-		records = append(records, record)
-	}
-
-	err = rows.Err()
+	data, err := io.ReadAll(file)
 	if err != nil {
 		return nil, err
 	}
 
-	return records, nil
+	var articles []Article
+	err = json.Unmarshal(data, &articles)
+	if err != nil {
+		return nil, err
+	}
+
+	for i := 0; i < len(articles); i++ {
+		articles[i].Index = i + 1
+	}
+
+	return articles, nil
 }

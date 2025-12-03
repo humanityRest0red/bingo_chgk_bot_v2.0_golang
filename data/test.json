@@ -1,0 +1,4286 @@
+[
+	{
+		"name": "Банши",
+		"description": "https://telegra.ph/Banshi-12-18",
+		"keys": [
+			"myth"
+		]
+	},
+	{
+		"name": "Огни Святого Эльма",
+		"description": "https://telegra.ph/Lyalyalya-12-18-3",
+		"keys": [
+			"rel",
+			"myth"
+		]
+	},
+	{
+		"name": "Баньян, Поль",
+		"description": "https://telegra.ph/Banyan-Pol-12-18",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Диоклетиан",
+		"description": "https://telegra.ph/Diokletian-12-18",
+		"keys": [
+			"hist"
+		]
+	},
+	{
+		"name": "Абель, Рудольф",
+		"description": "https://telegra.ph/Abel-Rudolf-12-18",
+		"keys": [
+			"hist"
+		]
+	},
+	{
+		"name": "Абсент",
+		"description": "https://telegra.ph/Absent-12-18",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Абсолютно чёрное тело",
+		"description": "https://telegra.ph/Absolyutno-chyornoe-telo-12-18",
+		"keys": [
+			"phys"
+		]
+	},
+	{
+		"name": "Абырвалг",
+		"description": "https://telegra.ph/Abyrvalg-12-18",
+		"keys": [
+			"book"
+		]
+	},
+	{
+		"name": "Авиньон",
+		"description": "https://telegra.ph/Avinon-12-18",
+		"keys": [
+			"hist"
+		]
+	},
+	{
+		"name": "Адам",
+		"description": "https://telegra.ph/Adam-12-18-4",
+		"keys": [
+			"rel"
+		]
+	},
+	{
+		"name": "Азеф, Евно",
+		"description": "https://telegra.ph/Azef-Evno-12-18",
+		"keys": [
+			"hist"
+		]
+	},
+	{
+		"name": "Амазонки",
+		"description": "https://telegra.ph/Amazonki-12-19",
+		"keys": [
+			"myth"
+		]
+	},
+	{
+		"name": "Аргентина - Ямайка 5:0",
+		"description": "https://telegra.ph/Argentina---YAmajka-50-12-19",
+		"keys": [
+			"sport"
+		]
+	},
+	{
+		"name": "Али",
+		"description": "https://telegra.ph/Ali-12-20",
+		"keys": [
+			"sport"
+		]
+	},
+	{
+		"name": "Андалузский пёс",
+		"description": "https://telegra.ph/Andaluzskij-pyos-12-20",
+		"keys": [
+			"film"
+		]
+	},
+	{
+		"name": "Андердог",
+		"description": "https://telegra.ph/Anderdog-12-20",
+		"keys": [
+			"sport"
+		]
+	},
+	{
+		"name": "Аокигахара",
+		"description": "https://telegra.ph/Aokigahara-12-20",
+		"keys": [
+			"geo"
+		]
+	},
+	{
+		"name": "Апории Зенона",
+		"description": "https://telegra.ph/Aporii-Zenona-12-20",
+		"keys": [
+			"phil"
+		]
+	},
+	{
+		"name": "Апофеоз войны",
+		"description": "https://telegra.ph/Apofeoz-vojny-12-20",
+		"keys": [
+			"paint"
+		]
+	},
+	{
+		"name": "Аргентина манит негра",
+		"description": "https://telegra.ph/Argentina-manit-negra-12-20",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Аргонавты",
+		"description": "https://telegra.ph/Argonavty-12-20",
+		"keys": [
+			"myth"
+		]
+	},
+	{
+		"name": "Армстронг, Нил",
+		"description": "https://telegra.ph/Armstrong-Nil-12-20",
+		"keys": [
+			"space"
+		]
+	},
+	{
+		"name": "Архимед",
+		"description": "https://telegra.ph/Arhimed-12-20",
+		"keys": [
+			"hist"
+		]
+	},
+	{
+		"name": "Баден-Баден",
+		"description": "https://telegra.ph/Baden-Baden-12-20",
+		"keys": [
+			"geo"
+		]
+	},
+	{
+		"name": "Батори",
+		"description": "https://telegra.ph/Batori-12-22",
+		"keys": [
+			"hist"
+		]
+	},
+	{
+		"name": "Пигмалион",
+		"description": "https://telegra.ph/Pigmalion-12-23",
+		"keys": [
+			"myth"
+		]
+	},
+	{
+		"name": "Батрахомиомахия",
+		"description": "https://telegra.ph/Batrahomiomahiya-12-25",
+		"keys": [
+			"book"
+		]
+	},
+	{
+		"name": "Баттон, Бенджамин",
+		"description": "https://telegra.ph/Batton-Bendzhamin-12-25",
+		"keys": [
+			"film"
+		]
+	},
+	{
+		"name": "Бегущий по лезвию",
+		"description": "https://telegra.ph/Begushchij-po-lezviyu-12-25",
+		"keys": [
+			"film"
+		]
+	},
+	{
+		"name": "Бедлам",
+		"description": "https://telegra.ph/Bedlam-12-25",
+		"keys": [
+			"geo"
+		]
+	},
+	{
+		"name": "Белка и Стрелка",
+		"description": "https://telegra.ph/Belka-i-Strelka-12-25",
+		"keys": [
+			"space"
+		]
+	},
+	{
+		"name": "Белое солнце пустыни",
+		"description": "https://telegra.ph/Beloe-solnce-pustyni-12-25",
+		"keys": [
+			"film"
+		]
+	},
+	{
+		"name": "Бендер",
+		"description": "https://telegra.ph/Bender-12-25",
+		"keys": [
+			"film",
+			"book"
+		]
+	},
+	{
+		"name": "Бергкамп, Деннис",
+		"description": "https://telegra.ph/Bergkamp-Dennis-12-25",
+		"keys": [
+			"sport"
+		]
+	},
+	{
+		"name": "Бертильон, Альфонс",
+		"description": "https://telegra.ph/Bertilon-Alfons-12-25",
+		"keys": [
+			"hist"
+		]
+	},
+	{
+		"name": "Бесконечная шутка",
+		"description": "https://telegra.ph/Beskonechnaya-shutka-12-25",
+		"keys": [
+			"book"
+		]
+	},
+	{
+		"name": "Бессмертные",
+		"description": "https://telegra.ph/Bessmertnye-12-25",
+		"keys": [
+			"book"
+		]
+	},
+	{
+		"name": "Бёрдвотчинг",
+		"description": "https://telegra.ph/Byordvotching-12-25",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Палантиры",
+		"description": "https://telegra.ph/Palantiry-12-25",
+		"keys": [
+			"book"
+		]
+	},
+	{
+		"name": "Эйнштейн, Альберт",
+		"description": "https://telegra.ph/EHjnshtejn-Albert-12-25",
+		"keys": [
+			"hist",
+			"phys"
+		]
+	},
+	{
+		"name": "Эрдёш, Пал",
+		"description": "https://telegra.ph/EHrdyosh-Pal-12-25",
+		"keys": [
+			"math"
+		]
+	},
+	{
+		"name": "Эффект «зловещей долины»",
+		"description": "https://telegra.ph/EHffekt-zloveshchej-doliny-12-25",
+		"keys": [
+			"psycho"
+		]
+	},
+	{
+		"name": "Эффект бабочки",
+		"description": "https://telegra.ph/EHffekt-babochki-12-26",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Эшер, Мауриц Корнелис",
+		"description": "https://telegra.ph/EHsher-Mauric-Kornelis-12-26",
+		"keys": [
+			"paint"
+		]
+	},
+	{
+		"name": "Я хватаюсь за пистолет",
+		"description": "https://telegra.ph/YA-hvatayus-za-pistolet-12-26",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Яд ва-Шем",
+		"description": "https://telegra.ph/YAd-va-SHem-12-26",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Ева",
+		"description": "https://telegra.ph/Eva-12-26-4",
+		"keys": [
+			"rel"
+		]
+	},
+	{
+		"name": "Если гора не идёт к Магомету",
+		"description": "https://telegra.ph/Esli-gora-ne-idyot-k-Magometu-12-26",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Жена Лота",
+		"description": "https://telegra.ph/ZHena-Lota-12-26",
+		"keys": [
+			"rel"
+		]
+	},
+	{
+		"name": "Бетховен, Людвиг ван",
+		"description": "https://telegra.ph/Bethoven-Lyudvig-van-01-01",
+		"keys": [
+			"music"
+		]
+	},
+	{
+		"name": "Библиотека Ивана Грозного",
+		"description": "https://telegra.ph/Biblioteka-Ivana-Groznogo-01-01",
+		"keys": [
+			"hist"
+		]
+	},
+	{
+		"name": "Язык веера",
+		"description": "https://telegra.ph/YAzyk-veera-01-01",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Бикила, Абебе",
+		"description": "https://telegra.ph/Bikila-Abebe-01-01",
+		"keys": [
+			"sport"
+		]
+	},
+	{
+		"name": "Бинтование ног",
+		"description": "https://telegra.ph/Bintovanie-nog-01-01",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Бирс, Амброз",
+		"description": "https://telegra.ph/Birs-Ambroz-01-01",
+		"keys": [
+			"book"
+		]
+	},
+	{
+		"name": "Бойня на ручье Вундед-Ни",
+		"description": "https://telegra.ph/Bojnya-na-ruche-Vunded-Ni-01-01",
+		"keys": [
+			"hist"
+		]
+	},
+	{
+		"name": "Бойс, Йозеф",
+		"description": "https://telegra.ph/Bojs-Jozef-01-01",
+		"keys": [
+			"paint"
+		]
+	},
+	{
+		"name": "Бокасса, Жан Бедель",
+		"description": "https://telegra.ph/Bokassa-ZHan-Bedel-01-01",
+		"keys": [
+			"hist"
+		]
+	},
+	{
+		"name": "Больной человек Европы",
+		"description": "https://telegra.ph/Bolnoj-chelovek-Evropy-01-01",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Ад - это другие",
+		"description": "https://telegra.ph/Ad---ehto-drugie-01-01",
+		"keys": [
+			"book"
+		]
+	},
+	{
+		"name": "Большая Берта",
+		"description": "https://telegra.ph/Bolshaya-Berta-01-01",
+		"keys": [
+			"hist"
+		]
+	},
+	{
+		"name": "Бомбардировка Дрездена",
+		"description": "https://telegra.ph/Bombardirovka-Drezdena-01-05",
+		"keys": [
+			"hist"
+		]
+	},
+	{
+		"name": "Бор, Нильс",
+		"description": "https://telegra.ph/Bor-Nils-01-05",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Борей",
+		"description": "https://telegra.ph/Borej-01-05",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Борхес, Хорхе Луис",
+		"description": "https://telegra.ph/Borhes-Horhe-Luis-01-05",
+		"keys": [
+			"book"
+		]
+	},
+	{
+		"name": "Бостонское чаепитие",
+		"description": "https://telegra.ph/Bostonskoe-chaepitie-01-05",
+		"keys": [
+			"hist"
+		]
+	},
+	{
+		"name": "Бразилиа",
+		"description": "https://telegra.ph/Brazilia-01-05",
+		"keys": [
+			"geo"
+		]
+	},
+	{
+		"name": "Бритва Оккама",
+		"description": "https://telegra.ph/Britva-Okkama-01-05",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Бульдозерная выставка",
+		"description": "https://telegra.ph/Buldozernaya-vystavka-01-05",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Бурбаки",
+		"description": "https://telegra.ph/Burbaki-01-05",
+		"keys": [
+			"math"
+		]
+	},
+	{
+		"name": "Бык",
+		"description": "https://telegra.ph/Byk-01-05",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Быки и медведи",
+		"description": "https://telegra.ph/Byki-i-medvedi-01-05",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Бэнкси",
+		"description": "https://telegra.ph/Behnksi-01-05",
+		"keys": [
+			"paint"
+		]
+	},
+	{
+		"name": "Штрейкбрехер",
+		"description": "https://telegra.ph/SHtrejkbreher-01-06",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Шпенглер, Освальд",
+		"description": "https://telegra.ph/SHpengler-Osvald-01-06",
+		"keys": [
+			"hist"
+		]
+	},
+	{
+		"name": "Шинель (повесть)",
+		"description": "https://telegra.ph/SHinel-povest-01-06",
+		"keys": [
+			"book"
+		]
+	},
+	{
+		"name": "Шерпы",
+		"description": "https://telegra.ph/SHerpy-01-06",
+		"keys": [
+			"geo"
+		]
+	},
+	{
+		"name": "Шахматы Фишера",
+		"description": "https://telegra.ph/SHahmaty-Fishera-01-06",
+		"keys": [
+			"sport"
+		]
+	},
+	{
+		"name": "Шахматная горячка",
+		"description": "https://telegra.ph/SHahmatnaya-goryachka-01-06",
+		"keys": [
+			"film"
+		]
+	},
+	{
+		"name": "Шаи-Хулуд",
+		"description": "https://telegra.ph/SHai-Hulud-01-06",
+		"keys": [
+			"book"
+		]
+	},
+	{
+		"name": "Шалтай-Болтай",
+		"description": "https://telegra.ph/SHaltaj-Boltaj-01-06",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Число пи",
+		"description": "https://telegra.ph/CHislo-pi-01-06",
+		"keys": [
+			"math"
+		]
+	},
+	{
+		"name": "Человек флоресский",
+		"description": "https://telegra.ph/CHelovek-floresskij-01-06",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Что у меня в кармане?",
+		"description": "https://telegra.ph/CHto-u-menya-v-karmane-01-06",
+		"keys": [
+			"book"
+		]
+	},
+	{
+		"name": "Числа Фибоначчи",
+		"description": "https://telegra.ph/CHisla-Fibonachchi-01-06",
+		"keys": [
+			"math"
+		]
+	},
+	{
+		"name": "Черный квадрат",
+		"description": "https://telegra.ph/CHernyj-kvadrat-01-21",
+		"keys": [
+			"paint"
+		]
+	},
+	{
+		"name": "Чайка по имени Джонатан Ливингстон",
+		"description": "https://telegra.ph/CHajka-po-imeni-Dzhonatan-Livingston-01-21",
+		"keys": [
+			"book"
+		]
+	},
+	{
+		"name": "Фасмер, Макс",
+		"description": "https://telegra.ph/Fasmer-Maks-01-21",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Феномен Баадера-Майнхоф",
+		"description": "https://telegra.ph/Fenomen-Baadera-Majnhof-01-21",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Физическая невозможность смерти в сознании живущего",
+		"description": "https://telegra.ph/Fizicheskaya-nevozmozhnost-smerti-v-soznanii-zhivushchego-01-21",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Философский пароход",
+		"description": "https://telegra.ph/Filosofskij-parohod-01-21",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Флаг Бразилии",
+		"description": "https://telegra.ph/Flag-Brazilii-01-21",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Флатландия",
+		"description": "https://telegra.ph/Flatlandiya-01-21",
+		"keys": [
+			"book"
+		]
+	},
+	{
+		"name": "Фонтан Дюшана",
+		"description": "https://telegra.ph/Fontan-Dyushana-01-21",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Уорхол, Энди",
+		"description": "https://telegra.ph/Uorhol-EHndi-01-21",
+		"keys": [
+			"paint"
+		]
+	},
+	{
+		"name": "Уайет, Эндрю",
+		"description": "https://telegra.ph/Uajet-EHndryu-01-21",
+		"keys": [
+			"paint"
+		]
+	},
+	{
+		"name": "У попа была собака",
+		"description": "https://telegra.ph/U-popa-byla-sobaka-01-21",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Тайсон, Майк",
+		"description": "https://telegra.ph/Tajson-Majk-01-21",
+		"keys": [
+			"sport"
+		]
+	},
+	{
+		"name": "Тамплиеры",
+		"description": "https://telegra.ph/Tampliery-01-21",
+		"keys": [
+			"hist"
+		]
+	},
+	{
+		"name": "Танка",
+		"description": "https://telegra.ph/Tanka-01-21",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Тарковский, Андрей",
+		"description": "https://telegra.ph/Tarkovskij-Andrej-01-21",
+		"keys": [
+			"film"
+		]
+	},
+	{
+		"name": "Тест Бекдел",
+		"description": "https://telegra.ph/Test-Bekdel-01-22",
+		"keys": [
+			"psycho"
+		]
+	},
+	{
+		"name": "Тест Роршаха",
+		"description": "https://telegra.ph/Test-Rorshaha-01-22",
+		"keys": [
+			"psycho"
+		]
+	},
+	{
+		"name": "Тонкая красная линия",
+		"description": "https://telegra.ph/Tonkaya-krasnaya-liniya-01-22",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Эффект Даннинга — Крюгера",
+		"description": "https://telegra.ph/EHffekt-Danninga--Kryugera-01-23",
+		"keys": [
+			"psycho"
+		]
+	},
+	{
+		"name": "Кракелюры",
+		"description": "https://telegra.ph/Krakelyury-01-23",
+		"keys": [
+			"paint"
+		]
+	},
+	{
+		"name": "Точка над i",
+		"description": "https://telegra.ph/Tochka-nad-i-01-23",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "«Ваза»",
+		"description": "https://telegra.ph/Vaza-01-26",
+		"keys": [
+			"hist"
+		]
+	},
+	{
+		"name": "Полуночники",
+		"description": "https://telegra.ph/Polunochniki-01-26",
+		"keys": [
+			"paint"
+		]
+	},
+	{
+		"name": "Поверхность Мохоровичича",
+		"description": "https://telegra.ph/Poverhnost-Mohorovichicha-01-26",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Извлечение камня глупости",
+		"description": "https://telegra.ph/Izvlechenie-kamnya-gluposti-01-26",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Джейн Гудолл",
+		"description": "https://telegra.ph/Dzhejn-Gudoll-01-26",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Мадлен",
+		"description": "https://telegra.ph/Madlen-01-26",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Джорджо Вазари",
+		"description": "https://telegra.ph/Dzhordzho-Vazari-01-26",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Габриела Мистраль",
+		"description": "https://telegra.ph/Gabriela-Mistral-01-26",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Сад расходящихся тропок",
+		"description": "https://telegra.ph/Sad-rashodyashchihsya-tropok-01-26",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Гипотеза Сепира — Уорфа",
+		"description": "https://telegra.ph/Gipoteza-Sepira--Uorfa-01-26",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Victoria’s Secret",
+		"description": "https://telegra.ph/Victorias-Secret-01-26",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Хорошо темперированный клавир",
+		"description": "https://telegra.ph/Horosho-temperirovannyj-klavir-01-26",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Вверх по лестнице, ведущей вниз",
+		"description": "https://telegra.ph/Vverh-po-lestnice-vedushchej-vniz-01-26",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Исчезновение батальона Норфолкского полка",
+		"description": "https://telegra.ph/Ischeznovenie-batalona-Norfolkskogo-polka-01-26",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Отто Лилиенталь",
+		"description": "https://telegra.ph/Otto-Liliental-01-26",
+		"keys": [
+			"hist"
+		]
+	},
+	{
+		"name": "Ноам Хомский",
+		"description": "https://telegra.ph/Noam-Homskij-01-26",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Йоги Берра",
+		"description": "https://telegra.ph/Jogi-Berra-01-26",
+		"keys": [
+			"sport"
+		]
+	},
+	{
+		"name": "Джордж Гэллап",
+		"description": "https://telegra.ph/Dzhordzh-Gehllap-01-26",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Эффект «буба — кики»",
+		"description": "https://telegra.ph/EHffekt-buba--kiki-01-26",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Кристиан Барнард",
+		"description": "https://telegra.ph/Kristian-Barnard-01-26",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Траляля и Труляля",
+		"description": "https://telegra.ph/Tralyalya-i-Trulyalya-01-26",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Туман войны",
+		"description": "https://telegra.ph/Tuman-vojny-01-26",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Туринская плащаница",
+		"description": "https://telegra.ph/Turinskaya-plashchanica-01-26",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Тысяча ли",
+		"description": "https://telegra.ph/Tysyacha-li-01-26",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Хиллари и Тенцинг",
+		"description": "https://telegra.ph/Hillari-i-Tencing-01-26",
+		"keys": [
+			"hist",
+			"geo"
+		]
+	},
+	{
+		"name": "Химейер, Марвин",
+		"description": "https://telegra.ph/Himejer-Marvin-01-26",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Хокинг, Стивен",
+		"description": "https://telegra.ph/Hoking-Stiven-01-27",
+		"keys": [
+			"phys"
+		]
+	},
+	{
+		"name": "Хокку",
+		"description": "https://telegra.ph/Hokku-01-27",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Хокусай, Кацусика",
+		"description": "https://telegra.ph/Hokusaj-Kacusika-01-27",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Хоппер, Эдвард",
+		"description": "https://telegra.ph/Hopper-EHdvard-01-27",
+		"keys": [
+			"paint"
+		]
+	},
+	{
+		"name": "Хугин и Мунин",
+		"description": "https://telegra.ph/Hugin-i-Munin-01-27",
+		"keys": [
+			"myth"
+		]
+	},
+	{
+		"name": "«Съешь же ещё этих мягких французских булок да выпей чаю»",
+		"description": "https://telegra.ph/Sesh-zhe-eshchyo-ehtih-myagkih-francuzskih-bulok-da-vypej-chayu-01-27",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Сюрпляс",
+		"description": "https://telegra.ph/Syurplyas-01-27",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Сцевола, Гай Муций",
+		"description": "https://telegra.ph/Scevola-Gaj-Mucij-01-27",
+		"keys": [
+			"hist"
+		]
+	},
+	{
+		"name": "Сухой лист",
+		"description": "https://telegra.ph/Suhoj-list-01-27",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Сумбур вместо музыки",
+		"description": "https://telegra.ph/Sumbur-vmesto-muzyki-01-27",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Страдания юного Вертера",
+		"description": "https://telegra.ph/Stradaniya-yunogo-Vertera-01-27",
+		"keys": [
+			"book"
+		]
+	},
+	{
+		"name": "Стеклянный потолок",
+		"description": "https://telegra.ph/Steklyannyj-potolok-01-27",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Статуя Христа-Искупителя",
+		"description": "https://telegra.ph/Statuya-Hrista-Iskupitelya-01-28",
+		"keys": [
+			"geo"
+		]
+	},
+	{
+		"name": "Стайн, Гертруда",
+		"description": "https://telegra.ph/Stajn-Gertruda-01-28",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Спагетти-вестерн",
+		"description": "https://telegra.ph/Spagetti-vestern-01-28",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Солидарность",
+		"description": "https://telegra.ph/Solidarnost-01-28",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Смит, Адам",
+		"description": "https://telegra.ph/Smit-Adam-01-28",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Слейпнир",
+		"description": "https://telegra.ph/Slejpnir-01-29",
+		"keys": [
+			"myth"
+		]
+	},
+	{
+		"name": "Адвент-календарь",
+		"description": "https://telegra.ph/Advent-kalendar-01-29",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Алая буква",
+		"description": "https://telegra.ph/Alaya-bukva-01-29",
+		"keys": [
+			"book"
+		]
+	},
+	{
+		"name": "Мещанин во дворянстве",
+		"description": "https://telegra.ph/Meshchanin-vo-dvoryanstve-01-29",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Синг-Синг",
+		"description": "https://telegra.ph/Sing-Sing-01-29",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Париж стоит мессы",
+		"description": "https://telegra.ph/Parizh-stoit-messy-01-29",
+		"keys": [
+			"hist"
+		]
+	},
+	{
+		"name": "«В дороге» Джек Керуак",
+		"description": "https://telegra.ph/V-doroge-Dzhek-Keruak-01-29",
+		"keys": [
+			"book"
+		]
+	},
+	{
+		"name": "Линия Мэйсона - Диксона",
+		"description": "https://telegra.ph/Liniya-Mehjsona---Diksona-01-29",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Нигерийские письма",
+		"description": "https://telegra.ph/Nigerijskie-pisma-01-29",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Саймон говорит",
+		"description": "https://telegra.ph/Sajmon-govorit-01-29",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Лапута",
+		"description": "https://telegra.ph/Laputa-01-29",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Хироо Онода",
+		"description": "https://telegra.ph/Hiroo-Onoda-01-29",
+		"keys": [
+			"hist"
+		]
+	},
+	{
+		"name": "Шоколадница Лиотара",
+		"description": "https://telegra.ph/SHokoladnica-Liotara-01-29",
+		"keys": [
+			"paint"
+		]
+	},
+	{
+		"name": "95 тезисов. Виттенберг",
+		"description": "https://telegra.ph/95-tezisov-Vittenberg-01-29",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Публий Овидий Назон",
+		"description": "https://telegra.ph/Publij-Ovidij-Nazon-01-29",
+		"keys": [
+			"hist"
+		]
+	},
+	{
+		"name": "HAL 9000",
+		"description": "https://telegra.ph/HAL-9000-01-29",
+		"keys": [
+			"film"
+		]
+	},
+	{
+		"name": "Лурд",
+		"description": "https://telegra.ph/Lurd-01-29",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Клиффхэнгер",
+		"description": "https://telegra.ph/Kliffhehnger-01-29",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Портрет четы Арнольфини",
+		"description": "https://telegra.ph/Portret-chety-Arnolfini-01-29",
+		"keys": [
+			"paint"
+		]
+	},
+	{
+		"name": "Кофе и сигареты Джармуша",
+		"description": "https://telegra.ph/Kofe-i-sigarety-Dzharmusha-01-29",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Болеро Мориса Равеля",
+		"description": "https://telegra.ph/Bolero-Morisa-Ravelya-01-29",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Шесть персонажей в поисках автора",
+		"description": "https://telegra.ph/SHest-personazhej-v-poiskah-avtora-01-30",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Генрих Бёлль",
+		"description": "https://telegra.ph/Genrih-Byoll-01-30",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Весна священная",
+		"description": "https://telegra.ph/Vesna-svyashchennaya-01-30",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Похищение сабинянок",
+		"description": "https://telegra.ph/Pohishchenie-sabinyanok-01-30",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Томас Мальтус",
+		"description": "https://telegra.ph/Tomas-Maltus-01-30",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Каррарские карьеры",
+		"description": "https://telegra.ph/Karrarskie-karery-01-30",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Лаокоон",
+		"description": "https://telegra.ph/Laokoon-01-30",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Roll Over Beethoven",
+		"description": "https://telegra.ph/Roll-Over-Beethoven-01-30",
+		"keys": [
+			"music"
+		]
+	},
+	{
+		"name": "Кукольный дом",
+		"description": "https://telegra.ph/Kukolnyj-dom-01-30",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "«Селтик» vs «Глазго Рейнджерс»",
+		"description": "https://telegra.ph/Seltik-vs-Glazgo-Rejndzhers-01-30",
+		"keys": [
+			"sport"
+		]
+	},
+	{
+		"name": "Конец истории?",
+		"description": "https://telegra.ph/Konec-istorii-01-30",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Четыре классических романа",
+		"description": "https://telegra.ph/CHetyre-klassicheskih-romana-01-30",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Филлоксера",
+		"description": "https://telegra.ph/Filloksera-01-30",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Трумен Капоте",
+		"description": "https://telegra.ph/Trumen-Kapote-01-30",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Фронтир",
+		"description": "https://telegra.ph/Frontir-01-31",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Плеяды",
+		"description": "https://telegra.ph/Pleyady-01-31",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Тартан",
+		"description": "https://telegra.ph/Tartan-01-31",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Атака легкой бригады",
+		"description": "https://telegra.ph/Ataka-legkoj-brigady-01-31",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Бутон розы",
+		"description": "https://telegra.ph/Buton-rozy-01-31",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Вратарь республики",
+		"description": "https://telegra.ph/Vratar-respubliki-01-31",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Кеннинг",
+		"description": "https://telegra.ph/Kenning-01-31",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Уильям Гарвей",
+		"description": "https://telegra.ph/Uilyam-Garvej-01-31",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Куб Неккера",
+		"description": "https://telegra.ph/Kub-Nekkera-01-31",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Ван Клиберн",
+		"description": "https://telegra.ph/Van-Klibern-01-31",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Смерть Гауди",
+		"description": "https://telegra.ph/Smert-Gaudi-01-31",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Коан",
+		"description": "https://telegra.ph/Koan-01-31",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Хлопок одной ладонью",
+		"description": "https://telegra.ph/Hlopok-odnoj-ladonyu-01-31",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Плот «Медузы». Часть 1.",
+		"description": "https://telegra.ph/Plot-Meduzy-01-31",
+		"keys": [
+			"paint"
+		]
+	},
+	{
+		"name": "Плот «Медузы». Часть 2.",
+		"description": "https://telegra.ph/Plot-Meduzy-CHast-2-01-31",
+		"keys": [
+			"paint"
+		]
+	},
+	{
+		"name": "REM",
+		"description": "https://telegra.ph/REM-01-31-2",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Скупой рыцарь",
+		"description": "https://telegra.ph/Skupoj-rycar-01-31",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Синдром Туретта",
+		"description": "https://telegra.ph/Sindrom-Turetta-01-31",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Синдром Дженовезе",
+		"description": "https://telegra.ph/Sindrom-Dzhenoveze-01-31",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Симпсон, О Джей",
+		"description": "https://telegra.ph/Simpson-O-Dzhej-02-01",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Сикстинская капелла",
+		"description": "https://telegra.ph/Sikstinskaya-kapella-02-01",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Сиднейская опера",
+		"description": "https://telegra.ph/Sidnejskaya-opera-02-01",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Сибирская язва",
+		"description": "https://telegra.ph/Sibirskaya-yazva-02-01",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Сибарис",
+		"description": "https://telegra.ph/Sibaris-02-01",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Серебряные стрелы",
+		"description": "https://telegra.ph/Serebryanye-strely-02-01",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Сердце Шопена",
+		"description": "https://telegra.ph/Serdce-SHopena-02-01",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Семь мостов Кёнигсберга",
+		"description": "https://telegra.ph/Sem-mostov-Kyonigsberga-02-01",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "SETI",
+		"description": "https://telegra.ph/SETI-02-01",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Семнадцать мгновений весны",
+		"description": "https://telegra.ph/Semnadcat-mgnovenij-vesny-02-01",
+		"keys": [
+			"film"
+		]
+	},
+	{
+		"name": "Северное сияние",
+		"description": "https://telegra.ph/Severnoe-siyanie-02-01",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Святой Себастьян",
+		"description": "https://telegra.ph/Svyatoj-Sebastyan-02-01",
+		"keys": [
+			"rel"
+		]
+	},
+	{
+		"name": "Святой Патрик",
+		"description": "https://telegra.ph/Svyatoj-Patrik-02-01",
+		"keys": [
+			"rel"
+		]
+	},
+	{
+		"name": "Сатурналии",
+		"description": "https://telegra.ph/Saturnalii-02-01",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Салемские ведьмы",
+		"description": "https://telegra.ph/Salemskie-vedmy-02-01",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Санкюлоты",
+		"description": "https://telegra.ph/Sankyuloty-02-01",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Сантьяго Бернабеу",
+		"description": "https://telegra.ph/Santyago-Bernabeu-02-01",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Сапфо",
+		"description": "https://telegra.ph/Sapfo-02-01",
+		"keys": [
+			"book"
+		]
+	},
+	{
+		"name": "Сатанинские стихи",
+		"description": "https://telegra.ph/Sataninskie-stihi-02-01",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Сад камней",
+		"description": "https://telegra.ph/Sad-kamnej-02-01",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Листья травы",
+		"description": "https://telegra.ph/Listya-travy-02-01",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Смерть в Венеции",
+		"description": "https://telegra.ph/Smert-v-Venecii-02-01",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Зефирный эксперимент",
+		"description": "https://telegra.ph/Zefirnyj-ehksperiment-02-01",
+		"keys": [
+			"psycho"
+		]
+	},
+	{
+		"name": "Похитители велосипедов",
+		"description": "https://telegra.ph/Pohititeli-velosipedov-02-01",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Севр",
+		"description": "https://telegra.ph/Sevr-02-01",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Венеры палеолита",
+		"description": "https://telegra.ph/Venery-paleolita-02-01",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Жорж Перек",
+		"description": "https://telegra.ph/ZHorzh-Perek-02-01",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Верхняя Вольта",
+		"description": "https://telegra.ph/Verhnyaya-Volta-02-01",
+		"keys": [
+			"geo"
+		]
+	},
+	{
+		"name": "Ив Кляйн",
+		"description": "https://telegra.ph/Iv-Klyajn-02-01",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Чезаре Ломброзо",
+		"description": "https://telegra.ph/CHezare-Lombrozo-02-01",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "В ожидании Годо",
+		"description": "https://telegra.ph/V-ozhidanii-Godo-02-01",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "В Сантьяго идёт дождь",
+		"description": "https://telegra.ph/V-Santyago-idyot-dozhd-02-01",
+		"keys": [
+			"hist"
+		]
+	},
+	{
+		"name": "Вавилонская башня",
+		"description": "https://telegra.ph/Vavilonskaya-bashnya-02-01",
+		"keys": [
+			"rel"
+		]
+	},
+	{
+		"name": "Ван Гог, Винсент",
+		"description": "https://telegra.ph/Van-Gog-Vinsent-02-01",
+		"keys": [
+			"painthist"
+		]
+	},
+	{
+		"name": "Ведьмины круги",
+		"description": "https://telegra.ph/Vedminy-krugi-02-01",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Вересковый мёд",
+		"description": "https://telegra.ph/Vereskovyj-myod-02-01",
+		"keys": [
+			"book"
+		]
+	},
+	{
+		"name": "Вернись в Сорренто",
+		"description": "https://telegra.ph/Vernis-v-Sorrento-02-01",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Вудсток",
+		"description": "https://telegra.ph/Vudstok-02-01",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Встреча на Эльбе",
+		"description": "https://telegra.ph/Vstrecha-na-EHlbe-02-01",
+		"keys": [
+			"hist"
+		]
+	},
+	{
+		"name": "Восстание сипаев",
+		"description": "https://telegra.ph/Vosstanie-sipaev-02-01",
+		"keys": [
+			"hist"
+		]
+	},
+	{
+		"name": "Война миров",
+		"description": "https://telegra.ph/Vojna-mirov-02-01",
+		"keys": [
+			"book"
+		]
+	},
+	{
+		"name": "Вирус табачной мозаики",
+		"description": "https://telegra.ph/Virus-tabachnoj-mozaiki-02-02",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Ланцет",
+		"description": "https://telegra.ph/Lancet-02-02-2",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Виктория регия",
+		"description": "https://telegra.ph/Viktoriya-regiya-02-02",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Индекс запрещенных книг",
+		"description": "https://telegra.ph/Indeks-zapreshchennyh-knig-02-02",
+		"keys": [
+			"hist"
+		]
+	},
+	{
+		"name": "Карл Бедекер",
+		"description": "https://telegra.ph/Karl-Bedeker-02-02",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Костёр тщеславия",
+		"description": "https://telegra.ph/Kostyor-tshcheslaviya-02-02",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Сирокко",
+		"description": "https://telegra.ph/Sirokko-02-02",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Хенрикюс Антониус ван Мегерен",
+		"description": "https://telegra.ph/Henrikyus-Antonius-van-Megeren-02-02",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Анабасис Кира",
+		"description": "https://telegra.ph/Anabasis-Kira-02-02",
+		"keys": [
+			"hist"
+		]
+	},
+	{
+		"name": "Фригийский колпак",
+		"description": "https://telegra.ph/Frigijskij-kolpak-02-02",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Менины",
+		"description": "https://telegra.ph/Meniny-02-02",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Вильгельм Телль",
+		"description": "https://telegra.ph/Vilgelm-Tell-02-02",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Все критяне лжецы",
+		"description": "https://telegra.ph/Vse-krityane-lzhecy-02-02",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Видок, Эжен Франсуа",
+		"description": "https://telegra.ph/Vidok-EHzhen-Fransua-02-02",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Ветряная мельница",
+		"description": "https://telegra.ph/Vetryanaya-melnica-02-02",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Вестминстерское аббатство",
+		"description": "https://telegra.ph/Vestminsterskoe-abbatstvo-02-02",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Весёлая вдова",
+		"description": "https://telegra.ph/Vesyolaya-vdova-02-02",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Верблюд",
+		"description": "https://telegra.ph/Verblyud-02-02",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Венеция",
+		"description": "https://telegra.ph/Veneciya-02-02-31",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Великий лондонский пожар",
+		"description": "https://telegra.ph/Velikij-londonskij-pozhar-02-02",
+		"keys": [
+			"hist"
+		]
+	},
+	{
+		"name": "Рыба фугу",
+		"description": "https://telegra.ph/Ryba-fugu-02-02",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Руст, Матиас",
+		"description": "https://telegra.ph/Rust-Matias-02-02",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Русские сезоны",
+		"description": "https://telegra.ph/Russkie-sezony-02-03",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Россия — родина слонов",
+		"description": "https://telegra.ph/Rossiya--rodina-slonov-02-03",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Рука Бога",
+		"description": "https://telegra.ph/Ruka-Boga-02-03",
+		"keys": [
+			"sport"
+		]
+	},
+	{
+		"name": "Роквелл, Норман",
+		"description": "https://telegra.ph/Rokvell-Norman-02-03",
+		"keys": [
+			"paint"
+		]
+	},
+	{
+		"name": "Мондриан",
+		"description": "https://telegra.ph/Mondrian-02-03",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Игра в классики и 62. Модель для сборки",
+		"description": "https://telegra.ph/Igra-v-klassiki-i-62-Model-dlya-sborki-02-03",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Джесси Оуэнс",
+		"description": "https://telegra.ph/Dzhessi-Ouehns-02-03",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Палочники",
+		"description": "https://telegra.ph/Palochniki-02-03",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Авессалом",
+		"description": "https://telegra.ph/Avessalom-02-03",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Альфонс Муха",
+		"description": "https://telegra.ph/Alfons-Muha-02-03",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Робин Гуд",
+		"description": "https://telegra.ph/Robin-Gud-02-05",
+		"keys": [
+			"myth"
+		]
+	},
+	{
+		"name": "Розеттский камень",
+		"description": "https://telegra.ph/Rozettskij-kamen-02-05",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Розуэлльский инцидент",
+		"description": "https://telegra.ph/Rozuehllskij-incident-02-05",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Римские каникулы",
+		"description": "https://telegra.ph/Rimskie-kanikuly-02-05",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Ретиарий",
+		"description": "https://telegra.ph/Retiarij-02-05",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Рентген, Вильгельм",
+		"description": "https://telegra.ph/Rentgen-Vilgelm-02-05",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Ремингтон № 1",
+		"description": "https://telegra.ph/Remington--1-02-05",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Расёмон",
+		"description": "https://telegra.ph/Rasyomon-02-05",
+		"keys": [
+			"film"
+		]
+	},
+	{
+		"name": "Рембо, Артюр",
+		"description": "https://telegra.ph/Rembo-Artyur-02-05",
+		"keys": [
+			"book"
+		]
+	},
+	{
+		"name": "Рембрант",
+		"description": "https://telegra.ph/Rembrant-02-05",
+		"keys": [
+			"paint"
+		]
+	},
+	{
+		"name": "Газлайтинг",
+		"description": "https://telegra.ph/Gazlajting-02-08-2",
+		"keys": [
+			"psycho"
+		]
+	},
+	{
+		"name": "Жеводанский зверь",
+		"description": "https://telegra.ph/ZHevodanskij-zver-02-08",
+		"keys": [
+			"myth"
+		]
+	},
+	{
+		"name": "Жестяной барабан",
+		"description": "https://telegra.ph/ZHestyanoj-baraban-02-08",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Гаммельнский крысолов",
+		"description": "https://telegra.ph/Gammelnskij-krysolov-02-09",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Гекзаметр",
+		"description": "https://telegra.ph/Gekzametr-02-09",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Гексли, Томас",
+		"description": "https://telegra.ph/Geksli-Tomas-02-09",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Гензель и Гретель",
+		"description": "https://telegra.ph/Genzel-i-Gretel-02-09",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Геркулесовы столбы",
+		"description": "https://telegra.ph/Gerkulesovy-stolby-02-09",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Герника",
+		"description": "https://telegra.ph/Gernika-02-09",
+		"keys": [
+			"paint"
+		]
+	},
+	{
+		"name": "Герострат",
+		"description": "https://telegra.ph/Gerostrat-02-09",
+		"keys": [
+			"hist"
+		]
+	},
+	{
+		"name": "Гиббон, Эдуард",
+		"description": "https://telegra.ph/Gibbon-EHduard-02-09",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Гибли",
+		"description": "https://telegra.ph/Gibli-02-09",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Гномон",
+		"description": "https://telegra.ph/Gnomon-02-09",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Голова лошади",
+		"description": "https://telegra.ph/Golova-loshadi-02-09",
+		"keys": [
+			"film"
+		]
+	},
+	{
+		"name": "Головокружение от успехов",
+		"description": "https://telegra.ph/Golovokruzhenie-ot-uspehov-02-09",
+		"keys": [
+			"hist"
+		]
+	},
+	{
+		"name": "Гонг",
+		"description": "https://telegra.ph/Gong-02-09",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Гринвич",
+		"description": "https://telegra.ph/Grinvich-02-09",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Гус, Ян",
+		"description": "https://telegra.ph/Gus-YAn-02-09",
+		"keys": [
+			"hist"
+		]
+	},
+	{
+		"name": "Замбони",
+		"description": "https://telegra.ph/Zamboni-02-10",
+		"keys": [
+			"sport"
+		]
+	},
+	{
+		"name": "Лузиады",
+		"description": "https://telegra.ph/Luziady-02-10",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Арман Давид",
+		"description": "https://telegra.ph/Arman-David-02-10",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Тюльпаномания",
+		"description": "https://telegra.ph/Tyulpanomaniya-02-10",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Винланд",
+		"description": "https://telegra.ph/Vinland-02-10",
+		"keys": [
+			"geo"
+		]
+	},
+	{
+		"name": "Кломпы",
+		"description": "https://telegra.ph/Klompy-02-10",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Дадаизм",
+		"description": "https://telegra.ph/Dadaizm-02-10",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Смерть автора",
+		"description": "https://telegra.ph/Smert-avtora-02-14",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "«Дождь,пар и скорость»",
+		"description": "https://telegra.ph/Dozhdpar-i-skorost-02-14",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Правило Миранды",
+		"description": "https://telegra.ph/Pravilo-Mirandy-02-15",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Дамасская сталь",
+		"description": "https://telegra.ph/Damasskaya-stal-02-16",
+		"keys": [
+			"hist"
+		]
+	},
+	{
+		"name": "Дарвин, Чарльз Роберт",
+		"description": "https://telegra.ph/Darvin-CHarlz-Robert-02-16",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Дары волхвов",
+		"description": "https://telegra.ph/Dary-volhvov-02-16",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Дельфийский оракул",
+		"description": "https://telegra.ph/Delfijskij-orakul-02-16",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Демосфен",
+		"description": "https://telegra.ph/Demosfen-02-16",
+		"keys": [
+			"hist"
+		]
+	},
+	{
+		"name": "Дефенестрация",
+		"description": "https://telegra.ph/Defenestraciya-02-16",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Дюрер, Альбрехт",
+		"description": "https://telegra.ph/Dyurer-Albreht-02-19",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Дыхание Чейна — Стокса",
+		"description": "https://telegra.ph/Dyhanie-CHejna--Stoksa-02-19",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Донн, Джон",
+		"description": "https://telegra.ph/Donn-Dzhon-02-19",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Доля ангелов",
+		"description": "https://telegra.ph/Dolya-angelov-02-19",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Дон Кихот",
+		"description": "https://telegra.ph/Don-Kihot-02-19",
+		"keys": [
+			"book"
+		]
+	},
+	{
+		"name": "Джеронимо",
+		"description": "https://telegra.ph/Dzheronimo-02-19",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Дженнер, Эдвард",
+		"description": "https://telegra.ph/Dzhenner-EHdvard-02-19",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Десять негритят",
+		"description": "https://telegra.ph/Desyat-negrityat-02-19",
+		"keys": [
+			"book"
+		]
+	},
+	{
+		"name": "День сурка",
+		"description": "https://telegra.ph/Den-surka-02-19",
+		"keys": [
+			"film"
+		]
+	},
+	{
+		"name": "Ё (буква)",
+		"description": "https://telegra.ph/YO-bukva-02-19",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Омела",
+		"description": "https://telegra.ph/Omela-02-19",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Они убили Кенни",
+		"description": "https://telegra.ph/Oni-ubili-Kenni-02-19",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Охота на Снарка",
+		"description": "https://telegra.ph/Ohota-na-Snarka-02-19",
+		"keys": [
+			"book"
+		]
+	},
+	{
+		"name": "Один",
+		"description": "https://telegra.ph/Odin-02-19",
+		"keys": [
+			"myth"
+		]
+	},
+	{
+		"name": "Навахо",
+		"description": "https://telegra.ph/Navaho-02-19",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Нансен, Фритьоф",
+		"description": "https://telegra.ph/Nansen-Fritof-02-19",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Наска",
+		"description": "https://telegra.ph/Naska-02-19",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Невидимая рука рынка",
+		"description": "https://telegra.ph/Nevidimaya-ruka-rynka-02-19",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "«Недоросль»",
+		"description": "https://telegra.ph/Nedorosl-02-19",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Нерон",
+		"description": "https://telegra.ph/Neron-02-19",
+		"keys": [
+			"hist"
+		]
+	},
+	{
+		"name": "Новые горизонты",
+		"description": "https://telegra.ph/Novye-gorizonty-02-19",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Ночные ведьмы",
+		"description": "https://telegra.ph/Nochnye-vedmy-02-19",
+		"keys": [
+			"hist"
+		]
+	},
+	{
+		"name": "Ньютон, Исаак",
+		"description": "https://telegra.ph/Nyuton-Isaak-02-19",
+		"keys": [
+			"math"
+		]
+	},
+	{
+		"name": "Ной",
+		"description": "https://telegra.ph/Noj-02-19",
+		"keys": [
+			"rel"
+		]
+	},
+	{
+		"name": "Одиночество в сети",
+		"description": "https://telegra.ph/Odinochestvo-v-seti-02-19",
+		"keys": [
+			"book"
+		]
+	},
+	{
+		"name": "Одностишие",
+		"description": "https://telegra.ph/Odnostishie-02-19",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Озёрная школа",
+		"description": "https://telegra.ph/Ozyornaya-shkola-02-19",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "«Оксфорд — Кембридж»",
+		"description": "https://telegra.ph/Oksford--Kembridzh-02-19",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Оксфордская запятая",
+		"description": "https://telegra.ph/Oksfordskaya-zapyataya-02-19",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Оливье",
+		"description": "https://telegra.ph/Olive-02-19",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Орден меньших братьев капуцинов",
+		"description": "https://telegra.ph/Orden-menshih-bratev-kapucinov-02-19",
+		"keys": [
+			"hist"
+		]
+	},
+	{
+		"name": "Отелло",
+		"description": "https://telegra.ph/Otello-02-19",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Имя розы",
+		"description": "https://telegra.ph/Imya-rozy-02-19",
+		"keys": [
+			"book"
+		]
+	},
+	{
+		"name": "Ибаррури, Долорес",
+		"description": "https://telegra.ph/Ibarruri-Dolores-02-19",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Индекс Биг-Мака",
+		"description": "https://telegra.ph/Indeks-Big-Maka-02-19",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Испорченный телефон",
+		"description": "https://telegra.ph/Isporchennyj-telefon-02-19",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Ирландская арфа",
+		"description": "https://telegra.ph/Irlandskaya-arfa-02-19",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Ипр",
+		"description": "https://telegra.ph/Ipr-02-19",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Иордан",
+		"description": "https://telegra.ph/Iordan-02-19",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Лента Мёбиуса",
+		"description": "https://telegra.ph/Lenta-Myobiusa-02-19",
+		"keys": [
+			"math"
+		]
+	},
+	{
+		"name": "«Лето любви»",
+		"description": "https://telegra.ph/Leto-lyubvi-02-21",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Лига плюща",
+		"description": "https://telegra.ph/Liga-plyushcha-02-21",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Лимерик",
+		"description": "https://telegra.ph/Limerik-02-21",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Линия Маннергейма",
+		"description": "https://telegra.ph/Liniya-Mannergejma-02-21",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Линдберг, Чарльз",
+		"description": "https://telegra.ph/Lindberg-CHarlz-02-21",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Лирой Дженкинс",
+		"description": "https://telegra.ph/Liroj-Dzhenkins-02-21",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Лисистра́та",
+		"description": "https://telegra.ph/Lisistrata-02-21",
+		"keys": [
+			"book"
+		]
+	},
+	{
+		"name": "Люпен, Арсен",
+		"description": "https://telegra.ph/Lyupen-Arsen-02-21",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Луддиты",
+		"description": "https://telegra.ph/Luddity-02-21",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Лондонский глаз",
+		"description": "https://telegra.ph/Londonskij-glaz-02-21",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Лихтенштейн",
+		"description": "https://telegra.ph/Lihtenshtejn-02-21",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Задача коммивояжёра",
+		"description": "https://telegra.ph/Zadacha-kommivoyazhyora-02-21",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Задача трёх тел",
+		"description": "https://telegra.ph/Zadacha-tryoh-tel-02-21",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Закон о трех колосках",
+		"description": "https://telegra.ph/Zakon-o-treh-koloskah-02-21",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Заяц Пушкина",
+		"description": "https://telegra.ph/Zayac-Pushkina-02-21",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Звягинцев, Андрей",
+		"description": "https://telegra.ph/Zvyagincev-Andrej-02-21",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Зелёная книга",
+		"description": "https://telegra.ph/Zelyonaya-kniga-02-21",
+		"keys": [
+			"film"
+		]
+	},
+	{
+		"name": "Зелинский, Николай",
+		"description": "https://telegra.ph/Zelinskij-Nikolaj-02-21",
+		"keys": [
+			"hist"
+		]
+	},
+	{
+		"name": "Земля Санникова",
+		"description": "https://telegra.ph/Zemlya-Sannikova-02-21",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Змееносец",
+		"description": "https://telegra.ph/Zmeenosec-02-21",
+		"keys": [
+			"space"
+		]
+	},
+	{
+		"name": "Золотой храм (роман)",
+		"description": "https://telegra.ph/Zolotoj-hram-roman-02-21",
+		"keys": [
+			"book"
+		]
+	},
+	{
+		"name": "Золотые ворота (мост)",
+		"description": "https://telegra.ph/Zolotye-vorota-most-02-21",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Золотые пластинки «Вояджера»",
+		"description": "https://telegra.ph/Zolotye-plastinki-Voyadzhera-02-21",
+		"keys": [
+			"space"
+		]
+	},
+	{
+		"name": "Зорге, Рихард",
+		"description": "https://telegra.ph/Zorge-Rihard-02-21",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Зубная фея",
+		"description": "https://telegra.ph/Zubnaya-feya-02-21-2",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Макбет",
+		"description": "https://telegra.ph/Makbet-02-21",
+		"keys": [
+			"book"
+		]
+	},
+	{
+		"name": "Малые голландцы",
+		"description": "https://telegra.ph/Malye-gollandcy-02-21",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Манускрипт Войнича",
+		"description": "https://telegra.ph/Manuskript-Vojnicha-02-21",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Мафусаил",
+		"description": "https://telegra.ph/Mafusail-02-21",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Маятник Фуко",
+		"description": "https://telegra.ph/Mayatnik-Fuko-02-21",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Марсо, Марсель",
+		"description": "https://telegra.ph/Marso-Marsel-02-21",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Магдебург",
+		"description": "https://telegra.ph/Magdeburg-02-21",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Мэри Сью",
+		"description": "https://telegra.ph/Mehri-Syu-02-21",
+		"keys": [
+			"film"
+		]
+	},
+	{
+		"name": "Москва-Петушки",
+		"description": "https://telegra.ph/Moskva-Petushki-02-21",
+		"keys": [
+			"book"
+		]
+	},
+	{
+		"name": "Менса",
+		"description": "https://telegra.ph/Mensa-02-21-2",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Мене, текел, фарес",
+		"description": "https://telegra.ph/Mene-tekel-fares-02-21",
+		"keys": [
+			"rel"
+		]
+	},
+	{
+		"name": "Месснер, Райнхольд",
+		"description": "https://telegra.ph/Messner-Rajnhold-02-21",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Метод Монте-Карло",
+		"description": "https://telegra.ph/Metod-Monte-Karlo-02-21",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Моряк Попай",
+		"description": "https://telegra.ph/Moryak-Popaj-02-21",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Монмартр",
+		"description": "https://telegra.ph/Monmartr-02-21",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Молот ведьм",
+		"description": "https://telegra.ph/Molot-vedm-02-21",
+		"keys": [
+			"hist"
+		]
+	},
+	{
+		"name": "Мона Лиза Джоконда",
+		"description": "https://telegra.ph/Mona-Liza-Dzhokonda-02-21",
+		"keys": [
+			"paint"
+		]
+	},
+	{
+		"name": "Мой сосед Тоторо",
+		"description": "https://telegra.ph/Moj-sosed-Totoro-02-21",
+		"keys": [
+			"film"
+		]
+	},
+	{
+		"name": "Миф о пещере",
+		"description": "https://telegra.ph/Mif-o-peshchere-02-21",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Моби Дик",
+		"description": "https://telegra.ph/Mobi-Dik-02-21",
+		"keys": [
+			"book"
+		]
+	},
+	{
+		"name": "Мёртвые души",
+		"description": "https://telegra.ph/Myortvye-dushi-02-21",
+		"keys": [
+			"book"
+		]
+	},
+	{
+		"name": "Минотавр",
+		"description": "https://telegra.ph/Minotavr-02-21",
+		"keys": [
+			"myth"
+		]
+	},
+	{
+		"name": "Митридат VI Евпатор",
+		"description": "https://telegra.ph/Mitridat-VI-Evpator-02-21",
+		"keys": [
+			"hist"
+		]
+	},
+	{
+		"name": "Конклав",
+		"description": "https://telegra.ph/Konklav-02-21",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Кювье, Жорж",
+		"description": "https://telegra.ph/Kyuve-ZHorzh-02-21",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Кэдди",
+		"description": "https://telegra.ph/Kehddi-02-21",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Культ карго",
+		"description": "https://telegra.ph/Kult-kargo-02-21",
+		"keys": [
+			"hist"
+		]
+	},
+	{
+		"name": "Куант, Мэри",
+		"description": "https://telegra.ph/Kuant-Mehri-02-21",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Кулидж, Кассиус",
+		"description": "https://telegra.ph/Kulidzh-Kassius-02-21",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Круги на полях",
+		"description": "https://telegra.ph/Krugi-na-polyah-02-21",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Кровь, пот и слёзы",
+		"description": "https://telegra.ph/Krov-pot-i-slyozy-02-21",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Кринолин",
+		"description": "https://telegra.ph/Krinolin-02-21",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Криптон",
+		"description": "https://telegra.ph/Kripton-02-21",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Камикадзе",
+		"description": "https://telegra.ph/Kamikadze-02-22",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Каменный гость",
+		"description": "https://telegra.ph/Kamennyj-gost-02-22",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Камень, Ножницы, Бумага",
+		"description": "https://telegra.ph/Kamen-Nozhnicy-Bumaga-02-22",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Камера обскура",
+		"description": "https://telegra.ph/Kamera-obskura-02-22",
+		"keys": [
+			"book"
+		]
+	},
+	{
+		"name": "Каналы Скиапарелли",
+		"description": "https://telegra.ph/Kanaly-Skiaparelli-02-22",
+		"keys": [
+			"space"
+		]
+	},
+	{
+		"name": "Караян, Герберт фон",
+		"description": "https://telegra.ph/Karayan-Gerbert-fon-02-22",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Касабланка",
+		"description": "https://telegra.ph/Kasablanka-02-22",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "“Качели” Фрагонара",
+		"description": "https://telegra.ph/Kacheli-Fragonara-02-22",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Квадратура круга",
+		"description": "https://telegra.ph/Kvadratura-kruga-02-22",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Кеворкян, Джек",
+		"description": "https://telegra.ph/Kevorkyan-Dzhek-02-22",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Кембрийский взрыв",
+		"description": "https://telegra.ph/Kembrijskij-vzryv-02-22",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Кипу",
+		"description": "https://telegra.ph/Kipu-02-22",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Кристи, Агата",
+		"description": "https://telegra.ph/Kristi-Agata-02-22",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Крик Вильгельма",
+		"description": "https://telegra.ph/Krik-Vilgelma-02-22",
+		"keys": [
+			"film"
+		]
+	},
+	{
+		"name": "Крик",
+		"description": "https://telegra.ph/Krik-02-22",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Крещение корабля",
+		"description": "https://telegra.ph/Kreshchenie-korablya-02-22",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Красный гид Мишлен",
+		"description": "https://telegra.ph/Krasnyj-gid-Mishlen-02-22",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Котурны",
+		"description": "https://telegra.ph/Koturny-02-22",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Кот Шрёдингера",
+		"description": "https://telegra.ph/Kot-SHryodingera-02-22",
+		"keys": [
+			"phys"
+		]
+	},
+	{
+		"name": "Кот д'Ивуар",
+		"description": "https://telegra.ph/Kot-dIvuar-02-22",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Корабль Тесея",
+		"description": "https://telegra.ph/Korabl-Teseya-02-22",
+		"keys": [
+			"phil"
+		]
+	},
+	{
+		"name": "Кицунэ",
+		"description": "https://telegra.ph/Kicuneh-02-22",
+		"keys": [
+			"myth"
+		]
+	},
+	{
+		"name": "Клакёр",
+		"description": "https://telegra.ph/Klakyor-02-22",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Клепсидра",
+		"description": "https://telegra.ph/Klepsidra-02-23",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Клуб «Диоген»",
+		"description": "https://telegra.ph/Klub-Diogen-02-23",
+		"keys": [
+			"book"
+		]
+	},
+	{
+		"name": "Клуб Григория Федотова",
+		"description": "https://telegra.ph/Klub-Grigoriya-Fedotova-02-23",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Кнорозов, Юрий Валентинович",
+		"description": "https://telegra.ph/Knorozov-YUrij-Valentinovich-02-23",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Ковентри",
+		"description": "https://telegra.ph/Koventri-02-23",
+		"keys": [
+			"geo",
+			" hist"
+		]
+	},
+	{
+		"name": "Колибри",
+		"description": "https://telegra.ph/Kolibri-02-23",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Колумбово яйцо",
+		"description": "https://telegra.ph/Kolumbovo-yajco-02-23",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Колыбель Ньютона",
+		"description": "https://telegra.ph/Kolybel-Nyutona-02-23",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Комета Галлея",
+		"description": "https://telegra.ph/Kometa-Galleya-02-23",
+		"keys": [
+			"space"
+		]
+	},
+	{
+		"name": "Ab ovo",
+		"description": "https://telegra.ph/Ab-ovo-02-23",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "A.C.A.B.",
+		"description": "https://telegra.ph/ACAB-02-23",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Ford Model T",
+		"description": "https://telegra.ph/Ford-Model-T-02-23",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "I'll be back",
+		"description": "https://telegra.ph/Ill-be-back-02-23",
+		"keys": [
+			"film"
+		]
+	},
+	{
+		"name": "Kinder, Küche, Kirche, (Kleider)",
+		"description": "https://telegra.ph/Kinder-K%C3%BCche-Kirche-Kleider-02-23",
+		"keys": [
+			"hist"
+		]
+	},
+	{
+		"name": "«Something Old, Something New, Something Borrowed, Something Blue»",
+		"description": "https://telegra.ph/Something-Old-Something-New-Something-Borrowed-Something-Blue-02-23",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "The Dark Side of the Moon",
+		"description": "https://telegra.ph/The-Dark-Side-of-the-Moon-02-23",
+		"keys": [
+			"music"
+		]
+	},
+	{
+		"name": "The Wall",
+		"description": "https://telegra.ph/The-Wall-02-23",
+		"keys": [
+			"music"
+		]
+	},
+	{
+		"name": "Шакал, Карлос",
+		"description": "https://telegra.ph/SHakal-Karlos-02-23",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Эксперимент Милгрэма",
+		"description": "https://telegra.ph/EHksperiment-Milgrehma-02-23",
+		"keys": [
+			"psycho"
+		]
+	},
+	{
+		"name": "15 минут славы",
+		"description": "https://telegra.ph/15-minut-slavy-02-23",
+		"keys": [
+			"quote"
+		]
+	},
+	{
+		"name": "1984",
+		"description": "https://telegra.ph/1984-02-23",
+		"keys": [
+			"book"
+		]
+	},
+	{
+		"name": "4'33''",
+		"description": "https://telegra.ph/433-02-23",
+		"keys": [
+			"music"
+		]
+	},
+	{
+		"name": "42",
+		"description": "https://telegra.ph/42-02-23",
+		"keys": [
+			"book"
+		]
+	},
+	{
+		"name": "451 градус по Фаренгейту",
+		"description": "https://telegra.ph/451-gradus-po-Farengejtu-02-23-2",
+		"keys": [
+			"book"
+		]
+	},
+	{
+		"name": "Клепсидра",
+		"description": "https://telegra.ph/Klepsidra-02-23-2",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Павлов, Иван Петрович",
+		"description": "https://telegra.ph/Pavlov-Ivan-Petrovich-02-23",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Павлова, Анна Павловна",
+		"description": "https://telegra.ph/Pavlova-Anna-Pavlovna-02-23",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Палах, Ян",
+		"description": "https://telegra.ph/Palah-YAn-02-23",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Палимпсест",
+		"description": "https://telegra.ph/Palimpsest-02-23",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Памплона",
+		"description": "https://telegra.ph/Pamplona-02-23",
+		"keys": [
+			"geo"
+		]
+	},
+	{
+		"name": "Папесса Иоанна",
+		"description": "https://telegra.ph/Papessa-Ioanna-02-23",
+		"keys": [
+			"rel"
+		]
+	},
+	{
+		"name": "Парис",
+		"description": "https://telegra.ph/Paris-02-23-13",
+		"keys": [
+			"myth"
+		]
+	},
+	{
+		"name": "Парфюмер",
+		"description": "https://telegra.ph/Parfyumer-02-23",
+		"keys": [
+			"book"
+		]
+	},
+	{
+		"name": "Пауэрс, Фрэнсис Гэри",
+		"description": "https://telegra.ph/Pauehrs-Frehnsis-Gehri-02-23",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Певец джаза",
+		"description": "https://telegra.ph/Pevec-dzhaza-02-23",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Пети, Филипп",
+		"description": "https://telegra.ph/Peti-Filipp-02-23",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Петя и Волк",
+		"description": "https://telegra.ph/Petya-i-Volk-02-23",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Пилтдаунский человек",
+		"description": "https://telegra.ph/Piltdaunskij-chelovek-02-23",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Пиноккио",
+		"description": "https://telegra.ph/Pinokkio-02-23",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Пиросмани, Нико",
+		"description": "https://telegra.ph/Pirosmani-Niko-02-23",
+		"keys": [
+			"music"
+		]
+	},
+	{
+		"name": "Писающий мальчик",
+		"description": "https://telegra.ph/Pisayushchij-malchik-02-23",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Плавильный котёл",
+		"description": "https://telegra.ph/Plavilnyj-kotyol-02-23",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Плат, Сильвия",
+		"description": "https://telegra.ph/Plat-Silviya-02-23",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "666",
+		"description": "https://telegra.ph/666-02-23-7",
+		"keys": [
+			"rel"
+		]
+	},
+	{
+		"name": "Геракл",
+		"description": "https://telegra.ph/Gerakl-02-23",
+		"keys": [
+			"myth"
+		]
+	},
+	{
+		"name": "Казни египетские",
+		"description": "https://telegra.ph/Kazni-egipetskie-02-23",
+		"keys": [
+			"rel"
+		]
+	},
+	{
+		"name": "Могучая Кучка",
+		"description": "https://telegra.ph/Moguchaya-Kuchka-02-23",
+		"keys": [
+			"music"
+		]
+	},
+	{
+		"name": "Музы",
+		"description": "https://telegra.ph/Muzy-02-23",
+		"keys": [
+			"myth"
+		]
+	},
+	{
+		"name": "Чудеса света",
+		"description": "https://telegra.ph/CHudesa-sveta-02-23",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Чемпионы мира по шахматам",
+		"description": "https://telegra.ph/CHempiony-Mira-po-shahmatam-02-23",
+		"keys": [
+			"sport"
+		]
+	},
+	{
+		"name": "Пляска смерти",
+		"description": "https://telegra.ph/Plyaska-smerti-02-23",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Пляшущие человечки",
+		"description": "https://telegra.ph/Plyashushchie-chelovechki-02-23",
+		"keys": [
+			"book"
+		]
+	},
+	{
+		"name": "Подпоручик Киже",
+		"description": "https://telegra.ph/Podporuchik-Kizhe-02-23",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Поехали",
+		"description": "https://telegra.ph/Poehali-02-23",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "«Политый поливальщик»",
+		"description": "https://telegra.ph/Polityj-polivalshchik-02-23",
+		"keys": [
+			"film"
+		]
+	},
+	{
+		"name": "Полифем",
+		"description": "https://telegra.ph/Polifem-02-23",
+		"keys": [
+			"myth"
+		]
+	},
+	{
+		"name": "После нас хоть потоп",
+		"description": "https://telegra.ph/Posle-nas-hot-potop-02-23",
+		"keys": [
+			"quote"
+		]
+	},
+	{
+		"name": "Последнее танго в Париже",
+		"description": "https://telegra.ph/Poslednee-tango-v-Parizhe-02-23",
+		"keys": [
+			"film"
+		]
+	},
+	{
+		"name": "Потлач",
+		"description": "https://telegra.ph/Potlach-02-23",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Пощёчина общественному вкусу",
+		"description": "https://telegra.ph/Poshchyochina-obshchestvennomu-vkusu-02-23",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Пражская весна",
+		"description": "https://telegra.ph/Prazhskaya-vesna-02-23",
+		"keys": [
+			"hist"
+		]
+	},
+	{
+		"name": "Пражские дефенестрации",
+		"description": "https://telegra.ph/Prazhskie-defenestracii-02-23",
+		"keys": [
+			"hist"
+		]
+	},
+	{
+		"name": "Предложение, от которого невозможно отказаться",
+		"description": "https://telegra.ph/Predlozhenie-ot-kotorogo-nevozmozhno-otkazatsya-02-23-2",
+		"keys": [
+			"film"
+		]
+	},
+	{
+		"name": "Принцип Дирихле",
+		"description": "https://telegra.ph/Princip-Dirihle-02-23",
+		"keys": [
+			"math"
+		]
+	},
+	{
+		"name": "Принцип домино",
+		"description": "https://telegra.ph/Princip-domino-02-23",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Принцип неопределённости Гейзенберга",
+		"description": "https://telegra.ph/Princip-neopredelyonnosti-Gejzenberga-02-23",
+		"keys": [
+			"phys"
+		]
+	},
+	{
+		"name": "Принцип Паули",
+		"description": "https://telegra.ph/Princip-Pauli-02-23",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Принцип, Гаврило",
+		"description": "https://telegra.ph/Princip-Gavrilo-02-23",
+		"keys": [
+			"hist"
+		]
+	},
+	{
+		"name": "Проклятие девятой симфонии",
+		"description": "https://telegra.ph/Proklyatie-devyatoj-simfonii-02-23",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Прокудин - Горский, Сергей Михайлович",
+		"description": "https://telegra.ph/Prokudin---Gorskij-Sergej-Mihajlovich-02-23",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Прометей",
+		"description": "https://telegra.ph/Prometej-02-23",
+		"keys": [
+			"myth"
+		]
+	},
+	{
+		"name": "Пусть едят пирожные",
+		"description": "https://telegra.ph/Pust-edyat-pirozhnye-02-23-2",
+		"keys": [
+			"hist",
+			"quote"
+		]
+	},
+	{
+		"name": "Пурпурное сердце",
+		"description": "https://telegra.ph/Purpurnoe-serdce-02-23-2",
+		"keys": [
+			"hist"
+		]
+	},
+	{
+		"name": "Путёвка в жизнь",
+		"description": "https://telegra.ph/Putyovka-v-zhizn-02-24",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Пушкин, Александр Сергеевич",
+		"description": "https://telegra.ph/Pushkin-Aleksandr-Sergeevich-02-24",
+		"keys": [
+			"book"
+		]
+	},
+	{
+		"name": "Анчар",
+		"description": "https://telegra.ph/Anchar-02-24",
+		"keys": [
+			"book"
+		]
+	},
+	{
+		"name": "Гарринча",
+		"description": "https://telegra.ph/Garrincha-02-24",
+		"keys": [
+			"sport"
+		]
+	},
+	{
+		"name": "Кассандра",
+		"description": "https://telegra.ph/Kassandra-02-24",
+		"keys": [
+			"myth"
+		]
+	},
+	{
+		"name": "Рашмор",
+		"description": "https://telegra.ph/Rashmor-02-24",
+		"keys": [
+			"geo"
+		]
+	},
+	{
+		"name": "Кларк, Артур",
+		"description": "https://telegra.ph/Klark-Artur-02-24",
+		"keys": [
+			"book",
+			"space"
+		]
+	},
+	{
+		"name": "Планеты",
+		"description": "https://telegra.ph/Planety-02-27",
+		"keys": [
+			"space"
+		]
+	},
+	{
+		"name": "За́хер-Ма́зох, Леопольд",
+		"description": "https://telegra.ph/Zaher-Mazoh-Leopold-02-27",
+		"keys": [
+			"book"
+		]
+	},
+	{
+		"name": "О мышах и людях",
+		"description": "https://telegra.ph/O-myshah-i-lyudyah-03-01",
+		"keys": [
+			"book"
+		]
+	},
+	{
+		"name": "Дзен и искусство ухода за мотоциклом",
+		"description": "https://telegra.ph/Dzen-i-iskusstvo-uhoda-za-motociklom-03-01",
+		"keys": [
+			"book"
+		]
+	},
+	{
+		"name": "Кант, Иммануил",
+		"description": "https://telegra.ph/Kant-Immanuil-03-12",
+		"keys": [
+			"quote"
+		]
+	},
+	{
+		"name": "Арчимбольдо, Джузеппе",
+		"description": "https://telegra.ph/Archimboldo-Dzhuzeppe-03-12",
+		"keys": [
+			"paint"
+		]
+	},
+	{
+		"name": "Потёмкинские деревни",
+		"description": "https://telegra.ph/Potyomkinskie-derevni-03-12",
+		"keys": [
+			"hist"
+		]
+	},
+	{
+		"name": "Плиний старший",
+		"description": "https://telegra.ph/Plinij-starshij-03-12",
+		"keys": [
+			"hist"
+		]
+	},
+	{
+		"name": "Закрой глаза и думай об Англии",
+		"description": "https://telegra.ph/Zakroj-glaza-i-dumaj-ob-Anglii-03-21",
+		"keys": [
+			"quote"
+		]
+	},
+	{
+		"name": "Где Уолли?",
+		"description": "https://telegra.ph/Gde-Uolli-03-21",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Красная сельдь",
+		"description": "https://telegra.ph/Krasnaya-seld-03-23",
+		"keys": [
+			"book"
+		]
+	},
+	{
+		"name": "«Носорог» Дюрера",
+		"description": "https://telegra.ph/Nosorog-Dyurera-03-23",
+		"keys": [
+			"paint"
+		]
+	},
+	{
+		"name": "Малкольм Икс",
+		"description": "https://telegra.ph/Malkolm-Iks-03-27",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Филадельфийский эксперимент",
+		"description": "https://telegra.ph/Filadelfijskij-ehksperiment-03-29",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Кэмпбелл, Джозеф",
+		"description": "https://telegra.ph/Kehmpbell-Dzhozef-03-29",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Редкая птица долетит до середины Днепра",
+		"description": "https://telegra.ph/Redkaya-ptica-doletit-do-serediny-Dnepra-03-29",
+		"keys": [
+			"book"
+		]
+	},
+	{
+		"name": "Проклятие девятой симфонии",
+		"description": "https://telegra.ph/Proklyatie-devyatoj-simfonii-04-05",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Леди Годива",
+		"description": "https://telegra.ph/Ledi-Godiva-04-05",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Колокол Свободы",
+		"description": "https://telegra.ph/Kolokol-Svobody-04-05",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Хэмптон-Кортский лабиринт",
+		"description": "https://telegra.ph/Hehmpton-Kortskij-labirint-04-05",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Жугдэрдэмидийн Гуррагча",
+		"description": "https://telegra.ph/ZHugdehrdehmidijn-Gurragcha-04-05",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Аксолотль",
+		"description": "https://telegra.ph/Aksolotl-04-05",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Пустой дом",
+		"description": "https://telegra.ph/Pustoj-dom-04-05",
+		"keys": [
+			"book"
+		]
+	},
+	{
+		"name": "Бульвар Сансет",
+		"description": "https://telegra.ph/Bulvar-Sanset-05-10",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Синкансэн",
+		"description": "https://telegra.ph/Sinkansehn-05-10",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Гретна-Грин",
+		"description": "https://telegra.ph/Gretna-Grin-05-10",
+		"keys": [
+			"hist",
+			"geo"
+		]
+	},
+	{
+		"name": "Падение дома Ашеров",
+		"description": "https://telegra.ph/Padenie-doma-Asherov-05-10",
+		"keys": [
+			"book"
+		]
+	},
+	{
+		"name": "Мир Кристины",
+		"description": "https://telegra.ph/Mir-Kristiny-05-10",
+		"keys": [
+			"paint"
+		]
+	},
+	{
+		"name": "Ювентус",
+		"description": "https://telegra.ph/YUventus-03-12",
+		"keys": [
+			"sport"
+		]
+	},
+	{
+		"name": "Меандр",
+		"description": "https://telegra.ph/Meandr-05-13",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Мариэ Кондо",
+		"description": "https://telegra.ph/Marieh-Kondo-05-13",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Джиро д’Италия",
+		"description": "https://telegra.ph/Dzhiro-dItaliya-05-13",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Мейфлауэр",
+		"description": "https://telegra.ph/Mejflauehr-05-13",
+		"keys": [
+			"hist"
+		]
+	},
+	{
+		"name": "Шибболет",
+		"description": "https://telegra.ph/SHibbolet-05-13",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Проблема вагонетки",
+		"description": "https://telegra.ph/Problema-vagonetki-05-13",
+		"keys": [
+			"psycho"
+		]
+	},
+	{
+		"name": "Чесли Салленбергер",
+		"description": "https://telegra.ph/CHesli-Sallenberger-05-13",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Десятичная классификация Дьюи",
+		"description": "https://telegra.ph/Desyatichnaya-klassifikaciya-Dyui-05-13",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Шкала Сковилла",
+		"description": "https://telegra.ph/SHkala-Skovilla-05-15",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Теория разбитых окон",
+		"description": "https://telegra.ph/Teoriya-razbityh-okon-05-15",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Франкенштейн, или Современный Прометей",
+		"description": "https://telegra.ph/Frankenshtejn-ili-Sovremennyj-Prometej-05-17",
+		"keys": [
+			"book"
+		]
+	},
+	{
+		"name": "Вертеп",
+		"description": "https://telegra.ph/Vertep-07-06",
+		"keys": [
+			"rel"
+		]
+	},
+	{
+		"name": "Бибендум",
+		"description": "https://telegra.ph/Bibendum-07-06",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Белый слон Сиама",
+		"description": "https://telegra.ph/Belyj-slon-Siama-07-06",
+		"keys": [
+			"myth"
+		]
+	},
+	{
+		"name": "Душ Шарко",
+		"description": "https://telegra.ph/Dush-SHarko-07-07",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Дело Дрейфуса",
+		"description": "https://telegra.ph/Delo-Drejfusa-07-07",
+		"keys": [
+			"hist"
+		]
+	},
+	{
+		"name": "Мэй Уэст",
+		"description": "https://telegra.ph/Mehj-Uehst-07-07",
+		"keys": [
+			"paint"
+		]
+	},
+	{
+		"name": "Дюрандаль",
+		"description": "https://telegra.ph/Dyurandal-07-07",
+		"keys": [
+			"myth"
+		]
+	},
+	{
+		"name": "Abbey Road",
+		"description": "https://telegra.ph/Abbey-Road-07-07",
+		"keys": [
+			"music"
+		]
+	},
+	{
+		"name": "Монтессори",
+		"description": "https://telegra.ph/Montessori-07-07-5",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Пьета",
+		"description": "https://telegra.ph/Peta-07-08-3",
+		"keys": [
+			"rel",
+			"paint"
+		]
+	},
+	{
+		"name": "Памплона",
+		"description": "https://telegra.ph/Pamplona-07-08-4",
+		"keys": [
+			"geo"
+		]
+	},
+	{
+		"name": "Адрианов вал",
+		"description": "https://telegra.ph/Adrianov-val-07-08",
+		"keys": [
+			"hist"
+		]
+	},
+	{
+		"name": "Слеза комсомолки",
+		"description": "https://telegra.ph/Sleza-komsomolki-07-08",
+		"keys": [
+			"book"
+		]
+	},
+	{
+		"name": "Множество Мандельброта",
+		"description": "https://telegra.ph/Mnozhestvo-Mandelbrota-07-09",
+		"keys": [
+			"math"
+		]
+	},
+	{
+		"name": "Город ветров",
+		"description": "https://telegra.ph/Gorod-vetrov-07-09",
+		"keys": [
+			"geo"
+		]
+	},
+	{
+		"name": "Гаудеамус",
+		"description": "https://telegra.ph/Gaudeamus-07-10",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Премия Дарвина",
+		"description": "https://telegra.ph/Premiya-Darvina-07-19",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Гуигнгнмы и Еху",
+		"description": "https://telegra.ph/Guigngnmy-i-Ehu-07-19",
+		"keys": [
+			"book"
+		]
+	},
+	{
+		"name": "Коза Ностра",
+		"description": "https://telegra.ph/Koza-Nostra-07-26",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Тетрамино",
+		"description": "https://telegra.ph/Tetramino-07-22",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Эсперанто",
+		"description": "https://telegra.ph/EHsperanto-07-25",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Metro-Goldwyn-Mayer",
+		"description": "https://telegra.ph/Metro-Goldwyn-Mayer-07-26",
+		"keys": [
+			"film"
+		]
+	},
+	{
+		"name": "Автомат Кемпелена",
+		"description": "https://telegra.ph/Avtomat-Kempelena-07-26",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Ярмарка тщеславия",
+		"description": "https://telegra.ph/YArmarka-tshcheslaviya-07-27",
+		"keys": [
+			"book"
+		]
+	},
+	{
+		"name": "Ротко, Марк",
+		"description": "https://telegra.ph/Rotko-Mark-07-27",
+		"keys": [
+			"paint"
+		]
+	},
+	{
+		"name": "Алькатрас",
+		"description": "https://telegra.ph/Alkatras-07-29",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Колумбийский галстук",
+		"description": "https://telegra.ph/Kolumbijskij-galstuk-07-31",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Столыпинский галстук",
+		"description": "https://telegra.ph/Stolypinskij-galstuk-07-31",
+		"keys": [
+			"hist"
+		]
+	},
+	{
+		"name": "Банановая республика",
+		"description": "https://telegra.ph/Bananovaya-respublika-07-31",
+		"keys": [
+			"geo"
+		]
+	},
+	{
+		"name": "Катастрофа шаттла «Челленджер»",
+		"description": "https://telegra.ph/Katastrofa-shattla-CHellendzher-07-31",
+		"keys": [
+			"space"
+		]
+	},
+	{
+		"name": "Золотая лихорадка",
+		"description": "https://telegra.ph/Zolotaya-lihoradka-v-SSHA-08-01",
+		"keys": [
+			"hist"
+		]
+	},
+	{
+		"name": "Ваканда, вибраниум",
+		"description": "https://telegra.ph/Vakanda-vibranium-08-02",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Кольцо нибелунга",
+		"description": "https://telegra.ph/Kolco-nibelunga-08-03",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Уотергейтский скандал",
+		"description": "https://telegra.ph/Uotergejtskij-skandal-08-08",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Глайвицкий инцидент",
+		"description": "https://telegra.ph/Glajvickij-incident-08-08",
+		"keys": [
+			"hist",
+			"geo"
+		]
+	},
+	{
+		"name": "Меркатор, Герард",
+		"description": "https://telegra.ph/Merkator-Gerard-08-09",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Доллары",
+		"description": "https://telegra.ph/Dollary-08-09",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Доктор Ноу",
+		"description": "https://telegra.ph/Doktor-Nou-08-11",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Марсель Дюшан",
+		"description": "https://telegra.ph/Marsel-Dyushan-08-20",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Ксантиппа",
+		"description": "https://telegra.ph/Ksantippa-08-20",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Сатоси Накамото",
+		"description": "https://telegra.ph/Satosi-Nakamoto-08-27",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Туннельный синдром",
+		"description": "https://telegra.ph/Tunnelnyj-sindrom-08-29",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Дурова, Надежда",
+		"description": "https://telegra.ph/Durova-Nadezhda-09-22",
+		"keys": [
+			"hist"
+		]
+	},
+	{
+		"name": "Ниро Вульф, Арчи Гудвин",
+		"description": "https://telegra.ph/Niro-Vulf-Archi-Gudvin-09-26",
+		"keys": [
+			"book"
+		]
+	},
+	{
+		"name": "Мицар и Алькор",
+		"description": "https://telegra.ph/Micar-i-Alkor-10-01",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Голдберг, Руб",
+		"description": "https://telegra.ph/Goldberg-Rub-10-03",
+		"keys": [
+			
+		]
+	},
+	{
+		"name": "Габсбургская губа",
+		"description": "https://telegra.ph/Gabsburgskaya-guba-10-05",
+		"keys": [
+			"hist"
+		]
+	},
+	{
+		"name": "Скрипка Энгра",
+		"description": "Фразеологизм, означающий хобби или второе призвание человека, которое он практикует с большой любовью и мастерством, не будучи его основной профессией. Он происходит от легенды о французском художнике Жан-Огюсте-Доминике Энгра, который, будучи талантливым живописцем, также профессионально играл на скрипке. Происхождение: Выражение возникло из-за увлечения художника Энгра игрой на скрипке, которой он занимался с упоением и на высоком уровне, наряду с живописью. Значение: Оно стало метафорой для обозначения любого увлечения, которое не является основным занятием человека, но которому он посвящает много времени и сил, достигая в нём большого мастерства. Другие значения: Выражение «Скрипка Энгра» также используется для обозначения одноимённой знаменитой фотографии Ман Рэя (1924), где на женское тело наложены контуры скрипки, а также короткометражного фильма 1939 года.",
+		"keys": []
+	}
+	,
+	{
+		"name": "Кинцуги",
+		"description": "Кинцуги (яп. 金継ぎ — золотая заплатка), или кинцукурой (яп. 金繕い — золотой ремонт), — японское искусство реставрации керамических изделий с помощью лака, полученного из сока лакового дерева (уруси), смешанного с золотым, серебряным или платиновым порошком. Философская основа искусства кинцуги заключается прежде всего в том, что поломки и трещины неотъемлемы от истории объекта и поэтому не заслуживают забвения и маскировки.",
+		"keys": []
+	}
+]
