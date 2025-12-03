@@ -62,7 +62,7 @@ func RandomArticle() (Article, error) {
 
 func GetArticles() ([]Article, error) {
 absPath, err := filepath.Abs("../../data/test.json")
-	file, err := os.Open(absPath)
+	file, err := os.OpenFile(absPath, 0644)
 	if err != nil {
 		return nil, err
 	}
