@@ -83,9 +83,9 @@ func sendArticle(bot *tgbotapi.BotAPI, update tgbotapi.Update, article models.Ar
 
 func buildKeyboard() tgbotapi.ReplyKeyboardMarkup {
 	var (
-		buttonsTexts = []string{"Бинго", "Список статей", "Рандомная статья", "Статьи по темам"}
+		buttonsTexts = []string{ /*"Бинго", */ "Список статей", "Рандомная статья", "Статьи по темам"}
 		cols         = 2
-		rows         = len(buttonsTexts) / cols
+		rows         = len(buttonsTexts)/cols + 1
 		buttons      = make([][]tgbotapi.KeyboardButton, rows)
 	)
 
@@ -100,8 +100,8 @@ func buildKeyboard() tgbotapi.ReplyKeyboardMarkup {
 func handleButtonPress(bot *tgbotapi.BotAPI, update tgbotapi.Update) error {
 	var response string
 	switch update.Message.Text {
-	case "Бинго":
-		response = models.Link("Бинго", bingoLink)
+	// case "Бинго":
+	// response = models.Link("Бинго", bingoLink)
 	case "Список статей":
 		printArticles(bot, update)
 	case "Рандомная статья":
