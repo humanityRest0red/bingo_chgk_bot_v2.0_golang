@@ -15,7 +15,7 @@ type Topic struct {
 }
 
 func GetTopics() ([]Topic, error) {
-	file, err := os.Open(filepath.Join("data", "topics.json")
+	file, err := os.Open(filepath.Join("data", "topics.json"))
 	if err != nil {
 		return nil, err
 	}
