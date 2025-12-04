@@ -3,7 +3,6 @@ package models
 import (
 	"encoding/json"
 	"io"
- "log"
 	"math/rand/v2"
 	"os"
  "path/filepath"
@@ -62,21 +61,12 @@ func RandomArticle() (Article, error) {
 }
 
 func GetArticles() ([]Article, error) {
-currentDir, err := os.Getwd()
-if err != nil {
-    log.Println(err)
-}
-log.Println("Текущая рабочая директория:", currentDir)
-
-basePath := filepath.Join("data", "test.json")
-absPath, err := filepath.Abs(basePath)
- log.Println(absPath)
-	file, err := os.OpenFile(absPath, os.O_RDONLY, 0644)
+path, err := filepath.Abs(filepath.Join("data", "test.json"))
+	file, err := os.OpenFile(path, os.O_RDONLY, 0644)
 	if err != nil {
 		return nil, err
 	}
 	defer file.Close()
-log.Println("before readall")
 
 	data, err := io.ReadAll(file)
 	if err != nil {
@@ -84,7 +74,6 @@ log.Println("before readall")
 	}
 
 	var articles []Article
- log.Println("before unmarshall")
 	err = json.Unmarshal(data, &articles)
 	if err != nil {
 		return nil, err
@@ -93,6 +82,6 @@ log.Println("before readall")
 	for i := 0; i < len(articles); i++ {
 		articles[i].Index = i + 1
 	}
- log.Println(len(articles))
+
 	return articles, nil
 }
