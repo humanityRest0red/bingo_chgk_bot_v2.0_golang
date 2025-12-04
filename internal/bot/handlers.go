@@ -307,7 +307,7 @@ func findArticle(bot *tgbotapi.BotAPI, update tgbotapi.Update) error {
 		isFind := false
 		for _, article := range articles {
 			if strings.Contains(strings.ToLower(article.Name), textAfterCommand) {
-				response += article.Full() + "\n"
+				response += article.Link() + "\n"
 				isFind = true
 			}
 		}
@@ -357,7 +357,7 @@ func sendLog(bot *tgbotapi.BotAPI, update tgbotapi.Update) error {
 		return err
 	}
 
-	const maxLines = 100
+	const maxLines = 30
 	if len(lines) > maxLines {
 		lines = lines[len(lines)-maxLines:]
 	}
