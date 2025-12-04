@@ -11,20 +11,18 @@ import (
 	"strconv"
 	"strings"
 
-	"bingo-chgk-bot-v2.0-golang/internal"
 	"bingo-chgk-bot-v2.0-golang/internal/models"
 	tgbotapi "github.com/go-telegram-bot-api/telegram-bot-api"
 )
 
 func handleCommand(bot *tgbotapi.BotAPI, update tgbotapi.Update) error {
-	var text string
+	// var text string
 	var err error
-	const maxLength = 4000
+	// const maxLength = 4000
 
 	switch update.Message.Command() {
 	case "start", "help":
-		text = internal.HelpText()
-		msg := tgbotapi.NewMessage(update.Message.Chat.ID, text)
+		msg := tgbotapi.NewMessage(update.Message.Chat.ID, helpText)
 		msg.ReplyMarkup = buildKeyboard()
 		_, err = bot.Send(msg)
 		return err
@@ -46,20 +44,6 @@ func handleCommand(bot *tgbotapi.BotAPI, update tgbotapi.Update) error {
 		return sendArticle(bot, update, article)
 	}
 
-	for len(text) > 0 {
-		chunk := text
-		if len(chunk) > maxLength {
-			chunk = text[:maxLength]
-			text = text[maxLength:]
-		} else {
-			text = ""
-		}
-		msg := tgbotapi.NewMessage(update.Message.Chat.ID, chunk)
-		msg.ParseMode = tgbotapi.ModeMarkdown
-
-		bot.Send(msg)
-	}
-
 	return err
 }
 
@@ -76,14 +60,14 @@ func sendArticle(bot *tgbotapi.BotAPI, update tgbotapi.Update, article models.Ar
 		},
 	}
 
-	searchLink := internal.Link("Google", "https://www.google.com/search?hl=ru&q="+url.QueryEscape(strings.ReplaceAll(article.Name, " ", "+")))
+	searchLink := models.Link("Google", "https://www.google.com/search?hl=ru&q="+url.QueryEscape(strings.ReplaceAll(article.Name, " ", "+")))
 	text += "\n\n" + searchLink
 
-	wikiLink := internal.Link("Wikipedia", "https://ru.wikipedia.org/wiki/"+url.QueryEscape(strings.ReplaceAll(article.Name, " ", "_")))
+	wikiLink := models.Link("Wikipedia", "https://ru.wikipedia.org/wiki/"+url.QueryEscape(strings.ReplaceAll(article.Name, " ", "_")))
 	text += "\n" + wikiLink
 
 	buf := strings.NewReplacer("(", "", ")", "").Replace(article.Name)
-	questionsLink := internal.Link("Вопросы в базе", "https://gotquestions.online/search?search="+url.QueryEscape(buf))
+	questionsLink := models.Link("Вопросы в базе", "https://gotquestions.online/search?search="+url.QueryEscape(buf))
 	text += "\n\n" + questionsLink
 
 	msg := tgbotapi.NewMessage(update.Message.Chat.ID, text)
@@ -117,7 +101,7 @@ func handleButtonPress(bot *tgbotapi.BotAPI, update tgbotapi.Update) error {
 	var response string
 	switch update.Message.Text {
 	case "Бинго":
-		response = internal.BingoLink()
+		response = models.Link("Бинго", bingoLink)
 	case "Список статей":
 		printArticles(bot, update)
 	case "Рандомная статья":
@@ -196,13 +180,13 @@ func buildInlineKeyboard(currentPage, totalPages int) tgbotapi.InlineKeyboardMar
 	keyboard := tgbotapi.InlineKeyboardMarkup{
 		InlineKeyboard: [][]tgbotapi.InlineKeyboardButton{
 			{
-				tgbotapi.NewInlineKeyboardButtonData("◀", internal.CreatePageChangeCommand(currentPage-1)),
+				tgbotapi.NewInlineKeyboardButtonData("◀", createPageChangeCommand(currentPage-1)),
 				tgbotapi.NewInlineKeyboardButtonData(fmt.Sprintf("%d/%d", currentPage, totalPages), "null"),
-				tgbotapi.NewInlineKeyboardButtonData("▶", internal.CreatePageChangeCommand(currentPage+1)),
+				tgbotapi.NewInlineKeyboardButtonData("▶", createPageChangeCommand(currentPage+1)),
 			},
 			{
-				tgbotapi.NewInlineKeyboardButtonData("⏮ В начало", internal.CreatePageChangeCommand(1)),
-				tgbotapi.NewInlineKeyboardButtonData("В конец ⏭", internal.CreatePageChangeCommand(totalPages)),
+				tgbotapi.NewInlineKeyboardButtonData("⏮ В начало", createPageChangeCommand(1)),
+				tgbotapi.NewInlineKeyboardButtonData("В конец ⏭", createPageChangeCommand(totalPages)),
 			},
 		},
 	}
@@ -213,8 +197,8 @@ func buildInlineKeyboard(currentPage, totalPages int) tgbotapi.InlineKeyboardMar
 func handleCallback(bot *tgbotapi.BotAPI, update tgbotapi.Update) error {
 	callbackData := update.CallbackQuery.Data
 
-	if strings.HasPrefix(callbackData, internal.PageChangePrefix) {
-		pageNumber, err := internal.ExtractPageNumber(callbackData)
+	if strings.HasPrefix(callbackData, pageChangePrefix) {
+		pageNumber, err := extractPageNumber(callbackData)
 		if err != nil {
 			return fmt.Errorf("ошибка при извлечении номера страницы: %v", err)
 		}
@@ -223,11 +207,8 @@ func handleCallback(bot *tgbotapi.BotAPI, update tgbotapi.Update) error {
 	}
 
 	var text string
-	if strings.HasPrefix(callbackData, internal.TopicsPrefix) {
-		// if len(keysStr) < 2 {
-		// 	return fmt.Errorf("len < 2")
-		// }
-		key := callbackData[len(internal.TopicsPrefix):]
+	if strings.HasPrefix(callbackData, topicsPrefix) {
+		key := callbackData[len(topicsPrefix):]
 		var filteredArticles, err = models.FilteredArticles(key)
 		if err != nil {
 			return err
@@ -236,13 +217,7 @@ func handleCallback(bot *tgbotapi.BotAPI, update tgbotapi.Update) error {
 			text += fmt.Sprintf("%d. %s\n", i+1, article.Link())
 		}
 	} else if strings.HasPrefix(callbackData, "questions:") {
-		text = "В разработке"
-		msg := tgbotapi.NewMessage(update.CallbackQuery.Message.Chat.ID, text)
-
-		if _, err := bot.Send(msg); err != nil {
-			return err
-		}
-		return nil
+		return sendMessage(bot, update.Message.Chat.ID, "В разработке")
 	}
 
 	if text == "" {
@@ -273,49 +248,35 @@ func selectTopics(bot *tgbotapi.BotAPI, update tgbotapi.Update) error {
 
 	for i, topic := range topics {
 		ind := i / cols
-		buttons[ind] = append(buttons[ind], tgbotapi.NewInlineKeyboardButtonData(topic.Name, fmt.Sprintf("%s%v", internal.TopicsPrefix, topic.Key)))
+		buttons[ind] = append(buttons[ind], tgbotapi.NewInlineKeyboardButtonData(topic.Name, fmt.Sprintf("%s%v", topicsPrefix, topic.Key)))
 	}
 
-	markup := tgbotapi.InlineKeyboardMarkup{InlineKeyboard: buttons}
-
-	text := "Выберите тему:"
-	msg := tgbotapi.NewMessage(update.Message.Chat.ID, text)
-
+	msg := tgbotapi.NewMessage(update.Message.Chat.ID, "Выберите тему:")
 	msg.ParseMode = tgbotapi.ModeMarkdown
-	msg.ReplyMarkup = markup
+	msg.ReplyMarkup = tgbotapi.InlineKeyboardMarkup{InlineKeyboard: buttons}
 
-	if _, err := bot.Send(msg); err != nil {
-		return fmt.Errorf("ошибка при отправке сообщения: %v", err)
-	}
+	_, err = bot.Send(msg)
 
-	return nil
+	return err
 }
 
 func findArticle(bot *tgbotapi.BotAPI, update tgbotapi.Update) error {
-	var (
-		command          = update.Message.Command()
-		textAfterCommand = strings.TrimSpace(strings.TrimPrefix(update.Message.Text, "/"+command))
-		response         string
-	)
+	command := update.Message.Command()
+	textAfterCommand := strings.TrimSpace(strings.TrimPrefix(update.Message.Text, "/"+command))
 
 	if textAfterCommand == "" {
-		response = "Укажите выражение после команды"
-	} else {
-		filteredArticles := models.FilteredByWordArticles(textAfterCommand)
-		if len(filteredArticles) == 0 {
-			response = "По вашему запросу ничего не найдено"
-		} else {
-			for _, article := range filteredArticles {
-				response += article.Link() + "\n"
-			}
-		}
+		return sendMessage(bot, update.Message.Chat.ID, "Укажите выражение после команды")
 	}
 
-	msg := tgbotapi.NewMessage(update.Message.Chat.ID, response)
-	// msg.ParseMode = tgbotapi.ModeMarkdown
-	_, err := bot.Send(msg)
-
-	return err
+	filteredArticles := models.FilteredByWordArticles(textAfterCommand)
+	switch len(filteredArticles) {
+	case 0:
+		return sendMessage(bot, update.Message.Chat.ID, "По вашему запросу ничего не найдено")
+	case 1:
+		return sendArticle(bot, update, filteredArticles[0])
+	default:
+		return sendMultipleArticles(bot, update, filteredArticles)
+	}
 }
 
 func sendLog(bot *tgbotapi.BotAPI, update tgbotapi.Update) error {
@@ -323,13 +284,7 @@ func sendLog(bot *tgbotapi.BotAPI, update tgbotapi.Update) error {
 		return nil
 	}
 
-	logFilePath, err := filepath.Abs("../../logs/app.log")
-	if err != nil {
-		log.Printf("Error determining log file path: %v", err)
-		return err
-	}
-
-	file, err := os.Open(logFilePath)
+	file, err := os.Open(filepath.Join("logs", "app.log"))
 	if err != nil {
 		log.Printf("Error opening log file: %v", err)
 		return err
@@ -358,5 +313,19 @@ func sendLog(bot *tgbotapi.BotAPI, update tgbotapi.Update) error {
 	msg := tgbotapi.NewMessage(update.Message.Chat.ID, text)
 	_, err = bot.Send(msg)
 
+	return err
+}
+
+func sendMultipleArticles(bot *tgbotapi.BotAPI, update tgbotapi.Update, articles []models.Article) error {
+	var builder strings.Builder
+	for _, article := range articles {
+		builder.WriteString(article.Link() + "\n")
+	}
+	return sendMessage(bot, update.Message.Chat.ID, builder.String())
+}
+
+func sendMessage(bot *tgbotapi.BotAPI, chatID int64, text string) error {
+	msg := tgbotapi.NewMessage(chatID, text)
+	_, err := bot.Send(msg)
 	return err
 }

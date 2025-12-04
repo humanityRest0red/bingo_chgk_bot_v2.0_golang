@@ -1,4 +1,4 @@
-package internal
+package bot
 
 import (
 	"fmt"
@@ -10,32 +10,20 @@ const helpText = `Команды:
 /find {выражение} - поиск статьи по выражению`
 
 const (
-	PageChangePrefix = "changePage:"
-	TopicsPrefix     = "topic:"
+	pageChangePrefix = "changePage:"
+	topicsPrefix     = "topic:"
 )
 
 var (
 	bingoLink = os.Getenv("BINGO_BOT_LINK")
-	BotToken  = os.Getenv("BINGO_BOT_TOKEN")
+	botToken  = os.Getenv("BINGO_BOT_TOKEN")
 )
 
-func HelpText() string {
-	return helpText
+func createPageChangeCommand(pageNumber int) string {
+	return fmt.Sprintf("%s%d", pageChangePrefix, pageNumber)
 }
 
-func BingoLink() string {
-	return Link("Бинго", bingoLink)
-}
-
-func Link(text, link string) string {
-	return fmt.Sprintf("[%s](%s)", text, link)
-}
-
-func CreatePageChangeCommand(pageNumber int) string {
-	return fmt.Sprintf("%s%d", PageChangePrefix, pageNumber)
-}
-
-func ExtractPageNumber(callbackData string) (int, error) {
+func extractPageNumber(callbackData string) (int, error) {
 	var pageNumber int
 	n, err := fmt.Sscanf(callbackData, "changePage:%d", &pageNumber)
 	if err != nil {

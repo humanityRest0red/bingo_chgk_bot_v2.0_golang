@@ -12,10 +12,11 @@ import (
 )
 
 type Article struct {
-	Index       int
-	Name        string   `json:"name"`
-	Description string   `json:"description"`
-	Keys        []string `json:"keys"`
+	Index        int
+	Name         string   `json:"name"`
+	Description  string   `json:"description"`
+	Associations []string `json:"associations"`
+	Keys         []string `json:"keys"`
 }
 
 func (a *Article) Link() string {
@@ -23,7 +24,14 @@ func (a *Article) Link() string {
 }
 
 func (a *Article) Full() string {
-	return a.Link() + "\n\n" + a.Description
+	var buf string
+	if len(a.Associations) > 0 {
+		buf = "\n\n**Ассоциации:**\n"
+		for _, v := range a.Associations {
+			buf += "— " + v + "\n"
+		}
+	}
+	return a.Link() + "\n\n" + a.Description + buf
 }
 
 func FilteredArticles(key string) ([]Article, error) {
