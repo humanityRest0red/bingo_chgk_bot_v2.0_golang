@@ -357,7 +357,7 @@ func sendLog(bot *tgbotapi.BotAPI, update tgbotapi.Update) error {
 		return err
 	}
 
-	const maxLines = 30
+	const maxLines = 50
 	if len(lines) > maxLines {
 		lines = lines[len(lines)-maxLines:]
 	}
