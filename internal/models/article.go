@@ -68,14 +68,15 @@ if err != nil {
 }
 log.Println("Текущая рабочая директория:", currentDir)
 
-basePath := filepath.Join("..", "..", "data")
-absPath, err := filepath.Abs(filepath.Join(basePath, "test.json"))
+basePath := filepath.Join("data", "test.json")
+absPath, err := filepath.Abs(basePath)
  log.Println(absPath)
 	file, err := os.OpenFile(absPath, os.O_RDONLY, 0644)
 	if err != nil {
 		return nil, err
 	}
 	defer file.Close()
+log.Println("before readall")
 
 	data, err := io.ReadAll(file)
 	if err != nil {
