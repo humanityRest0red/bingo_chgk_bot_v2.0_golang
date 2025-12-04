@@ -37,10 +37,6 @@ func handleCommand(bot *tgbotapi.BotAPI, update tgbotapi.Update) error {
 		if err != nil {
 			return err
 		}
-		// articles, _ := models.GetArticles()
-		// if n <= len(articles) {
-		// 	text = articles[n-1].Full()
-		// }
 
 		article, exists := ArticlesMap[n-1]
 		if !exists {
@@ -80,7 +76,7 @@ func sendArticle(bot *tgbotapi.BotAPI, update tgbotapi.Update, article models.Ar
 		},
 	}
 
-	searchLink := internal.Link("Google", "https://www.google.com/search?q="+url.QueryEscape(strings.ReplaceAll(article.Name, " ", "+")))
+	searchLink := internal.Link("Google", "https://www.google.com/search?hl=ru&q="+url.QueryEscape(strings.ReplaceAll(article.Name, " ", "+")))
 	text += "\n\n" + searchLink
 
 	wikiLink := internal.Link("Wikipedia", "https://ru.wikipedia.org/wiki/"+url.QueryEscape(strings.ReplaceAll(article.Name, " ", "_")))
@@ -302,27 +298,21 @@ func findArticle(bot *tgbotapi.BotAPI, update tgbotapi.Update) error {
 		response         string
 	)
 
-	if textAfterCommand != "" {
-		textAfterCommand := strings.ToLower(textAfterCommand)
-		articles, _ := models.GetArticles()
-		isFind := false
-		for _, article := range articles {
-			if strings.Contains(strings.ToLower(article.Name), textAfterCommand) {
+	if textAfterCommand == "" {
+		response = "Укажите выражение после команды"
+	} else {
+		filteredArticles := models.FilteredByWordArticles(textAfterCommand)
+		if len(filteredArticles) == 0 {
+			response = "По вашему запросу ничего не найдено"
+		} else {
+			for _, article := range filteredArticles {
 				response += article.Link() + "\n"
-				isFind = true
 			}
 		}
-
-		if !isFind {
-			response = "По вашему запросу ничего не найдено"
-		}
-
-	} else {
-		response = "Укажите выражение после команды"
 	}
 
 	msg := tgbotapi.NewMessage(update.Message.Chat.ID, response)
-	msg.ParseMode = tgbotapi.ModeMarkdown
+	// msg.ParseMode = tgbotapi.ModeMarkdown
 	_, err := bot.Send(msg)
 
 	return err

@@ -25,14 +25,14 @@
 		"name": "Диоклетиан",
 		"description": "https://telegra.ph/Diokletian-12-18",
 		"keys": [
-			"hist"
+			"history"
 		]
 	},
 	{
 		"name": "Абель, Рудольф",
 		"description": "https://telegra.ph/Abel-Rudolf-12-18",
 		"keys": [
-			"hist"
+			"history"
 		]
 	},
 	{
@@ -60,7 +60,7 @@
 		"name": "Авиньон",
 		"description": "https://telegra.ph/Avinon-12-18",
 		"keys": [
-			"hist"
+			"history"
 		]
 	},
 	{
@@ -74,7 +74,7 @@
 		"name": "Азеф, Евно",
 		"description": "https://telegra.ph/Azef-Evno-12-18",
 		"keys": [
-			"hist"
+			"history"
 		]
 	},
 	{
@@ -116,7 +116,7 @@
 		"name": "Аокигахара",
 		"description": "https://telegra.ph/Aokigahara-12-20",
 		"keys": [
-			"geo"
+			"geography"
 		]
 	},
 	{
@@ -158,21 +158,21 @@
 		"name": "Архимед",
 		"description": "https://telegra.ph/Arhimed-12-20",
 		"keys": [
-			"hist"
+			"history"
 		]
 	},
 	{
 		"name": "Баден-Баден",
 		"description": "https://telegra.ph/Baden-Baden-12-20",
 		"keys": [
-			"geo"
+			"geography"
 		]
 	},
 	{
 		"name": "Батори",
 		"description": "https://telegra.ph/Batori-12-22",
 		"keys": [
-			"hist"
+			"history"
 		]
 	},
 	{
@@ -207,7 +207,7 @@
 		"name": "Бедлам",
 		"description": "https://telegra.ph/Bedlam-12-25",
 		"keys": [
-			"geo"
+			"geography"
 		]
 	},
 	{
@@ -243,7 +243,7 @@
 		"name": "Бертильон, Альфонс",
 		"description": "https://telegra.ph/Bertilon-Alfons-12-25",
 		"keys": [
-			"hist"
+			"history"
 		]
 	},
 	{
@@ -278,7 +278,7 @@
 		"name": "Эйнштейн, Альберт",
 		"description": "https://telegra.ph/EHjnshtejn-Albert-12-25",
 		"keys": [
-			"hist",
+			"history",
 			"phys"
 		]
 	},
@@ -356,7 +356,7 @@
 		"name": "Библиотека Ивана Грозного",
 		"description": "https://telegra.ph/Biblioteka-Ivana-Groznogo-01-01",
 		"keys": [
-			"hist"
+			"history"
 		]
 	},
 	{
@@ -391,7 +391,7 @@
 		"name": "Бойня на ручье Вундед-Ни",
 		"description": "https://telegra.ph/Bojnya-na-ruche-Vunded-Ni-01-01",
 		"keys": [
-			"hist"
+			"history"
 		]
 	},
 	{
@@ -405,7 +405,7 @@
 		"name": "Бокасса, Жан Бедель",
 		"description": "https://telegra.ph/Bokassa-ZHan-Bedel-01-01",
 		"keys": [
-			"hist"
+			"history"
 		]
 	},
 	{
@@ -426,14 +426,14 @@
 		"name": "Большая Берта",
 		"description": "https://telegra.ph/Bolshaya-Berta-01-01",
 		"keys": [
-			"hist"
+			"history"
 		]
 	},
 	{
 		"name": "Бомбардировка Дрездена",
 		"description": "https://telegra.ph/Bombardirovka-Drezdena-01-05",
 		"keys": [
-			"hist"
+			"history"
 		]
 	},
 	{
@@ -461,14 +461,14 @@
 		"name": "Бостонское чаепитие",
 		"description": "https://telegra.ph/Bostonskoe-chaepitie-01-05",
 		"keys": [
-			"hist"
+			"history"
 		]
 	},
 	{
 		"name": "Бразилиа",
 		"description": "https://telegra.ph/Brazilia-01-05",
 		"keys": [
-			"geo"
+			"geography"
 		]
 	},
 	{
@@ -524,7 +524,7 @@
 		"name": "Шпенглер, Освальд",
 		"description": "https://telegra.ph/SHpengler-Osvald-01-06",
 		"keys": [
-			"hist"
+			"history"
 		]
 	},
 	{
@@ -538,7 +538,7 @@
 		"name": "Шерпы",
 		"description": "https://telegra.ph/SHerpy-01-06",
 		"keys": [
-			"geo"
+			"geography"
 		]
 	},
 	{
@@ -692,7 +692,7 @@
 		"name": "Тамплиеры",
 		"description": "https://telegra.ph/Tampliery-01-21",
 		"keys": [
-			"hist"
+			"history"
 		]
 	},
 	{
@@ -755,7 +755,7 @@
 		"name": "«Ваза»",
 		"description": "https://telegra.ph/Vaza-01-26",
 		"keys": [
-			"hist"
+			"history"
 		]
 	},
 	{
@@ -853,7 +853,7 @@
 		"name": "Отто Лилиенталь",
 		"description": "https://telegra.ph/Otto-Liliental-01-26",
 		"keys": [
-			"hist"
+			"history"
 		]
 	},
 	{
@@ -923,8 +923,8 @@
 		"name": "Хиллари и Тенцинг",
 		"description": "https://telegra.ph/Hillari-i-Tencing-01-26",
 		"keys": [
-			"hist",
-			"geo"
+			"history",
+			"geography"
 		]
 	},
 	{
@@ -987,7 +987,7 @@
 		"name": "Сцевола, Гай Муций",
 		"description": "https://telegra.ph/Scevola-Gaj-Mucij-01-27",
 		"keys": [
-			"hist"
+			"history"
 		]
 	},
 	{
@@ -1022,7 +1022,7 @@
 		"name": "Статуя Христа-Искупителя",
 		"description": "https://telegra.ph/Statuya-Hrista-Iskupitelya-01-28",
 		"keys": [
-			"geo"
+			"geography"
 		]
 	},
 	{
@@ -1092,7 +1092,7 @@
 		"name": "Париж стоит мессы",
 		"description": "https://telegra.ph/Parizh-stoit-messy-01-29",
 		"keys": [
-			"hist"
+			"history"
 		]
 	},
 	{
@@ -1134,7 +1134,7 @@
 		"name": "Хироо Онода",
 		"description": "https://telegra.ph/Hiroo-Onoda-01-29",
 		"keys": [
-			"hist"
+			"history"
 		]
 	},
 	{
@@ -1155,7 +1155,7 @@
 		"name": "Публий Овидий Назон",
 		"description": "https://telegra.ph/Publij-Ovidij-Nazon-01-29",
 		"keys": [
-			"hist"
+			"history"
 		]
 	},
 	{
@@ -1624,7 +1624,7 @@
 		"name": "Верхняя Вольта",
 		"description": "https://telegra.ph/Verhnyaya-Volta-02-01",
 		"keys": [
-			"geo"
+			"geography"
 		]
 	},
 	{
@@ -1652,7 +1652,7 @@
 		"name": "В Сантьяго идёт дождь",
 		"description": "https://telegra.ph/V-Santyago-idyot-dozhd-02-01",
 		"keys": [
-			"hist"
+			"history"
 		]
 	},
 	{
@@ -1701,14 +1701,14 @@
 		"name": "Встреча на Эльбе",
 		"description": "https://telegra.ph/Vstrecha-na-EHlbe-02-01",
 		"keys": [
-			"hist"
+			"history"
 		]
 	},
 	{
 		"name": "Восстание сипаев",
 		"description": "https://telegra.ph/Vosstanie-sipaev-02-01",
 		"keys": [
-			"hist"
+			"history"
 		]
 	},
 	{
@@ -1743,7 +1743,7 @@
 		"name": "Индекс запрещенных книг",
 		"description": "https://telegra.ph/Indeks-zapreshchennyh-knig-02-02",
 		"keys": [
-			"hist"
+			"history"
 		]
 	},
 	{
@@ -1778,7 +1778,7 @@
 		"name": "Анабасис Кира",
 		"description": "https://telegra.ph/Anabasis-Kira-02-02",
 		"keys": [
-			"hist"
+			"history"
 		]
 	},
 	{
@@ -1855,7 +1855,7 @@
 		"name": "Великий лондонский пожар",
 		"description": "https://telegra.ph/Velikij-londonskij-pozhar-02-02",
 		"keys": [
-			"hist"
+			"history"
 		]
 	},
 	{
@@ -2079,7 +2079,7 @@
 		"name": "Герострат",
 		"description": "https://telegra.ph/Gerostrat-02-09",
 		"keys": [
-			"hist"
+			"history"
 		]
 	},
 	{
@@ -2114,7 +2114,7 @@
 		"name": "Головокружение от успехов",
 		"description": "https://telegra.ph/Golovokruzhenie-ot-uspehov-02-09",
 		"keys": [
-			"hist"
+			"history"
 		]
 	},
 	{
@@ -2135,7 +2135,7 @@
 		"name": "Гус, Ян",
 		"description": "https://telegra.ph/Gus-YAn-02-09",
 		"keys": [
-			"hist"
+			"history"
 		]
 	},
 	{
@@ -2170,7 +2170,7 @@
 		"name": "Винланд",
 		"description": "https://telegra.ph/Vinland-02-10",
 		"keys": [
-			"geo"
+			"geography"
 		]
 	},
 	{
@@ -2212,7 +2212,7 @@
 		"name": "Дамасская сталь",
 		"description": "https://telegra.ph/Damasskaya-stal-02-16",
 		"keys": [
-			"hist"
+			"history"
 		]
 	},
 	{
@@ -2240,7 +2240,7 @@
 		"name": "Демосфен",
 		"description": "https://telegra.ph/Demosfen-02-16",
 		"keys": [
-			"hist"
+			"history"
 		]
 	},
 	{
@@ -2387,7 +2387,7 @@
 		"name": "Нерон",
 		"description": "https://telegra.ph/Neron-02-19",
 		"keys": [
-			"hist"
+			"history"
 		]
 	},
 	{
@@ -2401,7 +2401,7 @@
 		"name": "Ночные ведьмы",
 		"description": "https://telegra.ph/Nochnye-vedmy-02-19",
 		"keys": [
-			"hist"
+			"history"
 		]
 	},
 	{
@@ -2464,7 +2464,7 @@
 		"name": "Орден меньших братьев капуцинов",
 		"description": "https://telegra.ph/Orden-menshih-bratev-kapucinov-02-19",
 		"keys": [
-			"hist"
+			"history"
 		]
 	},
 	{
@@ -2653,7 +2653,7 @@
 		"name": "Зелинский, Николай",
 		"description": "https://telegra.ph/Zelinskij-Nikolaj-02-21",
 		"keys": [
-			"hist"
+			"history"
 		]
 	},
 	{
@@ -2814,7 +2814,7 @@
 		"name": "Молот ведьм",
 		"description": "https://telegra.ph/Molot-vedm-02-21",
 		"keys": [
-			"hist"
+			"history"
 		]
 	},
 	{
@@ -2863,7 +2863,7 @@
 		"name": "Митридат VI Евпатор",
 		"description": "https://telegra.ph/Mitridat-VI-Evpator-02-21",
 		"keys": [
-			"hist"
+			"history"
 		]
 	},
 	{
@@ -2891,7 +2891,7 @@
 		"name": "Культ карго",
 		"description": "https://telegra.ph/Kult-kargo-02-21",
 		"keys": [
-			"hist"
+			"history"
 		]
 	},
 	{
@@ -3129,8 +3129,8 @@
 		"name": "Ковентри",
 		"description": "https://telegra.ph/Koventri-02-23",
 		"keys": [
-			"geo",
-			" hist"
+			"geography",
+			"history"
 		]
 	},
 	{
@@ -3193,7 +3193,7 @@
 		"name": "Kinder, Küche, Kirche, (Kleider)",
 		"description": "https://telegra.ph/Kinder-K%C3%BCche-Kirche-Kleider-02-23",
 		"keys": [
-			"hist"
+			"history"
 		]
 	},
 	{
@@ -3305,7 +3305,7 @@
 		"name": "Памплона",
 		"description": "https://telegra.ph/Pamplona-02-23",
 		"keys": [
-			"geo"
+			"geography"
 		]
 	},
 	{
@@ -3522,14 +3522,14 @@
 		"name": "Пражская весна",
 		"description": "https://telegra.ph/Prazhskaya-vesna-02-23",
 		"keys": [
-			"hist"
+			"history"
 		]
 	},
 	{
 		"name": "Пражские дефенестрации",
 		"description": "https://telegra.ph/Prazhskie-defenestracii-02-23",
 		"keys": [
-			"hist"
+			"history"
 		]
 	},
 	{
@@ -3571,7 +3571,7 @@
 		"name": "Принцип, Гаврило",
 		"description": "https://telegra.ph/Princip-Gavrilo-02-23",
 		"keys": [
-			"hist"
+			"history"
 		]
 	},
 	{
@@ -3599,7 +3599,7 @@
 		"name": "Пусть едят пирожные",
 		"description": "https://telegra.ph/Pust-edyat-pirozhnye-02-23-2",
 		"keys": [
-			"hist",
+			"history",
 			"quote"
 		]
 	},
@@ -3607,7 +3607,7 @@
 		"name": "Пурпурное сердце",
 		"description": "https://telegra.ph/Purpurnoe-serdce-02-23-2",
 		"keys": [
-			"hist"
+			"history"
 		]
 	},
 	{
@@ -3649,7 +3649,7 @@
 		"name": "Рашмор",
 		"description": "https://telegra.ph/Rashmor-02-24",
 		"keys": [
-			"geo"
+			"geography"
 		]
 	},
 	{
@@ -3706,14 +3706,14 @@
 		"name": "Потёмкинские деревни",
 		"description": "https://telegra.ph/Potyomkinskie-derevni-03-12",
 		"keys": [
-			"hist"
+			"history"
 		]
 	},
 	{
 		"name": "Плиний старший",
 		"description": "https://telegra.ph/Plinij-starshij-03-12",
 		"keys": [
-			"hist"
+			"history"
 		]
 	},
 	{
@@ -3839,8 +3839,8 @@
 		"name": "Гретна-Грин",
 		"description": "https://telegra.ph/Gretna-Grin-05-10",
 		"keys": [
-			"hist",
-			"geo"
+			"history",
+			"geography"
 		]
 	},
 	{
@@ -3889,7 +3889,7 @@
 		"name": "Мейфлауэр",
 		"description": "https://telegra.ph/Mejflauehr-05-13",
 		"keys": [
-			"hist"
+			"history"
 		]
 	},
 	{
@@ -3973,7 +3973,7 @@
 		"name": "Дело Дрейфуса",
 		"description": "https://telegra.ph/Delo-Drejfusa-07-07",
 		"keys": [
-			"hist"
+			"history"
 		]
 	},
 	{
@@ -4016,14 +4016,14 @@
 		"name": "Памплона",
 		"description": "https://telegra.ph/Pamplona-07-08-4",
 		"keys": [
-			"geo"
+			"geography"
 		]
 	},
 	{
 		"name": "Адрианов вал",
 		"description": "https://telegra.ph/Adrianov-val-07-08",
 		"keys": [
-			"hist"
+			"history"
 		]
 	},
 	{
@@ -4044,7 +4044,7 @@
 		"name": "Город ветров",
 		"description": "https://telegra.ph/Gorod-vetrov-07-09",
 		"keys": [
-			"geo"
+			"geography"
 		]
 	},
 	{
@@ -4135,14 +4135,14 @@
 		"name": "Столыпинский галстук",
 		"description": "https://telegra.ph/Stolypinskij-galstuk-07-31",
 		"keys": [
-			"hist"
+			"history"
 		]
 	},
 	{
 		"name": "Банановая республика",
 		"description": "https://telegra.ph/Bananovaya-respublika-07-31",
 		"keys": [
-			"geo"
+			"geography"
 		]
 	},
 	{
@@ -4156,7 +4156,7 @@
 		"name": "Золотая лихорадка",
 		"description": "https://telegra.ph/Zolotaya-lihoradka-v-SSHA-08-01",
 		"keys": [
-			"hist"
+			"history"
 		]
 	},
 	{
@@ -4184,8 +4184,8 @@
 		"name": "Глайвицкий инцидент",
 		"description": "https://telegra.ph/Glajvickij-incident-08-08",
 		"keys": [
-			"hist",
-			"geo"
+			"history",
+			"geography"
 		]
 	},
 	{
@@ -4241,7 +4241,7 @@
 		"name": "Дурова, Надежда",
 		"description": "https://telegra.ph/Durova-Nadezhda-09-22",
 		"keys": [
-			"hist"
+			"history"
 		]
 	},
 	{
@@ -4269,7 +4269,7 @@
 		"name": "Габсбургская губа",
 		"description": "https://telegra.ph/Gabsburgskaya-guba-10-05",
 		"keys": [
-			"hist"
+			"history"
 		]
 	},
 	{
@@ -4294,5 +4294,17 @@
 		"name": "Щегол (картина)",
 		"description": "Щегол» (нид. Het puttertje) — картина голландского художника Карела Фабрициуса, написанная в 1654 году. В настоящее время картина находится в собрании Маурицхёйса в Гааге, куда она попала в 1896 году. На картеине изображён черноголовый щегол (Carduelis carduelis), сидящий на кормушке и удерживаемый при помощи цепи. Внизу картины находится подпись художника и дата C fabritivs 1654.\n\nВ XVII веке щеглы были популярными домашними питомцами, поскольку их можно было дрессировать — научить набирать воду и переносить её в миниатюрном ведре. Название картины на голландском языке (нид. Het puttertje) является отсылкой к этому факту и дословно переводится как «маленький водонос».",
 		"keys": ["paint"]
+	}
+	,
+	{
+		"name": "Атилла",
+		"description": "Аттила — вождь гуннов V века, прославившийся как завоеватель и полководец, объединивший множество племён и создавший обширное государство. Современники прозвали его «бичом Божьим» за жестокость и опустошительные походы на Римские империи, включая вторжения в Галлию (451 г.) и Северную Италию (452 г.). Легенды рассказывают о его смерти в брачную ночь после победы над Западной Римской империей.\n\nЗначимые моменты:\n\n- **Создание державы гуннов**: Объединение разнородных племён (гуннов, тюркских, германских, славянских и др.) от Рейна до Волги.\n- **Бич Божий**: Прозвище от жестоких набегов на территории Римских империй.\n- **Военные походы**: В 451 году вторгся в Галлию и потерпел поражение, в 452 году разграбил Италию, но отступил из-за чумы и встреч с папой Львом I.\n- **Смерть**: Погиб в 453 году от кровоизлияния в мозг.\n- **Наследие**: Символ завоевателя и вождя-захватчика, память о нём сохранилась в германском эпосе.",
+		"keys": ["history"]
+	}
+	,
+	{
+		"name": "Жанна д'Арк",
+		"description": "Жанна д'Арк (ок. 1412—1431) — национальная героиня Франции, одна из командующих французскими войсками в Столетней войне. Она известна тем, что освободила Орлеан от осады, что стало поворотным моментом в войне. Попав в плен к бургундцам, её продали англичанам, которые осудили и сожгли её на костре за ересь. В 1456 году её реабилитировали, а в 1920 году католическая церковь причислила к лику святых.\nЖанна д'Арк родилась в 1412 году в крестьянской семье в Домреми.\n«Орлеанская дева»: Получила это прозвище за освобождение города Орлеан от осады в 1429 году, что подняло боевой дух французов.\nВоеначальница: Возглавила французские войска и сыграла ключевую роль в победе в Столетней войне.",
+		"keys": ["history"]
 	}
 ]

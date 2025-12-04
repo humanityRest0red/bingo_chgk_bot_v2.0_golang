@@ -46,6 +46,26 @@ func FilteredArticles(key string) ([]Article, error) {
 	return filteredArticles, nil
 }
 
+func FilteredByWordArticles(substr string) []Article {
+	filteredArticles := []Article{}
+	if substr != "" {
+		substr = strings.ToLower(substr)
+		articles, _ := GetArticles()
+		for _, article := range articles {
+			if strings.Contains(strings.ToLower(article.Name), substr) ||
+				strings.Contains(strings.ToLower(article.Description), substr) {
+				filteredArticles = append(filteredArticles, article)
+			}
+		}
+	}
+
+	slices.SortFunc(filteredArticles, func(a, b Article) int {
+		return strings.Compare(a.Name, b.Name)
+	})
+
+	return filteredArticles
+}
+
 func RandomArticle() (Article, error) {
 	articles, err := GetArticles()
 	if err != nil {
