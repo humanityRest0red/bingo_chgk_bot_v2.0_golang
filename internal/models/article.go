@@ -23,7 +23,7 @@ func (a *Article) Link() string {
 }
 
 func (a *Article) Full() string {
-	return a.Name + "\n\n" + a.Description
+	return a.Link() + "\n\n" + a.Description
 }
 
 func FilteredArticles(key string) ([]Article, error) {

@@ -42,7 +42,7 @@ func handleCommand(bot *tgbotapi.BotAPI, update tgbotapi.Update) error {
 		// 	text = articles[n-1].Full()
 		// }
 
-		article, exists := Articles[n-1]
+		article, exists := ArticlesMap[n-1]
 		if !exists {
 			return fmt.Errorf("статьи с указаннным номером нет")
 		}
@@ -80,11 +80,15 @@ func sendArticle(bot *tgbotapi.BotAPI, update tgbotapi.Update, article models.Ar
 		},
 	}
 
-	text += "\n\n" + internal.Link("Google", "https://www.google.com/search?hl=ru&q="+url.QueryEscape(strings.ReplaceAll(article.Name, " ", "+")))
-	text += "\n" + internal.Link("Wikipedia", "https://ru.wikipedia.org/wiki/"+url.QueryEscape(strings.ReplaceAll(article.Name, " ", "_")))
+	searchLink := internal.Link("Google", "https://www.google.com/search?q="+url.QueryEscape(strings.ReplaceAll(article.Name, " ", "+")))
+	text += "\n\n" + searchLink
+
+	wikiLink := internal.Link("Wikipedia", "https://ru.wikipedia.org/wiki/"+url.QueryEscape(strings.ReplaceAll(article.Name, " ", "_")))
+	text += "\n" + wikiLink
 
 	buf := strings.NewReplacer("(", "", ")", "").Replace(article.Name)
-	text += "\n\n" + internal.Link("Вопросы в базе", "https://gotquestions.online/search?search="+url.QueryEscape(buf))
+	questionsLink := internal.Link("Вопросы в базе", "https://gotquestions.online/search?search="+url.QueryEscape(buf))
+	text += "\n\n" + questionsLink
 
 	msg := tgbotapi.NewMessage(update.Message.Chat.ID, text)
 
@@ -235,20 +239,6 @@ func handleCallback(bot *tgbotapi.BotAPI, update tgbotapi.Update) error {
 		for i, article := range filteredArticles {
 			text += fmt.Sprintf("%d. %s\n", i+1, article.Link())
 		}
-
-		// } else if strings.HasPrefix(callbackData, "google:") {
-		// 	buf := "https://www.google.com/search?q=" + callbackData[len("google:"):]
-		// 	text = strings.ReplaceAll(buf, " ", "+")
-		// } else if strings.HasPrefix(callbackData, "wiki:") {
-		// 	buf := "https://ru.wikipedia.org/wiki/" + url.QueryEscape(strings.ReplaceAll(callbackData[len("wiki:"):], " ", "_"))
-		// 	text = strings.ReplaceAll(buf, " ", "_")
-		// 	msg := tgbotapi.NewMessage(update.CallbackQuery.Message.Chat.ID, text)
-
-		// 	if _, err := bot.Send(msg); err != nil {
-		// 		return err
-		// 	}
-		// 	return nil
-		// text = "https://ru.wikipedia.org/wiki/" + url.QueryEscape(strings.ReplaceAll(callbackData[len("wiki:"):], " ", "_"))
 	} else if strings.HasPrefix(callbackData, "questions:") {
 		text = "В разработке"
 		msg := tgbotapi.NewMessage(update.CallbackQuery.Message.Chat.ID, text)

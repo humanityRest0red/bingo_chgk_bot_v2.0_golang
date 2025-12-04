@@ -11,13 +11,15 @@ import (
 	tgbotapi "github.com/go-telegram-bot-api/telegram-bot-api"
 )
 
-var Articles = mapArticles()
+var ArticlesSlice, _ = models.GetArticles()
+var ArticlesMap = mapArticles()
 
 func mapArticles() map[int]models.Article {
-	var articles, _ = models.GetArticles()
-
-	result := make(map[int]models.Article, len(articles))
-	for i, a := range articles {
+	if len(ArticlesSlice) == 0 {
+		log.Fatalln("empty articles")
+	}
+	result := make(map[int]models.Article, len(ArticlesSlice))
+	for i, a := range ArticlesSlice {
 		result[i] = a
 	}
 
