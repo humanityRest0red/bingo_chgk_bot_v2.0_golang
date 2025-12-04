@@ -148,9 +148,9 @@ func displayPage(bot *tgbotapi.BotAPI, update tgbotapi.Update, pageNumber int) e
 	}
 
 	startIndex := articlesCount - 1 - (pageNumber-1)*recordsPerPage
-	endIndex := articlesCount - 1 - pageNumber*recordsPerPage
+	endIndex := max(articlesCount-1-pageNumber*recordsPerPage, 0)
 	var text string
-	for i := startIndex; i > endIndex && i > 0; i-- {
+	for i := startIndex; i >= endIndex; i-- {
 		text += fmt.Sprintf("%v. %s\n", articlesCount-i, articles[i].Link())
 	}
 

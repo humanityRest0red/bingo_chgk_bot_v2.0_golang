@@ -5,7 +5,7 @@ import (
 	"io"
 	"math/rand/v2"
 	"os"
- "path/filepath"
+	"path/filepath"
 	"slices"
 	"strconv"
 	"strings"
@@ -25,10 +25,6 @@ func (a *Article) Link() string {
 func (a *Article) Full() string {
 	return a.Name + "\n\n" + a.Description
 }
-
-// func (a *Article) Name() string {
-// 	return a.name
-// }
 
 func FilteredArticles(key string) ([]Article, error) {
 	articles, err := GetArticles()
@@ -61,7 +57,11 @@ func RandomArticle() (Article, error) {
 }
 
 func GetArticles() ([]Article, error) {
-path, err := filepath.Abs(filepath.Join("data", "test.json"))
+	path, err := filepath.Abs(filepath.Join("data", "test.json"))
+	if err != nil {
+		return nil, err
+	}
+
 	file, err := os.OpenFile(path, os.O_RDONLY, 0644)
 	if err != nil {
 		return nil, err

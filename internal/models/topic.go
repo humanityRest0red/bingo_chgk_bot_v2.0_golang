@@ -2,9 +2,9 @@ package models
 
 import (
 	"encoding/json"
- "path/filepath"
 	"io"
 	"os"
+	"path/filepath"
 
 	_ "github.com/mattn/go-sqlite3"
 )
