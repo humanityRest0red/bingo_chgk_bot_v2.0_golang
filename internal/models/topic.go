@@ -2,7 +2,7 @@ package models
 
 import (
 	"encoding/json"
- "filepath"
+ "path/filepath"
 	"io"
 	"os"
 
