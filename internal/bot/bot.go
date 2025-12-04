@@ -78,8 +78,8 @@ func botInitMust() (*tgbotapi.BotAPI, tgbotapi.UpdatesChannel) {
 		log.Panic(err)
 	}
 
-	log.Printf("Авторизован как %s", bot.Self.UserName)
-	fmt.Printf("Авторизован как %s", bot.Self.UserName)
+	log.Println("Авторизован как", bot.Self.UserName)
+	fmt.Println("Авторизован как", bot.Self.UserName)
 
 	u := tgbotapi.NewUpdate(0)
 	u.Timeout = 60

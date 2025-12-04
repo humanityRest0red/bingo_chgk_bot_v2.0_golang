@@ -73,14 +73,21 @@ func sendArticle(bot *tgbotapi.BotAPI, update tgbotapi.Update, article models.Ar
 	markup := tgbotapi.InlineKeyboardMarkup{
 		InlineKeyboard: [][]tgbotapi.InlineKeyboardButton{
 			{
-				tgbotapi.NewInlineKeyboardButtonData("Google", "google:"+article.Name),
-				tgbotapi.NewInlineKeyboardButtonData("Вики", "wiki:"+article.Name),
-				tgbotapi.NewInlineKeyboardButtonData("Вопросы", "questions:"+article.Name),
+				// tgbotapi.NewInlineKeyboardButtonData("Google", "google:"+article.Name),
+				// tgbotapi.NewInlineKeyboardButtonData("Вики", "wiki:"+article.Name),
+				tgbotapi.NewInlineKeyboardButtonData("Рандомный вопрос", "questions:"+article.Name),
 			},
 		},
 	}
 
+	text += "\n\n" + internal.Link("Google", "https://www.google.com/search?hl=ru&q="+url.QueryEscape(strings.ReplaceAll(article.Name, " ", "+")))
+	text += "\n" + internal.Link("Wikipedia", "https://ru.wikipedia.org/wiki/"+url.QueryEscape(strings.ReplaceAll(article.Name, " ", "_")))
+
+	buf := strings.NewReplacer("(", "", ")", "").Replace(article.Name)
+	text += "\n\n" + internal.Link("Вопросы в базе", "https://gotquestions.online/search?search="+url.QueryEscape(buf))
+
 	msg := tgbotapi.NewMessage(update.Message.Chat.ID, text)
+
 	msg.ParseMode = tgbotapi.ModeMarkdown
 	msg.ReplyMarkup = markup
 	if _, err := bot.Send(msg); err != nil {
@@ -217,11 +224,10 @@ func handleCallback(bot *tgbotapi.BotAPI, update tgbotapi.Update) error {
 
 	var text string
 	if strings.HasPrefix(callbackData, internal.TopicsPrefix) {
-		keysStr := strings.Split(callbackData, ",")
 		// if len(keysStr) < 2 {
 		// 	return fmt.Errorf("len < 2")
 		// }
-		key := keysStr[1]
+		key := callbackData[len(internal.TopicsPrefix):]
 		var filteredArticles, err = models.FilteredArticles(key)
 		if err != nil {
 			return err
@@ -230,21 +236,27 @@ func handleCallback(bot *tgbotapi.BotAPI, update tgbotapi.Update) error {
 			text += fmt.Sprintf("%d. %s\n", i+1, article.Link())
 		}
 
-	} else if strings.HasPrefix(callbackData, "google:") {
-		buf := "https://www.google.com/search?q=" + callbackData[len("google:"):]
-		text = strings.ReplaceAll(buf, " ", "+")
-	} else if strings.HasPrefix(callbackData, "wiki:") {
-		buf := "https://ru.wikipedia.org/wiki/" + url.QueryEscape(strings.ReplaceAll(callbackData[len("wiki:"):], " ", "_"))
-		text = strings.ReplaceAll(buf, " ", "_")
+		// } else if strings.HasPrefix(callbackData, "google:") {
+		// 	buf := "https://www.google.com/search?q=" + callbackData[len("google:"):]
+		// 	text = strings.ReplaceAll(buf, " ", "+")
+		// } else if strings.HasPrefix(callbackData, "wiki:") {
+		// 	buf := "https://ru.wikipedia.org/wiki/" + url.QueryEscape(strings.ReplaceAll(callbackData[len("wiki:"):], " ", "_"))
+		// 	text = strings.ReplaceAll(buf, " ", "_")
+		// 	msg := tgbotapi.NewMessage(update.CallbackQuery.Message.Chat.ID, text)
+
+		// 	if _, err := bot.Send(msg); err != nil {
+		// 		return err
+		// 	}
+		// 	return nil
+		// text = "https://ru.wikipedia.org/wiki/" + url.QueryEscape(strings.ReplaceAll(callbackData[len("wiki:"):], " ", "_"))
+	} else if strings.HasPrefix(callbackData, "questions:") {
+		text = "В разработке"
 		msg := tgbotapi.NewMessage(update.CallbackQuery.Message.Chat.ID, text)
 
 		if _, err := bot.Send(msg); err != nil {
 			return err
 		}
 		return nil
-		// text = "https://ru.wikipedia.org/wiki/" + url.QueryEscape(strings.ReplaceAll(callbackData[len("wiki:"):], " ", "_"))
-	} else if strings.HasPrefix(callbackData, "questions:") {
-		text = "В разработке"
 	}
 
 	if text == "" {
@@ -263,7 +275,6 @@ func handleCallback(bot *tgbotapi.BotAPI, update tgbotapi.Update) error {
 
 func selectTopics(bot *tgbotapi.BotAPI, update tgbotapi.Update) error {
 	topics, err := models.GetTopics()
-	fmt.Println(topics)
 	if err != nil {
 		return err
 	}
@@ -276,7 +287,7 @@ func selectTopics(bot *tgbotapi.BotAPI, update tgbotapi.Update) error {
 
 	for i, topic := range topics {
 		ind := i / cols
-		buttons[ind] = append(buttons[ind], tgbotapi.NewInlineKeyboardButtonData(topic.Name, fmt.Sprintf("%s,%v", internal.TopicsPrefix, topic.Key)))
+		buttons[ind] = append(buttons[ind], tgbotapi.NewInlineKeyboardButtonData(topic.Name, fmt.Sprintf("%s%v", internal.TopicsPrefix, topic.Key)))
 	}
 
 	markup := tgbotapi.InlineKeyboardMarkup{InlineKeyboard: buttons}

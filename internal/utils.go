@@ -46,15 +46,3 @@ func ExtractPageNumber(callbackData string) (int, error) {
 	}
 	return pageNumber, nil
 }
-
-// func ExtractGoogle(callbackData string) (string, error) {
-// 	var str string
-// 	n, err := fmt.Sscanf(callbackData, "changePage:%d", &pageNumber)
-// 	if err != nil {
-// 		return 0, err
-// 	}
-// 	if n != 1 {
-// 		return 0, fmt.Errorf("не удалось извлечь номер страницы из: %s", callbackData)
-// 	}
-// 	return pageNumber, nil
-// }

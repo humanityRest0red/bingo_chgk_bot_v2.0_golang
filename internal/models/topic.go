@@ -4,7 +4,6 @@ import (
 	"encoding/json"
 	"io"
 	"os"
-	"path/filepath"
 
 	_ "github.com/mattn/go-sqlite3"
 )
@@ -15,7 +14,7 @@ type Topic struct {
 }
 
 func GetTopics() ([]Topic, error) {
-	file, err := os.Open(filepath.Join("data", "topics.json"))
+	file, err := os.Open(TopicsDataFilePath)
 	if err != nil {
 		return nil, err
 	}

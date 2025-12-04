@@ -1,3 +1,10 @@
 package models
 
-const TABLE_NAME = "../../data/bingo.db"
+import "path/filepath"
+
+const dataDir = "data"
+
+var (
+	ArticlesDataFilePath = filepath.Join(dataDir, "articles.json")
+	TopicsDataFilePath   = filepath.Join(dataDir, "topics.json")
+)
