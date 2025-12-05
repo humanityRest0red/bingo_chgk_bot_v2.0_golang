@@ -6,8 +6,9 @@ import (
 )
 
 const helpText = `Команды:
-/help  - выводит это сообщение
-/find {выражение} - поиск статьи по выражению`
+/help  - выводит это сообщение`
+
+// /find {выражение} - поиск статьи по выражению`
 
 const (
 	pageChangePrefix = "changePage:"
@@ -15,8 +16,8 @@ const (
 )
 
 var (
-	bingoLink = os.Getenv("BINGO_BOT_LINK")
-	botToken  = os.Getenv("BINGO_BOT_TOKEN")
+	// bingoLink = os.Getenv("BINGO_BOT_LINK")
+	botToken = os.Getenv("BINGO_BOT_TOKEN")
 )
 
 func createPageChangeCommand(pageNumber int) string {

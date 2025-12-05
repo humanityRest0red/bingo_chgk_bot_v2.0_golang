@@ -3,7 +3,6 @@ package bot
 import (
 	"bufio"
 	"fmt"
-	"log"
 	"math"
 	"net/url"
 	"os"
@@ -26,8 +25,10 @@ func handleCommand(bot *tgbotapi.BotAPI, update tgbotapi.Update) error {
 		msg.ReplyMarkup = buildKeyboard()
 		_, err = bot.Send(msg)
 		return err
-	case "find":
-		err = findArticle(bot, update)
+	// case "find":
+	// 	command := update.Message.Command()
+	// 	textAfterCommand := strings.TrimSpace(strings.TrimPrefix(update.Message.Text, "/"+command))
+	// 	err = findArticle(bot, update, textAfterCommand)
 	case "log":
 		err = sendLog(bot, update)
 	default:
@@ -38,7 +39,7 @@ func handleCommand(bot *tgbotapi.BotAPI, update tgbotapi.Update) error {
 
 		article, exists := ArticlesMap[n-1]
 		if !exists {
-			return fmt.Errorf("статьи с указаннным номером нет")
+			return sendMessage(bot, update.Message.Chat.ID, fmt.Sprintf("Последняя на данный момент  опубликованная статья — /%d", len(ArticlesMap)))
 		}
 
 		return sendArticle(bot, update, article)
@@ -98,31 +99,27 @@ func buildKeyboard() tgbotapi.ReplyKeyboardMarkup {
 }
 
 func handleButtonPress(bot *tgbotapi.BotAPI, update tgbotapi.Update) error {
-	var response string
 	switch update.Message.Text {
 	// case "Бинго":
 	// response = models.Link("Бинго", bingoLink)
 	case "Список статей":
-		printArticles(bot, update)
+		return printArticles(bot, update)
 	case "Рандомная статья":
 		article, err := models.RandomArticle()
-		if err == nil {
-			sendArticle(bot, update, article)
+		if err != nil {
+			return err
 		}
+		return sendArticle(bot, update, article)
 	case "Статьи по темам":
 		selectTopics(bot, update)
 		return nil
+	default:
+		return findArticle(bot, update, update.Message.Text)
 	}
-
-	msg := tgbotapi.NewMessage(update.Message.Chat.ID, response)
-	msg.ParseMode = tgbotapi.ModeMarkdown
-
-	_, err := bot.Send(msg)
-	return err
 }
 
-func printArticles(bot *tgbotapi.BotAPI, update tgbotapi.Update) {
-	displayPage(bot, update, 1) // pageNumber = 1
+func printArticles(bot *tgbotapi.BotAPI, update tgbotapi.Update) error {
+	return displayPage(bot, update, 1) // pageNumber = 1
 }
 
 func displayPage(bot *tgbotapi.BotAPI, update tgbotapi.Update, pageNumber int) error {
@@ -135,7 +132,7 @@ func displayPage(bot *tgbotapi.BotAPI, update tgbotapi.Update, pageNumber int) e
 	pagesCount := int(math.Ceil(float64(articlesCount)/float64(recordsPerPage))) + 1
 
 	if pageNumber < 1 || pageNumber > pagesCount {
-		return fmt.Errorf("выход за пределы страниц")
+		return nil
 	}
 
 	startIndex := articlesCount - 1 - (pageNumber-1)*recordsPerPage
@@ -202,8 +199,7 @@ func handleCallback(bot *tgbotapi.BotAPI, update tgbotapi.Update) error {
 		if err != nil {
 			return fmt.Errorf("ошибка при извлечении номера страницы: %v", err)
 		}
-		displayPage(bot, update, pageNumber)
-		return nil
+		return displayPage(bot, update, pageNumber)
 	}
 
 	var text string
@@ -220,18 +216,7 @@ func handleCallback(bot *tgbotapi.BotAPI, update tgbotapi.Update) error {
 		return sendMessage(bot, update.CallbackQuery.Message.Chat.ID, "В разработке")
 	}
 
-	if text == "" {
-		return nil
-	}
-
-	msg := tgbotapi.NewMessage(update.CallbackQuery.Message.Chat.ID, text)
-	msg.ParseMode = tgbotapi.ModeMarkdown
-
-	if _, err := bot.Send(msg); err != nil {
-		return err
-	}
-
-	return nil
+	return sendMessageWithMarkdown(bot, update.CallbackQuery.Message.Chat.ID, text)
 }
 
 func selectTopics(bot *tgbotapi.BotAPI, update tgbotapi.Update) error {
@@ -260,23 +245,42 @@ func selectTopics(bot *tgbotapi.BotAPI, update tgbotapi.Update) error {
 	return err
 }
 
-func findArticle(bot *tgbotapi.BotAPI, update tgbotapi.Update) error {
-	command := update.Message.Command()
-	textAfterCommand := strings.TrimSpace(strings.TrimPrefix(update.Message.Text, "/"+command))
-
-	if textAfterCommand == "" {
-		return sendMessage(bot, update.Message.Chat.ID, "Укажите выражение после команды")
-	}
-
-	filteredArticles := models.FilteredByWordArticles(textAfterCommand)
+func findArticle(bot *tgbotapi.BotAPI, update tgbotapi.Update, substr string) error {
+	filteredArticles := models.FilteredByWordArticles(substr)
 	switch len(filteredArticles) {
 	case 0:
-		return sendMessage(bot, update.Message.Chat.ID, "По вашему запросу ничего не найдено")
+		return sendMessage(bot, update.Message.Chat.ID, fmt.Sprintf("По запросу \"%s\" ничего не найдено", substr))
 	case 1:
 		return sendArticle(bot, update, filteredArticles[0])
 	default:
 		return sendMultipleArticles(bot, update, filteredArticles)
 	}
+}
+
+func sendMultipleArticles(bot *tgbotapi.BotAPI, update tgbotapi.Update, articles []models.Article) error {
+	var articleLinks strings.Builder
+	for _, article := range articles {
+		articleLinks.WriteString(article.Link() + "\n")
+	}
+
+	if len(articleLinks.String()) > 4000 {
+		return sendMessage(bot, update.Message.Chat.ID, "Найдено слишком много статьей, уточните запрос.")
+	}
+	return sendMessage(bot, update.Message.Chat.ID, articleLinks.String())
+}
+
+func sendMessageWithMarkdown(bot *tgbotapi.BotAPI, chatID int64, text string) error {
+	msg := tgbotapi.NewMessage(chatID, text)
+	msg.ParseMode = tgbotapi.ModeMarkdown
+
+	_, err := bot.Send(msg)
+	return err
+}
+
+func sendMessage(bot *tgbotapi.BotAPI, chatID int64, text string) error {
+	msg := tgbotapi.NewMessage(chatID, text)
+	_, err := bot.Send(msg)
+	return err
 }
 
 func sendLog(bot *tgbotapi.BotAPI, update tgbotapi.Update) error {
@@ -286,8 +290,8 @@ func sendLog(bot *tgbotapi.BotAPI, update tgbotapi.Update) error {
 
 	file, err := os.Open(filepath.Join("logs", "app.log"))
 	if err != nil {
-		log.Printf("Error opening log file: %v", err)
-		return err
+		return fmt.Errorf("error opening log file: %v", err)
+
 	}
 	defer file.Close()
 
@@ -299,8 +303,7 @@ func sendLog(bot *tgbotapi.BotAPI, update tgbotapi.Update) error {
 	}
 
 	if err := scanner.Err(); err != nil {
-		log.Printf("Error reading log file: %v\n", err)
-		return err
+		return fmt.Errorf("error reading log file: %v", err)
 	}
 
 	const maxLines = 50
@@ -310,22 +313,5 @@ func sendLog(bot *tgbotapi.BotAPI, update tgbotapi.Update) error {
 
 	text := strings.Join(lines, "\n")
 
-	msg := tgbotapi.NewMessage(update.Message.Chat.ID, text)
-	_, err = bot.Send(msg)
-
-	return err
-}
-
-func sendMultipleArticles(bot *tgbotapi.BotAPI, update tgbotapi.Update, articles []models.Article) error {
-	var builder strings.Builder
-	for _, article := range articles {
-		builder.WriteString(article.Link() + "\n")
-	}
-	return sendMessage(bot, update.Message.Chat.ID, builder.String())
-}
-
-func sendMessage(bot *tgbotapi.BotAPI, chatID int64, text string) error {
-	msg := tgbotapi.NewMessage(chatID, text)
-	_, err := bot.Send(msg)
-	return err
+	return sendMessage(bot, update.Message.Chat.ID, text)
 }
