@@ -217,7 +217,7 @@ func handleCallback(bot *tgbotapi.BotAPI, update tgbotapi.Update) error {
 			text += fmt.Sprintf("%d. %s\n", i+1, article.Link())
 		}
 	} else if strings.HasPrefix(callbackData, "questions:") {
-		return sendMessage(bot, update.callbackQuery.Message.Chat.ID, "В разработке")
+		return sendMessage(bot, update.CallbackQuery.Message.Chat.ID, "В разработке")
 	}
 
 	if text == "" {
