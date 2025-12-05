@@ -4,6 +4,7 @@ import (
 	"bufio"
 	"fmt"
 	"math"
+	"math/rand/v2"
 	"net/url"
 	"os"
 	"path/filepath"
@@ -13,8 +14,11 @@ import (
 	"time"
 
 	"bingo-chgk-bot-v2.0-golang/internal/models"
+	"bingo-chgk-bot-v2.0-golang/internal/requests"
 	tgbotapi "github.com/go-telegram-bot-api/telegram-bot-api"
 )
+
+var Answers = make(map[int64]string, 4)
 
 func handleCommand(bot *tgbotapi.BotAPI, update tgbotapi.Update) error {
 	// var text string
@@ -276,6 +280,7 @@ func buildInlineKeyboard(currentPage, totalPages int) tgbotapi.InlineKeyboardMar
 }
 
 func handleCallback(bot *tgbotapi.BotAPI, update tgbotapi.Update) error {
+	defer bot.AnswerCallbackQuery(tgbotapi.NewCallback(update.CallbackQuery.ID, ""))
 	callbackData := update.CallbackQuery.Data
 
 	if strings.HasPrefix(callbackData, pageChangePrefix) {
@@ -286,21 +291,54 @@ func handleCallback(bot *tgbotapi.BotAPI, update tgbotapi.Update) error {
 		return displayPage(bot, update, pageNumber)
 	}
 
-	var text string
 	if strings.HasPrefix(callbackData, topicsPrefix) {
 		key := callbackData[len(topicsPrefix):]
 		var filteredArticles, err = models.FilteredArticles(key)
 		if err != nil {
 			return err
 		}
+
+		var text string
 		for i, article := range filteredArticles {
 			text += fmt.Sprintf("%d. %s\n", i+1, article.Link())
 		}
-	} else if strings.HasPrefix(callbackData, "questions:") {
-		return sendMessage(bot, update.CallbackQuery.Message.Chat.ID, "В разработке")
+		return sendMessageWithMarkdown(bot, update.CallbackQuery.Message.Chat.ID, text)
 	}
 
-	return sendMessageWithMarkdown(bot, update.CallbackQuery.Message.Chat.ID, text)
+	if strings.HasPrefix(callbackData, "questions:") {
+		name := callbackData[len("questions:"):]
+		questions, err := requests.Find(name)
+		if err != nil {
+			return err
+		}
+		if len(questions) == 0 {
+			return fmt.Errorf("0 questions found")
+		}
+
+		i := rand.IntN(len(questions))
+		keyboard := tgbotapi.InlineKeyboardMarkup{
+			InlineKeyboard: [][]tgbotapi.InlineKeyboardButton{
+				{
+					tgbotapi.NewInlineKeyboardButtonData("Ответ", "answer:"+name),
+					// tgbotapi.NewInlineKeyboardButtonData("Другой вопрос", createPageChangeCommand(totalPages)),
+				},
+			},
+		}
+		Answers[update.CallbackQuery.Message.Chat.ID] = "Ответ: " + questions[i].Answer + "\nКомментарий: " + questions[i].Comment
+		return sendMessageWithKeyboard(bot, update.CallbackQuery.Message.Chat.ID, questions[i].Text, keyboard)
+	}
+
+	if strings.HasPrefix(callbackData, "answer:") {
+		text, exists := Answers[update.CallbackQuery.Message.Chat.ID]
+		if exists {
+			delete(Answers, update.CallbackQuery.Message.Chat.ID)
+			return sendMessage(bot, update.CallbackQuery.Message.Chat.ID, text)
+		}
+		update.CallbackQuery.Data = "questions:" + callbackData[len("answer:"):]
+		return handleCallback(bot, update)
+	}
+
+	return fmt.Errorf("неизвестный коллбэк %v", update.CallbackQuery.Data)
 }
 
 func selectTopics(bot *tgbotapi.BotAPI, update tgbotapi.Update) error {
@@ -351,6 +389,14 @@ func sendMultipleArticles(bot *tgbotapi.BotAPI, update tgbotapi.Update, articles
 		return sendMessage(bot, update.Message.Chat.ID, "Найдено слишком много статьей, уточните запрос.")
 	}
 	return sendMessage(bot, update.Message.Chat.ID, articleLinks.String())
+}
+
+func sendMessageWithKeyboard(bot *tgbotapi.BotAPI, chatID int64, text string, keyboard tgbotapi.InlineKeyboardMarkup) error {
+	msg := tgbotapi.NewMessage(chatID, text)
+	msg.ReplyMarkup = keyboard
+
+	_, err := bot.Send(msg)
+	return err
 }
 
 func sendMessageWithMarkdown(bot *tgbotapi.BotAPI, chatID int64, text string) error {
