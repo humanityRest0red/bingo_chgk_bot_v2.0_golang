@@ -26,11 +26,26 @@ func (a *Article) Link() string {
 func (a *Article) Full() string {
 	var buf string
 	if len(a.Associations) > 0 {
-		buf = "\n\n**Ассоциации:**\n"
+		buf += "\n\n**Ассоциации:**\n"
 		for _, v := range a.Associations {
 			buf += "— " + v + "\n"
 		}
 	}
+	if len(a.Keys) > 0 {
+		topics, _ := GetTopics()
+		buf += "\n\n**Разделы:**\n"
+		topicNames := []string{}
+		for _, key := range a.Keys {
+			for _, topic := range topics {
+				if key == topic.Key {
+					topicNames = append(topicNames, topic.Name)
+					break
+				}
+			}
+		}
+		buf += strings.Join(topicNames, ", ")
+	}
+
 	return a.Link() + "\n\n" + a.Description + buf
 }
 

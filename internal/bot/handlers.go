@@ -7,8 +7,10 @@ import (
 	"net/url"
 	"os"
 	"path/filepath"
+	"slices"
 	"strconv"
 	"strings"
+	"time"
 
 	"bingo-chgk-bot-v2.0-golang/internal/models"
 	tgbotapi "github.com/go-telegram-bot-api/telegram-bot-api"
@@ -29,6 +31,9 @@ func handleCommand(bot *tgbotapi.BotAPI, update tgbotapi.Update) error {
 	// 	command := update.Message.Command()
 	// 	textAfterCommand := strings.TrimSpace(strings.TrimPrefix(update.Message.Text, "/"+command))
 	// 	err = findArticle(bot, update, textAfterCommand)
+	case "add":
+		return addArticle(bot, update)
+		// return sendMessage(bot, update.Message.Chat.ID, fmt.Sprintf("%v", update.Message.Chat.ID))
 	case "log":
 		err = sendLog(bot, update)
 	default:
@@ -46,6 +51,85 @@ func handleCommand(bot *tgbotapi.BotAPI, update tgbotapi.Update) error {
 	}
 
 	return err
+}
+
+func addArticle(bot *tgbotapi.BotAPI, update tgbotapi.Update) error {
+	var adminIDs = []int64{1077924714, 685644130}
+	if !slices.Contains(adminIDs, update.Message.Chat.ID) {
+		return fmt.Errorf("error user %v", update.Message.From.ID)
+	}
+
+	// 	message := `Заголовок статьи
+	// Тело статьи
+	// [Ассоциации: 8й вопрос, волчья фамилия
+	// [Теги: история, география]`
+	// 	sendMessage(bot, update.Message.Chat.ID, message)
+	sendMessage(bot, update.Message.Chat.ID, "Введите название:")
+	title, err := waitForResponse(update.Message.Chat.ID)
+	if err != nil {
+		return sendMessage(bot, update.Message.Chat.ID, "Ошибка при получении названия.")
+	}
+
+	sendMessage(bot, update.Message.Chat.ID, "Введите описание:")
+	description, err := waitForResponse(update.Message.Chat.ID)
+	if err != nil {
+		return sendMessage(bot, update.Message.Chat.ID, "Ошибка при получении описания.")
+	}
+
+	sendMessage(bot, update.Message.Chat.ID, "Введите ассоциации (через запятую):")
+	associationsInput, err := waitForResponse(update.Message.Chat.ID)
+	if err != nil {
+		return sendMessage(bot, update.Message.Chat.ID, "Ошибка при получении ассоциаций.")
+	}
+	associations := strings.Split(associationsInput, ", ")
+
+	sendMessage(bot, update.Message.Chat.ID, "Введите ключи (через запятую):")
+	keysInput, err := waitForResponse(update.Message.Chat.ID)
+	if err != nil {
+		return sendMessage(bot, update.Message.Chat.ID, "Ошибка при получении ключей.")
+	}
+	keys := strings.Split(keysInput, ", ")
+
+	article := models.Article{
+		Name:         title,
+		Description:  description,
+		Associations: associations,
+		Keys:         keys,
+	}
+
+	ArticlesSlice = append(ArticlesSlice, article)
+
+	return sendMessage(bot, update.Message.Chat.ID, "Запись успешно добавлена.")
+}
+
+func waitForResponse(chatID int64) (string, error) {
+	mu.Lock()
+	responseChan := make(chan string)
+	userResponses[chatID] = responseChan
+	mu.Unlock()
+
+	go func() {
+		time.Sleep(60 * time.Second)
+		mu.Lock()
+		delete(userResponses, chatID)
+		close(responseChan)
+		mu.Unlock()
+	}()
+
+	select {
+	case response := <-responseChan:
+		return response, nil
+	case <-time.After(60 * time.Second):
+		return "", fmt.Errorf("время ожидания истекло")
+	}
+}
+
+func collectResponses(update tgbotapi.Update) {
+	mu.Lock()
+	if responseChan, exists := userResponses[update.Message.Chat.ID]; exists {
+		responseChan <- update.Message.Text
+	}
+	mu.Unlock()
 }
 
 func sendArticle(bot *tgbotapi.BotAPI, update tgbotapi.Update, article models.Article) error {
