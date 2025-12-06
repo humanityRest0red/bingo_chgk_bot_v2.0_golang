@@ -1,11 +1,11 @@
 [
 	{
 		"name": "Христианство",
-		"key": "rel"
+		"key": "religion"
 	},
 	{
 		"name": "Книги",
-		"key": "book"
+		"key": "literature"
 	},
 	{
 		"name": "Картины",
