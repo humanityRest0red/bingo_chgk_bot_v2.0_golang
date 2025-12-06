@@ -42,7 +42,7 @@ func BotRun() {
 		} else {
 			log.Printf("[%s] Message: %s", update.Message.From.UserName, update.Message.Text)
 
-			collectResponses(update)
+			// collectResponses(update)
 
 			if update.Message.IsCommand() {
 				err = handleCommand(bot, update)

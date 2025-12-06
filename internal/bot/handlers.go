@@ -8,10 +8,8 @@ import (
 	"net/url"
 	"os"
 	"path/filepath"
-	"slices"
 	"strconv"
 	"strings"
-	"time"
 
 	"bingo-chgk-bot-v2.0-golang/internal/models"
 	"bingo-chgk-bot-v2.0-golang/internal/requests"
@@ -35,9 +33,9 @@ func handleCommand(bot *tgbotapi.BotAPI, update tgbotapi.Update) error {
 	// 	command := update.Message.Command()
 	// 	textAfterCommand := strings.TrimSpace(strings.TrimPrefix(update.Message.Text, "/"+command))
 	// 	err = findArticle(bot, update, textAfterCommand)
-	case "add":
-		return addArticle(bot, update)
-		// return sendMessage(bot, update.Message.Chat.ID, fmt.Sprintf("%v", update.Message.Chat.ID))
+	// case "add":
+	// 	return addArticle(bot, update)
+	// return sendMessage(bot, update.Message.Chat.ID, fmt.Sprintf("%v", update.Message.Chat.ID))
 	case "log":
 		err = sendLog(bot, update)
 	default:
@@ -57,84 +55,84 @@ func handleCommand(bot *tgbotapi.BotAPI, update tgbotapi.Update) error {
 	return err
 }
 
-func addArticle(bot *tgbotapi.BotAPI, update tgbotapi.Update) error {
-	var adminIDs = []int64{1077924714, 685644130}
-	if !slices.Contains(adminIDs, update.Message.Chat.ID) {
-		return fmt.Errorf("error user %v", update.Message.From.ID)
-	}
+// func addArticle(bot *tgbotapi.BotAPI, update tgbotapi.Update) error {
+// 	var adminIDs = []int64{1077924714, 685644130}
+// 	if !slices.Contains(adminIDs, update.Message.Chat.ID) {
+// 		return fmt.Errorf("error user %v", update.Message.From.ID)
+// 	}
 
-	// 	message := `Заголовок статьи
-	// Тело статьи
-	// [Ассоциации: 8й вопрос, волчья фамилия
-	// [Теги: история, география]`
-	// 	sendMessage(bot, update.Message.Chat.ID, message)
-	sendMessage(bot, update.Message.Chat.ID, "Введите название:")
-	title, err := waitForResponse(update.Message.Chat.ID)
-	if err != nil {
-		return sendMessage(bot, update.Message.Chat.ID, "Ошибка при получении названия.")
-	}
+// 	// 	message := `Заголовок статьи
+// 	// Тело статьи
+// 	// [Ассоциации: 8й вопрос, волчья фамилия
+// 	// [Теги: история, география]`
+// 	// 	sendMessage(bot, update.Message.Chat.ID, message)
+// 	sendMessage(bot, update.Message.Chat.ID, "Введите название:")
+// 	title, err := waitForResponse(update.Message.Chat.ID)
+// 	if err != nil {
+// 		return sendMessage(bot, update.Message.Chat.ID, "Ошибка при получении названия.")
+// 	}
 
-	sendMessage(bot, update.Message.Chat.ID, "Введите описание:")
-	description, err := waitForResponse(update.Message.Chat.ID)
-	if err != nil {
-		return sendMessage(bot, update.Message.Chat.ID, "Ошибка при получении описания.")
-	}
+// 	sendMessage(bot, update.Message.Chat.ID, "Введите описание:")
+// 	description, err := waitForResponse(update.Message.Chat.ID)
+// 	if err != nil {
+// 		return sendMessage(bot, update.Message.Chat.ID, "Ошибка при получении описания.")
+// 	}
 
-	sendMessage(bot, update.Message.Chat.ID, "Введите ассоциации (через запятую):")
-	associationsInput, err := waitForResponse(update.Message.Chat.ID)
-	if err != nil {
-		return sendMessage(bot, update.Message.Chat.ID, "Ошибка при получении ассоциаций.")
-	}
-	associations := strings.Split(associationsInput, ", ")
+// 	sendMessage(bot, update.Message.Chat.ID, "Введите ассоциации (через запятую):")
+// 	associationsInput, err := waitForResponse(update.Message.Chat.ID)
+// 	if err != nil {
+// 		return sendMessage(bot, update.Message.Chat.ID, "Ошибка при получении ассоциаций.")
+// 	}
+// 	associations := strings.Split(associationsInput, ", ")
 
-	sendMessage(bot, update.Message.Chat.ID, "Введите ключи (через запятую):")
-	keysInput, err := waitForResponse(update.Message.Chat.ID)
-	if err != nil {
-		return sendMessage(bot, update.Message.Chat.ID, "Ошибка при получении ключей.")
-	}
-	keys := strings.Split(keysInput, ", ")
+// 	sendMessage(bot, update.Message.Chat.ID, "Введите ключи (через запятую):")
+// 	keysInput, err := waitForResponse(update.Message.Chat.ID)
+// 	if err != nil {
+// 		return sendMessage(bot, update.Message.Chat.ID, "Ошибка при получении ключей.")
+// 	}
+// 	keys := strings.Split(keysInput, ", ")
 
-	article := models.Article{
-		Name:         title,
-		Description:  description,
-		Associations: associations,
-		Keys:         keys,
-	}
+// 	article := models.Article{
+// 		Name:         title,
+// 		Description:  description,
+// 		Associations: associations,
+// 		Keys:         keys,
+// 	}
 
-	ArticlesSlice = append(ArticlesSlice, article)
+// 	ArticlesSlice = append(ArticlesSlice, article)
 
-	return sendMessage(bot, update.Message.Chat.ID, "Запись успешно добавлена.")
-}
+// 	return sendMessage(bot, update.Message.Chat.ID, "Запись успешно добавлена.")
+// }
 
-func waitForResponse(chatID int64) (string, error) {
-	mu.Lock()
-	responseChan := make(chan string)
-	userResponses[chatID] = responseChan
-	mu.Unlock()
+// func waitForResponse(chatID int64) (string, error) {
+// 	mu.Lock()
+// 	responseChan := make(chan string)
+// 	userResponses[chatID] = responseChan
+// 	mu.Unlock()
 
-	go func() {
-		time.Sleep(60 * time.Second)
-		mu.Lock()
-		delete(userResponses, chatID)
-		close(responseChan)
-		mu.Unlock()
-	}()
+// 	go func() {
+// 		time.Sleep(60 * time.Second)
+// 		mu.Lock()
+// 		delete(userResponses, chatID)
+// 		close(responseChan)
+// 		mu.Unlock()
+// 	}()
 
-	select {
-	case response := <-responseChan:
-		return response, nil
-	case <-time.After(60 * time.Second):
-		return "", fmt.Errorf("время ожидания истекло")
-	}
-}
+// 	select {
+// 	case response := <-responseChan:
+// 		return response, nil
+// 	case <-time.After(60 * time.Second):
+// 		return "", fmt.Errorf("время ожидания истекло")
+// 	}
+// }
 
-func collectResponses(update tgbotapi.Update) {
-	mu.Lock()
-	if responseChan, exists := userResponses[update.Message.Chat.ID]; exists {
-		responseChan <- update.Message.Text
-	}
-	mu.Unlock()
-}
+// func collectResponses(update tgbotapi.Update) {
+// 	mu.Lock()
+// 	if responseChan, exists := userResponses[update.Message.Chat.ID]; exists {
+// 		responseChan <- update.Message.Text
+// 	}
+// 	mu.Unlock()
+// }
 
 func sendArticle(bot *tgbotapi.BotAPI, update tgbotapi.Update, article models.Article) error {
 	text := article.Full()
@@ -217,7 +215,7 @@ func displayPage(bot *tgbotapi.BotAPI, update tgbotapi.Update, pageNumber int) e
 	articles, _ := models.GetArticles()
 	articlesCount := len(articles)
 
-	pagesCount := int(math.Ceil(float64(articlesCount)/float64(recordsPerPage))) + 1
+	pagesCount := int(math.Ceil(float64(articlesCount) / float64(recordsPerPage)))
 
 	if pageNumber < 1 || pageNumber > pagesCount {
 		return nil
@@ -226,7 +224,7 @@ func displayPage(bot *tgbotapi.BotAPI, update tgbotapi.Update, pageNumber int) e
 	startIndex := articlesCount - 1 - (pageNumber-1)*recordsPerPage
 	endIndex := max(articlesCount-1-pageNumber*recordsPerPage, 0)
 	var text string
-	for i := startIndex; i >= endIndex; i-- {
+	for i := startIndex; i > endIndex; i-- {
 		text += fmt.Sprintf("%v. %s\n", articlesCount-i, articles[i].Link())
 	}
 
@@ -320,6 +318,7 @@ func handleCallback(bot *tgbotapi.BotAPI, update tgbotapi.Update) error {
 			InlineKeyboard: [][]tgbotapi.InlineKeyboardButton{
 				{
 					tgbotapi.NewInlineKeyboardButtonData("Ответ", "answer:"+name),
+					// tgbotapi.NewInlineKeyboardButtonData("Таймер", "timer:"),
 					// tgbotapi.NewInlineKeyboardButtonData("Другой вопрос", createPageChangeCommand(totalPages)),
 				},
 			},
@@ -329,14 +328,53 @@ func handleCallback(bot *tgbotapi.BotAPI, update tgbotapi.Update) error {
 	}
 
 	if strings.HasPrefix(callbackData, "answer:") {
+		name := callbackData[len("answer:"):]
+
 		text, exists := Answers[update.CallbackQuery.Message.Chat.ID]
 		if exists {
 			delete(Answers, update.CallbackQuery.Message.Chat.ID)
+
+			markup := tgbotapi.InlineKeyboardMarkup{
+				InlineKeyboard: [][]tgbotapi.InlineKeyboardButton{
+					{
+						tgbotapi.NewInlineKeyboardButtonData("Другой вопрос", "questions:"+name),
+					},
+				},
+			}
+			editedMsg := tgbotapi.NewEditMessageReplyMarkup(update.CallbackQuery.Message.Chat.ID, update.CallbackQuery.Message.MessageID, markup)
+			bot.Send(editedMsg)
+
 			return sendMessage(bot, update.CallbackQuery.Message.Chat.ID, text)
 		}
-		update.CallbackQuery.Data = "questions:" + callbackData[len("answer:"):]
+
+		update.CallbackQuery.Data = "questions:" + name
 		return handleCallback(bot, update)
 	}
+
+	// if strings.HasPrefix(callbackData, "timer:") {
+	// 	name := callbackData[len("timer:"):]
+	// 	go func() {
+	// 		var num int = 60
+	// 		for i := num; i >= 0; i-- {
+	// 			// fmt.Sscanf(callbackData, "timer:%d", &num)
+	// 			keyboard := tgbotapi.InlineKeyboardMarkup{
+	// 				InlineKeyboard: [][]tgbotapi.InlineKeyboardButton{
+	// 					{
+	// 						tgbotapi.NewInlineKeyboardButtonData("Ответ", "answer:"+name),
+	// 						tgbotapi.NewInlineKeyboardButtonData(strconv.Itoa(i), "null"),
+	// 					},
+	// 				},
+	// 			}
+
+	// 			editedMsg := tgbotapi.NewEditMessageText(update.CallbackQuery.Message.Chat.ID, update.CallbackQuery.Message.MessageID, update.CallbackQuery.Message.Text)
+	// 			editedMsg.ParseMode = tgbotapi.ModeMarkdown
+
+	// 			editedMsg.ReplyMarkup = &keyboard
+	// 			bot.Send(editedMsg)
+	// 			time.Sleep(1 * time.Second)
+	// 		}
+	// 	}()
+	// }
 
 	return fmt.Errorf("неизвестный коллбэк %v", update.CallbackQuery.Data)
 }
