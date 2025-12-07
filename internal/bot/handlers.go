@@ -44,12 +44,12 @@ func handleCommand(bot *tgbotapi.BotAPI, update tgbotapi.Update) error {
 			return err
 		}
 
-		article, exists := ArticlesMap[n-1]
+		article, exists := ArticlesMap[n]
 		if !exists {
 			return sendMessage(bot, update.Message.Chat.ID, fmt.Sprintf("Последняя на данный момент  опубликованная статья — /%d", len(ArticlesMap)))
 		}
 
-		return sendArticle(bot, update, article)
+		return sendArticle(bot, update.Message, article)
 	}
 
 	return err
@@ -134,15 +134,15 @@ func handleCommand(bot *tgbotapi.BotAPI, update tgbotapi.Update) error {
 // 	mu.Unlock()
 // }
 
-func sendArticle(bot *tgbotapi.BotAPI, update tgbotapi.Update, article models.Article) error {
+func sendArticle(bot *tgbotapi.BotAPI, message *tgbotapi.Message, article models.Article) error {
 	text := article.Full()
 
 	markup := tgbotapi.InlineKeyboardMarkup{
 		InlineKeyboard: [][]tgbotapi.InlineKeyboardButton{
 			{
-				// tgbotapi.NewInlineKeyboardButtonData("Google", "google:"+article.Name),
-				// tgbotapi.NewInlineKeyboardButtonData("Вики", "wiki:"+article.Name),
-				tgbotapi.NewInlineKeyboardButtonData("Рандомный вопрос", "questions:"+article.Name),
+				tgbotapi.NewInlineKeyboardButtonData("◀", "article:"+fmt.Sprintf("%d", article.Index-1)),
+				tgbotapi.NewInlineKeyboardButtonData("Вопрос", "questions:"+article.Name),
+				tgbotapi.NewInlineKeyboardButtonData("▶", "article:"+fmt.Sprintf("%d", article.Index+1)),
 			},
 		},
 	}
@@ -157,12 +157,17 @@ func sendArticle(bot *tgbotapi.BotAPI, update tgbotapi.Update, article models.Ar
 	questionsLink := models.Link("Вопросы в базе", "https://gotquestions.online/search?search="+url.QueryEscape(buf))
 	text += "\n\n" + questionsLink
 
-	msg := tgbotapi.NewMessage(update.Message.Chat.ID, text)
-
+	// msg := tgbotapi.NewMessage(chatID, text)
+	msg := tgbotapi.NewEditMessageText(message.Chat.ID, message.MessageID, text)
 	msg.ParseMode = tgbotapi.ModeMarkdown
-	msg.ReplyMarkup = markup
-	if _, err := bot.Send(msg); err != nil {
-		return fmt.Errorf("ошибка при отправке сообщения: %v", err)
+	msg.ReplyMarkup = &markup
+	if _, err := bot.Send(msg); err != nil && err.Error() == "Bad Request: message can't be edited" {
+		msgNew := tgbotapi.NewMessage(message.Chat.ID, text)
+		msgNew.ParseMode = tgbotapi.ModeMarkdown
+		msgNew.ReplyMarkup = &markup
+
+		_, err := bot.Send(msgNew)
+		return err
 	}
 
 	return nil
@@ -195,7 +200,7 @@ func handleButtonPress(bot *tgbotapi.BotAPI, update tgbotapi.Update) error {
 		if err != nil {
 			return err
 		}
-		return sendArticle(bot, update, article)
+		return sendArticle(bot, update.Message, article)
 	case "Статьи по темам":
 		selectTopics(bot, update)
 		return nil
@@ -304,6 +309,11 @@ func handleCallback(bot *tgbotapi.BotAPI, update tgbotapi.Update) error {
 	}
 
 	if strings.HasPrefix(callbackData, "questions:") {
+		_, exists := Answers[update.CallbackQuery.Message.Chat.ID]
+		if exists {
+			return nil
+		}
+
 		name := callbackData[len("questions:"):]
 		questions, err := requests.Find(name)
 		if err != nil {
@@ -337,7 +347,7 @@ func handleCallback(bot *tgbotapi.BotAPI, update tgbotapi.Update) error {
 			markup := tgbotapi.InlineKeyboardMarkup{
 				InlineKeyboard: [][]tgbotapi.InlineKeyboardButton{
 					{
-						tgbotapi.NewInlineKeyboardButtonData("Другой вопрос", "questions:"+name),
+						tgbotapi.NewInlineKeyboardButtonData("Вопрос", "questions:"+name),
 					},
 				},
 			}
@@ -349,6 +359,18 @@ func handleCallback(bot *tgbotapi.BotAPI, update tgbotapi.Update) error {
 
 		update.CallbackQuery.Data = "questions:" + name
 		return handleCallback(bot, update)
+	}
+
+	if strings.HasPrefix(callbackData, "article:") {
+		fmt.Println(callbackData)
+		indStr := callbackData[len("article:"):]
+		fmt.Println(indStr)
+
+		ind, _ := strconv.Atoi(indStr)
+		if ind > len(ArticlesSlice) || ind < 0 {
+			return nil
+		}
+		return sendArticle(bot, update.CallbackQuery.Message, ArticlesMap[ind])
 	}
 
 	// if strings.HasPrefix(callbackData, "timer:") {
@@ -387,7 +409,7 @@ func selectTopics(bot *tgbotapi.BotAPI, update tgbotapi.Update) error {
 
 	var (
 		cols    = 3
-		rows    = len(topics) / cols
+		rows    = len(topics)/cols + 1
 		buttons = make([][]tgbotapi.InlineKeyboardButton, rows)
 	)
 
@@ -411,7 +433,7 @@ func findArticle(bot *tgbotapi.BotAPI, update tgbotapi.Update, substr string) er
 	case 0:
 		return sendMessage(bot, update.Message.Chat.ID, fmt.Sprintf("По запросу \"%s\" ничего не найдено", substr))
 	case 1:
-		return sendArticle(bot, update, filteredArticles[0])
+		return sendArticle(bot, update.Message, filteredArticles[0])
 	default:
 		return sendMultipleArticles(bot, update, filteredArticles)
 	}

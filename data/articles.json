@@ -18,14 +18,14 @@
 		"description": "Огни святого Эльма — разряд в форме светящихся пучков или кисточек, возникающий на острых концах высоких предметов (башни, мачты, одиноко стоящие деревья, острые вершины скал и т. п.) при большой напряжённости электрического поля в атмосфере, что чаще всего бывает во время грозы или при её приближении, и зимой во время метелей.\n\nНазвание явление получило от имени святого Эльма — покровителя моряков в католицизме. Морякам их появление сулило надежду на успех, а во время опасности — и на спасение.",
 		"keys": [
 			"religion",
-			"myth"
+			"phys"
 		]
 	},
 	{
 		"name": "Баньян, Поль",
 		"description": "https://telegra.ph/Banyan-Pol-12-18",
 		"keys": [
-			
+			"myth"
 		]
 	},
 	{
@@ -39,14 +39,15 @@
 		"name": "Абель, Рудольф",
 		"description": "https://telegra.ph/Abel-Rudolf-12-18",
 		"keys": [
-			"history"
+			"history",
+			"personalities"
 		]
 	},
 	{
 		"name": "Абсент",
 		"description": "https://telegra.ph/Absent-12-18",
 		"keys": [
-			
+			"biology"
 		]
 	},
 	{
@@ -81,7 +82,8 @@
 		"name": "Азеф, Евно",
 		"description": "https://telegra.ph/Azef-Evno-12-18",
 		"keys": [
-			"history"
+			"history",
+			"personalities"
 		]
 	},
 	{
@@ -102,14 +104,15 @@
 		"name": "Али",
 		"description": "https://telegra.ph/Ali-12-20",
 		"keys": [
-			"sport"
+			"sport",
+			"personalities"
 		]
 	},
 	{
 		"name": "Андалузский пёс",
 		"description": "https://telegra.ph/Andaluzskij-pyos-12-20",
 		"keys": [
-			"film"
+			"cinema"
 		]
 	},
 	{
@@ -137,14 +140,14 @@
 		"name": "Апофеоз войны",
 		"description": "https://telegra.ph/Apofeoz-vojny-12-20",
 		"keys": [
-			"paint"
+			"painting"
 		]
 	},
 	{
 		"name": "Аргентина манит негра",
 		"description": "https://telegra.ph/Argentina-manit-negra-12-20",
 		"keys": [
-			
+			"language"
 		]
 	},
 	{
@@ -158,14 +161,16 @@
 		"name": "Армстронг, Нил",
 		"description": "https://telegra.ph/Armstrong-Nil-12-20",
 		"keys": [
-			"space"
+			"space",
+			"personalities"
 		]
 	},
 	{
 		"name": "Архимед",
 		"description": "https://telegra.ph/Arhimed-12-20",
 		"keys": [
-			"history"
+			"history",
+			"personalities"
 		]
 	},
 	{
@@ -179,6 +184,7 @@
 		"name": "Батори",
 		"description": "https://telegra.ph/Batori-12-22",
 		"keys": [
+			"personalities",
 			"history"
 		]
 	},
@@ -200,14 +206,14 @@
 		"name": "Баттон, Бенджамин",
 		"description": "https://telegra.ph/Batton-Bendzhamin-12-25",
 		"keys": [
-			"film"
+			"cinema"
 		]
 	},
 	{
 		"name": "Бегущий по лезвию",
 		"description": "https://telegra.ph/Begushchij-po-lezviyu-12-25",
 		"keys": [
-			"film"
+			"cinema"
 		]
 	},
 	{
@@ -228,14 +234,14 @@
 		"name": "Белое солнце пустыни",
 		"description": "https://telegra.ph/Beloe-solnce-pustyni-12-25",
 		"keys": [
-			"film"
+			"cinema"
 		]
 	},
 	{
 		"name": "Бендер",
 		"description": "https://telegra.ph/Bender-12-25",
 		"keys": [
-			"film",
+			"cinema",
 			"literature"
 		]
 	},
@@ -243,14 +249,16 @@
 		"name": "Бергкамп, Деннис",
 		"description": "https://telegra.ph/Bergkamp-Dennis-12-25",
 		"keys": [
-			"sport"
+			"sport",
+			"personalities"
 		]
 	},
 	{
 		"name": "Бертильон, Альфонс",
 		"description": "https://telegra.ph/Bertilon-Alfons-12-25",
 		"keys": [
-			"history"
+			"history",
+			"personalities"
 		]
 	},
 	{
@@ -264,14 +272,15 @@
 		"name": "Бессмертные",
 		"description": "https://telegra.ph/Bessmertnye-12-25",
 		"keys": [
-			"literature"
+			"literature",
+			"language"
 		]
 	},
 	{
 		"name": "Бёрдвотчинг",
 		"description": "https://telegra.ph/Byordvotching-12-25",
 		"keys": [
-			
+			"sport"
 		]
 	},
 	{
@@ -286,14 +295,16 @@
 		"description": "https://telegra.ph/EHjnshtejn-Albert-12-25",
 		"keys": [
 			"history",
-			"phys"
+			"phys",
+			"personalities"
 		]
 	},
 	{
 		"name": "Эрдёш, Пал",
 		"description": "https://telegra.ph/EHrdyosh-Pal-12-25",
 		"keys": [
-			"math"
+			"math",
+			"personalities"
 		]
 	},
 	{
@@ -307,28 +318,29 @@
 		"name": "Эффект бабочки",
 		"description": "https://telegra.ph/EHffekt-babochki-12-26",
 		"keys": [
-			
+			"paradox"
 		]
 	},
 	{
 		"name": "Эшер, Мауриц Корнелис",
 		"description": "https://telegra.ph/EHsher-Mauric-Kornelis-12-26",
 		"keys": [
-			"paint"
+			"painting",
+			"personalities"
 		]
 	},
 	{
 		"name": "Я хватаюсь за пистолет",
 		"description": "https://telegra.ph/YA-hvatayus-za-pistolet-12-26",
 		"keys": [
-			
+			"literature"
 		]
 	},
 	{
 		"name": "Яд ва-Шем",
 		"description": "https://telegra.ph/YAd-va-SHem-12-26",
 		"keys": [
-			
+			"geography"
 		]
 	},
 	{
@@ -342,7 +354,7 @@
 		"name": "Если гора не идёт к Магомету",
 		"description": "https://telegra.ph/Esli-gora-ne-idyot-k-Magometu-12-26",
 		"keys": [
-			
+			"language"
 		]
 	},
 	{
@@ -356,7 +368,8 @@
 		"name": "Бетховен, Людвиг ван",
 		"description": "https://telegra.ph/Bethoven-Lyudvig-van-01-01",
 		"keys": [
-			"music"
+			"music",
+			"personalities"
 		]
 	},
 	{
@@ -370,14 +383,15 @@
 		"name": "Язык веера",
 		"description": "https://telegra.ph/YAzyk-veera-01-01",
 		"keys": [
-			
+			"language"
 		]
 	},
 	{
 		"name": "Бикила, Абебе",
 		"description": "https://telegra.ph/Bikila-Abebe-01-01",
 		"keys": [
-			"sport"
+			"sport",
+			"personalities"
 		]
 	},
 	{
@@ -391,7 +405,8 @@
 		"name": "Бирс, Амброз",
 		"description": "https://telegra.ph/Birs-Ambroz-01-01",
 		"keys": [
-			"literature"
+			"literature",
+			"personalities"
 		]
 	},
 	{
@@ -405,28 +420,31 @@
 		"name": "Бойс, Йозеф",
 		"description": "https://telegra.ph/Bojs-Jozef-01-01",
 		"keys": [
-			"paint"
+			"painting",
+			"personalities"
 		]
 	},
 	{
 		"name": "Бокасса, Жан Бедель",
 		"description": "https://telegra.ph/Bokassa-ZHan-Bedel-01-01",
 		"keys": [
-			"history"
+			"history",
+			"personalities"
 		]
 	},
 	{
 		"name": "Больной человек Европы",
 		"description": "https://telegra.ph/Bolnoj-chelovek-Evropy-01-01",
 		"keys": [
-			
+			"history"
 		]
 	},
 	{
 		"name": "Ад - это другие",
 		"description": "https://telegra.ph/Ad---ehto-drugie-01-01",
 		"keys": [
-			"literature"
+			"literature",
+			"philosophy"
 		]
 	},
 	{
@@ -447,21 +465,23 @@
 		"name": "Бор, Нильс",
 		"description": "https://telegra.ph/Bor-Nils-01-05",
 		"keys": [
-			
+			"phys",
+			"personalities"
 		]
 	},
 	{
 		"name": "Борей",
 		"description": "https://telegra.ph/Borej-01-05",
 		"keys": [
-			
+			"myth"
 		]
 	},
 	{
 		"name": "Борхес, Хорхе Луис",
 		"description": "https://telegra.ph/Borhes-Horhe-Luis-01-05",
 		"keys": [
-			"literature"
+			"literature",
+			"personalities"
 		]
 	},
 	{
@@ -482,14 +502,14 @@
 		"name": "Бритва Оккама",
 		"description": "https://telegra.ph/Britva-Okkama-01-05",
 		"keys": [
-			
+			"philosophy"
 		]
 	},
 	{
 		"name": "Бульдозерная выставка",
 		"description": "https://telegra.ph/Buldozernaya-vystavka-01-05",
 		"keys": [
-			
+			"painting"
 		]
 	},
 	{
@@ -510,28 +530,30 @@
 		"name": "Быки и медведи",
 		"description": "https://telegra.ph/Byki-i-medvedi-01-05",
 		"keys": [
-			
+			"economics"
 		]
 	},
 	{
 		"name": "Бэнкси",
 		"description": "https://telegra.ph/Behnksi-01-05",
 		"keys": [
-			"paint"
+			"painting",
+			"personalities"
 		]
 	},
 	{
 		"name": "Штрейкбрехер",
 		"description": "https://telegra.ph/SHtrejkbreher-01-06",
 		"keys": [
-			
+			"history"
 		]
 	},
 	{
 		"name": "Шпенглер, Освальд",
 		"description": "https://telegra.ph/SHpengler-Osvald-01-06",
 		"keys": [
-			"history"
+			"history",
+			"personalities"
 		]
 	},
 	{
@@ -559,7 +581,7 @@
 		"name": "Шахматная горячка",
 		"description": "https://telegra.ph/SHahmatnaya-goryachka-01-06",
 		"keys": [
-			"film"
+			"cinema"
 		]
 	},
 	{
@@ -587,7 +609,7 @@
 		"name": "Человек флоресский",
 		"description": "https://telegra.ph/CHelovek-floresskij-01-06",
 		"keys": [
-			
+			"biology"
 		]
 	},
 	{
@@ -608,7 +630,7 @@
 		"name": "Черный квадрат",
 		"description": "https://telegra.ph/CHernyj-kvadrat-01-21",
 		"keys": [
-			"paint"
+			"painting"
 		]
 	},
 	{
@@ -622,35 +644,36 @@
 		"name": "Фасмер, Макс",
 		"description": "https://telegra.ph/Fasmer-Maks-01-21",
 		"keys": [
-			
+			"language",
+			"personalities"
 		]
 	},
 	{
 		"name": "Феномен Баадера-Майнхоф",
 		"description": "https://telegra.ph/Fenomen-Baadera-Majnhof-01-21",
 		"keys": [
-			
+			"psycho"
 		]
 	},
 	{
 		"name": "Физическая невозможность смерти в сознании живущего",
 		"description": "https://telegra.ph/Fizicheskaya-nevozmozhnost-smerti-v-soznanii-zhivushchego-01-21",
 		"keys": [
-			
+			"painting"
 		]
 	},
 	{
 		"name": "Философский пароход",
 		"description": "https://telegra.ph/Filosofskij-parohod-01-21",
 		"keys": [
-			
+			"history"
 		]
 	},
 	{
 		"name": "Флаг Бразилии",
 		"description": "https://telegra.ph/Flag-Brazilii-01-21",
 		"keys": [
-			
+			"geography"
 		]
 	},
 	{
@@ -664,35 +687,38 @@
 		"name": "Фонтан Дюшана",
 		"description": "https://telegra.ph/Fontan-Dyushana-01-21",
 		"keys": [
-			
+			"painting"
 		]
 	},
 	{
 		"name": "Уорхол, Энди",
 		"description": "https://telegra.ph/Uorhol-EHndi-01-21",
 		"keys": [
-			"paint"
+			"painting",
+			"personalities"
 		]
 	},
 	{
 		"name": "Уайет, Эндрю",
 		"description": "https://telegra.ph/Uajet-EHndryu-01-21",
 		"keys": [
-			"paint"
+			"painting",
+			"personalities"
 		]
 	},
 	{
 		"name": "У попа была собака",
 		"description": "https://telegra.ph/U-popa-byla-sobaka-01-21",
 		"keys": [
-			
+			"language"
 		]
 	},
 	{
 		"name": "Тайсон, Майк",
 		"description": "https://telegra.ph/Tajson-Majk-01-21",
 		"keys": [
-			"sport"
+			"sport",
+			"personalities"
 		]
 	},
 	{
@@ -713,7 +739,8 @@
 		"name": "Тарковский, Андрей",
 		"description": "https://telegra.ph/Tarkovskij-Andrej-01-21",
 		"keys": [
-			"film"
+			"cinema",
+			"personalities"
 		]
 	},
 	{
@@ -734,28 +761,29 @@
 		"name": "Тонкая красная линия",
 		"description": "https://telegra.ph/Tonkaya-krasnaya-liniya-01-22",
 		"keys": [
-			
+			"history"
 		]
 	},
 	{
 		"name": "Эффект Даннинга — Крюгера",
 		"description": "https://telegra.ph/EHffekt-Danninga--Kryugera-01-23",
 		"keys": [
-			"psycho"
+			"psycho",
+			"paradox"
 		]
 	},
 	{
 		"name": "Кракелюры",
 		"description": "https://telegra.ph/Krakelyury-01-23",
 		"keys": [
-			"paint"
+			"painting"
 		]
 	},
 	{
 		"name": "Точка над i",
 		"description": "https://telegra.ph/Tochka-nad-i-01-23",
 		"keys": [
-			
+			"language"
 		]
 	},
 	{
@@ -769,49 +797,52 @@
 		"name": "Полуночники",
 		"description": "https://telegra.ph/Polunochniki-01-26",
 		"keys": [
-			"paint"
+			"painting"
 		]
 	},
 	{
 		"name": "Поверхность Мохоровичича",
 		"description": "https://telegra.ph/Poverhnost-Mohorovichicha-01-26",
 		"keys": [
-			
+			"geography"
 		]
 	},
 	{
 		"name": "Извлечение камня глупости",
 		"description": "https://telegra.ph/Izvlechenie-kamnya-gluposti-01-26",
 		"keys": [
-			
+			"painting"
 		]
 	},
 	{
 		"name": "Джейн Гудолл",
 		"description": "https://telegra.ph/Dzhejn-Gudoll-01-26",
 		"keys": [
-			
+			"biology",
+			"personalities"
 		]
 	},
 	{
 		"name": "Мадлен",
 		"description": "https://telegra.ph/Madlen-01-26",
 		"keys": [
-			
+			"painting"
 		]
 	},
 	{
 		"name": "Джорджо Вазари",
 		"description": "https://telegra.ph/Dzhordzho-Vazari-01-26",
 		"keys": [
-			
+			"painting",
+			"personalities"
 		]
 	},
 	{
 		"name": "Габриела Мистраль",
 		"description": "https://telegra.ph/Gabriela-Mistral-01-26",
 		"keys": [
-			"literature"
+			"literature",
+			"personalities"
 		]
 	},
 	{
@@ -825,7 +856,8 @@
 		"name": "Гипотеза Сепира — Уорфа",
 		"description": "https://telegra.ph/Gipoteza-Sepira--Uorfa-01-26",
 		"keys": [
-			
+			"language",
+			"paradox"
 		]
 	},
 	{
@@ -839,7 +871,7 @@
 		"name": "Хорошо темперированный клавир",
 		"description": "https://telegra.ph/Horosho-temperirovannyj-klavir-01-26",
 		"keys": [
-			
+			"music"
 		]
 	},
 	{
@@ -853,49 +885,54 @@
 		"name": "Исчезновение батальона Норфолкского полка",
 		"description": "https://telegra.ph/Ischeznovenie-batalona-Norfolkskogo-polka-01-26",
 		"keys": [
-			
+			"history"
 		]
 	},
 	{
 		"name": "Отто Лилиенталь",
 		"description": "https://telegra.ph/Otto-Liliental-01-26",
 		"keys": [
-			"history"
+			"history",
+			"inventions",
+			"personalities"
 		]
 	},
 	{
 		"name": "Ноам Хомский",
 		"description": "https://telegra.ph/Noam-Homskij-01-26",
 		"keys": [
-			
+			"personalities"
 		]
 	},
 	{
 		"name": "Йоги Берра",
 		"description": "https://telegra.ph/Jogi-Berra-01-26",
 		"keys": [
-			"sport"
+			"sport",
+			"personalities"
 		]
 	},
 	{
 		"name": "Джордж Гэллап",
 		"description": "https://telegra.ph/Dzhordzh-Gehllap-01-26",
 		"keys": [
-			
+			"personalities"
 		]
 	},
 	{
 		"name": "Эффект «буба — кики»",
 		"description": "https://telegra.ph/EHffekt-buba--kiki-01-26",
 		"keys": [
-			
+			"psycho",
+			"paradox"
 		]
 	},
 	{
 		"name": "Кристиан Барнард",
 		"description": "https://telegra.ph/Kristian-Barnard-01-26",
 		"keys": [
-			
+			"biology",
+			"personalities"
 		]
 	},
 	{
@@ -909,7 +946,7 @@
 		"name": "Туман войны",
 		"description": "https://telegra.ph/Tuman-vojny-01-26",
 		"keys": [
-			
+			"economics"
 		]
 	},
 	{
@@ -923,7 +960,7 @@
 		"name": "Тысяча ли",
 		"description": "https://telegra.ph/Tysyacha-li-01-26",
 		"keys": [
-			
+			"geography"
 		]
 	},
 	{
@@ -938,14 +975,16 @@
 		"name": "Химейер, Марвин",
 		"description": "https://telegra.ph/Himejer-Marvin-01-26",
 		"keys": [
-			
+			"history",
+			"personalities"
 		]
 	},
 	{
 		"name": "Хокинг, Стивен",
 		"description": "https://telegra.ph/Hoking-Stiven-01-27",
 		"keys": [
-			"phys"
+			"phys",
+			"personalities"
 		]
 	},
 	{
@@ -959,14 +998,16 @@
 		"name": "Хокусай, Кацусика",
 		"description": "https://telegra.ph/Hokusaj-Kacusika-01-27",
 		"keys": [
-			
+			"painting",
+			"personalities"
 		]
 	},
 	{
 		"name": "Хоппер, Эдвард",
 		"description": "https://telegra.ph/Hopper-EHdvard-01-27",
 		"keys": [
-			"paint"
+			"painting",
+			"personalities"
 		]
 	},
 	{
@@ -980,14 +1021,14 @@
 		"name": "«Съешь же ещё этих мягких французских булок да выпей чаю»",
 		"description": "https://telegra.ph/Sesh-zhe-eshchyo-ehtih-myagkih-francuzskih-bulok-da-vypej-chayu-01-27",
 		"keys": [
-			
+			"language"
 		]
 	},
 	{
 		"name": "Сюрпляс",
 		"description": "https://telegra.ph/Syurplyas-01-27",
 		"keys": [
-			
+			"sport"
 		]
 	},
 	{
@@ -1001,14 +1042,14 @@
 		"name": "Сухой лист",
 		"description": "https://telegra.ph/Suhoj-list-01-27",
 		"keys": [
-			
+			"sport"
 		]
 	},
 	{
 		"name": "Сумбур вместо музыки",
 		"description": "https://telegra.ph/Sumbur-vmesto-muzyki-01-27",
 		"keys": [
-			
+			"music"
 		]
 	},
 	{
@@ -1022,7 +1063,7 @@
 		"name": "Стеклянный потолок",
 		"description": "https://telegra.ph/Steklyannyj-potolok-01-27",
 		"keys": [
-			
+			"economics"
 		]
 	},
 	{
@@ -1036,28 +1077,30 @@
 		"name": "Стайн, Гертруда",
 		"description": "https://telegra.ph/Stajn-Gertruda-01-28",
 		"keys": [
-			"literature"
+			"literature",
+			"personalities"
 		]
 	},
 	{
 		"name": "Спагетти-вестерн",
 		"description": "https://telegra.ph/Spagetti-vestern-01-28",
 		"keys": [
-			
+			"cinema"
 		]
 	},
 	{
 		"name": "Солидарность",
 		"description": "https://telegra.ph/Solidarnost-01-28",
 		"keys": [
-			
+			"history"
 		]
 	},
 	{
 		"name": "Смит, Адам",
 		"description": "https://telegra.ph/Smit-Adam-01-28",
 		"keys": [
-			
+			"economics",
+			"personalities"
 		]
 	},
 	{
@@ -1071,7 +1114,7 @@
 		"name": "Адвент-календарь",
 		"description": "https://telegra.ph/Advent-kalendar-01-29",
 		"keys": [
-			
+			"inventions"
 		]
 	},
 	{
@@ -1092,7 +1135,7 @@
 		"name": "Синг-Синг",
 		"description": "https://telegra.ph/Sing-Sing-01-29",
 		"keys": [
-			
+			"history"
 		]
 	},
 	{
@@ -1113,21 +1156,21 @@
 		"name": "Линия Мэйсона — Диксона",
 		"description": "Линия Мэйсона — Диксона (англ. Mason–Dixon Line) — граница, проведённая в 1763—1767 годах английскими землемерами и астрономами Чарльзом Мэйсоном и Джеремайей Диксоном для разрешения длившегося почти век территориального спора между британскими колониями в Америке: Пенсильванией и Мэрилендом. Линия чётко определила границы современных американских штатов Пенсильвания, Мэриленд, Делавэр и Западная Виргиния. До гражданской войны линия Мэйсона — Диксона служила символической границей между свободными от рабства штатами Севера и рабовладельческими штатами Юга.",
 		"keys": [
-			
+			"history"
 		]
 	},
 	{
 		"name": "Нигерийские письма",
 		"description": "https://telegra.ph/Nigerijskie-pisma-01-29",
 		"keys": [
-			
+			"language"
 		]
 	},
 	{
 		"name": "Саймон говорит",
 		"description": "https://telegra.ph/Sajmon-govorit-01-29",
 		"keys": [
-			
+			"sport"
 		]
 	},
 	{
@@ -1141,35 +1184,37 @@
 		"name": "Хироо Онода",
 		"description": "https://telegra.ph/Hiroo-Onoda-01-29",
 		"keys": [
-			"history"
+			"history",
+			"personalities"
 		]
 	},
 	{
 		"name": "Шоколадница Лиотара",
 		"description": "https://telegra.ph/SHokoladnica-Liotara-01-29",
 		"keys": [
-			"paint"
+			"painting"
 		]
 	},
 	{
 		"name": "95 тезисов. Виттенберг",
 		"description": "https://telegra.ph/95-tezisov-Vittenberg-01-29",
 		"keys": [
-			
+			"history"
 		]
 	},
 	{
 		"name": "Публий Овидий Назон",
 		"description": "https://telegra.ph/Publij-Ovidij-Nazon-01-29",
 		"keys": [
-			"history", "literature"
+			"history", "literature",
+			"personalities"
 		]
 	},
 	{
 		"name": "HAL 9000",
 		"description": "https://telegra.ph/HAL-9000-01-29",
 		"keys": [
-			"film"
+			"cinema"
 		]
 	},
 	{
@@ -1190,21 +1235,21 @@
 		"name": "Портрет четы Арнольфини",
 		"description": "https://telegra.ph/Portret-chety-Arnolfini-01-29",
 		"keys": [
-			"paint"
+			"painting"
 		]
 	},
 	{
 		"name": "Кофе и сигареты Джармуша",
 		"description": "https://telegra.ph/Kofe-i-sigarety-Dzharmusha-01-29",
 		"keys": [
-			
+			"cinema"
 		]
 	},
 	{
 		"name": "Болеро Мориса Равеля",
 		"description": "https://telegra.ph/Bolero-Morisa-Ravelya-01-29",
 		"keys": [
-			
+			"music"
 		]
 	},
 	{
@@ -1218,42 +1263,43 @@
 		"name": "Генрих Бёлль",
 		"description": "https://telegra.ph/Genrih-Byoll-01-30",
 		"keys": [
-			"literature"
+			"literature",
+			"personalities"
 		]
 	},
 	{
 		"name": "Весна священная",
 		"description": "https://telegra.ph/Vesna-svyashchennaya-01-30",
 		"keys": [
-			
+			"music"
 		]
 	},
 	{
 		"name": "Похищение сабинянок",
 		"description": "https://telegra.ph/Pohishchenie-sabinyanok-01-30",
 		"keys": [
-			
+			"history"
 		]
 	},
 	{
 		"name": "Томас Мальтус",
 		"description": "https://telegra.ph/Tomas-Maltus-01-30",
 		"keys": [
-			
+			"economics"
 		]
 	},
 	{
 		"name": "Каррарские карьеры",
 		"description": "https://telegra.ph/Karrarskie-karery-01-30",
 		"keys": [
-			
+			"geography"
 		]
 	},
 	{
 		"name": "Лаокоон",
 		"description": "https://telegra.ph/Laokoon-01-30",
 		"keys": [
-			
+			"painting"
 		]
 	},
 	{
@@ -1281,7 +1327,9 @@
 		"name": "Конец истории?",
 		"description": "https://telegra.ph/Konec-istorii-01-30",
 		"keys": [
-			"literature", "philosophy"
+			"literature",
+			"philosophy",
+			"history"
 		]
 	},
 	{
@@ -1295,28 +1343,28 @@
 		"name": "Филлоксера",
 		"description": "https://telegra.ph/Filloksera-01-30",
 		"keys": [
-			
+			"biology"
 		]
 	},
 	{
 		"name": "Трумен Капоте",
 		"description": "https://telegra.ph/Trumen-Kapote-01-30",
 		"keys": [
-			
+			"personalities"
 		]
 	},
 	{
 		"name": "Фронтир",
 		"description": "https://telegra.ph/Frontir-01-31",
 		"keys": [
-			
+			"history"
 		]
 	},
 	{
 		"name": "Плеяды",
 		"description": "https://telegra.ph/Pleyady-01-31",
 		"keys": [
-			
+			"space"
 		]
 	},
 	{
@@ -1330,7 +1378,7 @@
 		"name": "Атака легкой бригады",
 		"description": "https://telegra.ph/Ataka-legkoj-brigady-01-31",
 		"keys": [
-			
+			"history"
 		]
 	},
 	{
@@ -1344,77 +1392,81 @@
 		"name": "Вратарь республики",
 		"description": "https://telegra.ph/Vratar-respubliki-01-31",
 		"keys": [
-			
+			"sport"
 		]
 	},
 	{
 		"name": "Кеннинг",
 		"description": "https://telegra.ph/Kenning-01-31",
 		"keys": [
-			
+			"language"
 		]
 	},
 	{
 		"name": "Уильям Гарвей",
 		"description": "https://telegra.ph/Uilyam-Garvej-01-31",
 		"keys": [
-			
+			"biology",
+			"personalities"
 		]
 	},
 	{
 		"name": "Куб Неккера",
 		"description": "https://telegra.ph/Kub-Nekkera-01-31",
 		"keys": [
-			
+			"paradox"
 		]
 	},
 	{
 		"name": "Ван Клиберн",
 		"description": "https://telegra.ph/Van-Klibern-01-31",
 		"keys": [
-			
+			"music",
+			"personalities"
 		]
 	},
 	{
 		"name": "Смерть Гауди",
 		"description": "https://telegra.ph/Smert-Gaudi-01-31",
 		"keys": [
-			
+			"history"
 		]
 	},
 	{
 		"name": "Коан",
 		"description": "https://telegra.ph/Koan-01-31",
 		"keys": [
-			
+			"philosophy",
+			"paradox"
 		]
 	},
 	{
 		"name": "Хлопок одной ладонью",
 		"description": "https://telegra.ph/Hlopok-odnoj-ladonyu-01-31",
 		"keys": [
-			
+			"philosophy",
+			"paradox"
 		]
 	},
 	{
 		"name": "Плот «Медузы». Часть 1.",
 		"description": "https://telegra.ph/Plot-Meduzy-01-31",
 		"keys": [
-			"paint"
+			"painting"
 		]
 	},
 	{
 		"name": "Плот «Медузы». Часть 2.",
 		"description": "https://telegra.ph/Plot-Meduzy-CHast-2-01-31",
 		"keys": [
-			"paint"
+			"painting"
 		]
 	},
 	{
 		"name": "REM",
 		"description": "https://telegra.ph/REM-01-31-2",
 		"keys": [
-			
+			"biology"
 		]
 	},
 	{
@@ -1428,91 +1480,94 @@
 		"name": "Синдром Туретта",
 		"description": "https://telegra.ph/Sindrom-Turetta-01-31",
 		"keys": [
-			
+			"psycho"
 		]
 	},
 	{
 		"name": "Синдром Дженовезе",
 		"description": "https://telegra.ph/Sindrom-Dzhenoveze-01-31",
 		"keys": [
-			
+			"psycho"
 		]
 	},
 	{
 		"name": "Симпсон, О Джей",
 		"description": "https://telegra.ph/Simpson-O-Dzhej-02-01",
 		"keys": [
-			
+			"history",
+			"personalities"
 		]
 	},
 	{
 		"name": "Сикстинская капелла",
 		"description": "https://telegra.ph/Sikstinskaya-kapella-02-01",
 		"keys": [
-			
+			"geography"
 		]
 	},
 	{
 		"name": "Сиднейская опера",
 		"description": "https://telegra.ph/Sidnejskaya-opera-02-01",
 		"keys": [
-			
+			"geography"
 		]
 	},
 	{
 		"name": "Сибирская язва",
 		"description": "https://telegra.ph/Sibirskaya-yazva-02-01",
 		"keys": [
-			
+			"biology"
 		]
 	},
 	{
 		"name": "Сибарис",
 		"description": "https://telegra.ph/Sibaris-02-01",
 		"keys": [
-			
+			"history",
+			"geography"
 		]
 	},
 	{
 		"name": "Серебряные стрелы",
 		"description": "https://telegra.ph/Serebryanye-strely-02-01",
 		"keys": [
-			
+			"history",
+			"sport"
 		]
 	},
 	{
 		"name": "Сердце Шопена",
 		"description": "https://telegra.ph/Serdce-SHopena-02-01",
 		"keys": [
-			
+			"music"
 		]
 	},
 	{
 		"name": "Семь мостов Кёнигсберга",
 		"description": "https://telegra.ph/Sem-mostov-Kyonigsberga-02-01",
 		"keys": [
-			
+			"math"
 		]
 	},
 	{
 		"name": "SETI",
 		"description": "https://telegra.ph/SETI-02-01",
 		"keys": [
-			
+			"space"
 		]
 	},
 	{
 		"name": "Семнадцать мгновений весны",
 		"description": "https://telegra.ph/Semnadcat-mgnovenij-vesny-02-01",
 		"keys": [
-			"film"
+			"cinema"
 		]
 	},
 	{
 		"name": "Северное сияние",
 		"description": "https://telegra.ph/Severnoe-siyanie-02-01",
 		"keys": [
-			
+			"geography"
 		]
 	},
 	{
@@ -1533,28 +1588,28 @@
 		"name": "Сатурналии",
 		"description": "https://telegra.ph/Saturnalii-02-01",
 		"keys": [
-			
+			"myth"
 		]
 	},
 	{
 		"name": "Салемские ведьмы",
 		"description": "https://telegra.ph/Salemskie-vedmy-02-01",
 		"keys": [
-			
+			"history"
 		]
 	},
 	{
 		"name": "Санкюлоты",
 		"description": "https://telegra.ph/Sankyuloty-02-01",
 		"keys": [
-			
+			"history"
 		]
 	},
 	{
 		"name": "Сантьяго Бернабеу",
 		"description": "https://telegra.ph/Santyago-Bernabeu-02-01",
 		"keys": [
-			
+			"sport"
 		]
 	},
 	{
@@ -1575,7 +1630,7 @@
 		"name": "Сад камней",
 		"description": "https://telegra.ph/Sad-kamnej-02-01",
 		"keys": [
-			
+			"painting"
 		]
 	},
 	{
@@ -1603,49 +1658,53 @@
 		"name": "Похитители велосипедов",
 		"description": "https://telegra.ph/Pohititeli-velosipedov-02-01",
 		"keys": [
-			
+			"cinema"
 		]
 	},
 	{
 		"name": "Севр",
 		"description": "https://telegra.ph/Sevr-02-01",
 		"keys": [
-			
+			"history"
 		]
 	},
 	{
 		"name": "Венеры палеолита",
 		"description": "https://telegra.ph/Venery-paleolita-02-01",
 		"keys": [
-			
+			"painting"
 		]
 	},
 	{
 		"name": "Жорж Перек",
 		"description": "https://telegra.ph/ZHorzh-Perek-02-01",
 		"keys": [
-			"literature"
+			"literature",
+			"personalities"
 		]
 	},
 	{
 		"name": "Верхняя Вольта",
 		"description": "https://telegra.ph/Verhnyaya-Volta-02-01",
 		"keys": [
-			"geography"
+			"geography",
+			"history"
 		]
 	},
 	{
 		"name": "Ив Кляйн",
 		"description": "https://telegra.ph/Iv-Klyajn-02-01",
 		"keys": [
-			
+			"painting",
+			"personalities"
 		]
 	},
 	{
 		"name": "Чезаре Ломброзо",
 		"description": "https://telegra.ph/CHezare-Lombrozo-02-01",
 		"keys": [
-			
+			"psycho",
+			"personalities"
 		]
 	},
 	{
@@ -1666,21 +1725,23 @@
 		"name": "Вавилонская башня",
 		"description": "https://telegra.ph/Vavilonskaya-bashnya-02-01",
 		"keys": [
-			"religion"
+			"religion",
+			"myth"
 		]
 	},
 	{
 		"name": "Ван Гог, Винсент",
 		"description": "https://telegra.ph/Van-Gog-Vinsent-02-01",
 		"keys": [
-			"painthist"
+			"painting"
 		]
 	},
 	{
 		"name": "Ведьмины круги",
 		"description": "https://telegra.ph/Vedminy-krugi-02-01",
 		"keys": [
-			
+			"myth",
+			"paradox"
 		]
 	},
 	{
@@ -1694,14 +1755,14 @@
 		"name": "Вернись в Сорренто",
 		"description": "https://telegra.ph/Vernis-v-Sorrento-02-01",
 		"keys": [
-			
+			"music"
 		]
 	},
 	{
 		"name": "Вудсток",
 		"description": "https://telegra.ph/Vudstok-02-01",
 		"keys": [
-			
+			"history"
 		]
 	},
 	{
@@ -1729,21 +1790,21 @@
 		"name": "Вирус табачной мозаики",
 		"description": "https://telegra.ph/Virus-tabachnoj-mozaiki-02-02",
 		"keys": [
-			
+			"biology"
 		]
 	},
 	{
 		"name": "Ланцет",
 		"description": "https://telegra.ph/Lancet-02-02-2",
 		"keys": [
-			
+			"biology"
 		]
 	},
 	{
 		"name": "Виктория регия",
 		"description": "https://telegra.ph/Viktoriya-regiya-02-02",
 		"keys": [
-			
+			"biology"
 		]
 	},
 	{
@@ -1757,28 +1818,28 @@
 		"name": "Карл Бедекер",
 		"description": "https://telegra.ph/Karl-Bedeker-02-02",
 		"keys": [
-			
+			"personalities"
 		]
 	},
 	{
 		"name": "Костёр тщеславия",
 		"description": "https://telegra.ph/Kostyor-tshcheslaviya-02-02",
 		"keys": [
-			
+			"history"
 		]
 	},
 	{
 		"name": "Сирокко",
 		"description": "https://telegra.ph/Sirokko-02-02",
 		"keys": [
-			
+			"geography"
 		]
 	},
 	{
 		"name": "Хенрикюс Антониус ван Мегерен",
 		"description": "https://telegra.ph/Henrikyus-Antonius-van-Megeren-02-02",
 		"keys": [
-			
+			"personalities"
 		]
 	},
 	{
@@ -1799,63 +1860,65 @@
 		"name": "Менины",
 		"description": "https://telegra.ph/Meniny-02-02",
 		"keys": [
-			
+			"painting"
 		]
 	},
 	{
 		"name": "Вильгельм Телль",
 		"description": "https://telegra.ph/Vilgelm-Tell-02-02",
 		"keys": [
-			
+			"myth"
 		]
 	},
 	{
 		"name": "Все критяне лжецы",
 		"description": "https://telegra.ph/Vse-krityane-lzhecy-02-02",
 		"keys": [
-			
+			"paradox"
 		]
 	},
 	{
 		"name": "Видок, Эжен Франсуа",
 		"description": "https://telegra.ph/Vidok-EHzhen-Fransua-02-02",
 		"keys": [
-			
+			"history",
+			"personalities"
 		]
 	},
 	{
 		"name": "Ветряная мельница",
 		"description": "https://telegra.ph/Vetryanaya-melnica-02-02",
 		"keys": [
-			"literature"
+			"literature",
+			"inventions"
 		]
 	},
 	{
 		"name": "Вестминстерское аббатство",
 		"description": "https://telegra.ph/Vestminsterskoe-abbatstvo-02-02",
 		"keys": [
-			
+			"geography"
 		]
 	},
 	{
 		"name": "Весёлая вдова",
 		"description": "https://telegra.ph/Vesyolaya-vdova-02-02",
 		"keys": [
-			
+			"music"
 		]
 	},
 	{
 		"name": "Верблюд",
 		"description": "https://telegra.ph/Verblyud-02-02",
 		"keys": [
-			
+			"biology"
 		]
 	},
 	{
 		"name": "Венеция",
 		"description": "https://telegra.ph/Veneciya-02-02-31",
 		"keys": [
-			
+			"geography"
 		]
 	},
 	{
@@ -1869,28 +1932,28 @@
 		"name": "Рыба фугу",
 		"description": "https://telegra.ph/Ryba-fugu-02-02",
 		"keys": [
-			
+			"biology"
 		]
 	},
 	{
 		"name": "Руст, Матиас",
 		"description": "https://telegra.ph/Rust-Matias-02-02",
 		"keys": [
-			
+			"history"
 		]
 	},
 	{
 		"name": "Русские сезоны",
 		"description": "https://telegra.ph/Russkie-sezony-02-03",
 		"keys": [
-			
+			"painting"
 		]
 	},
 	{
 		"name": "Россия — родина слонов",
 		"description": "https://telegra.ph/Rossiya--rodina-slonov-02-03",
 		"keys": [
-			
+			"language"
 		]
 	},
 	{
@@ -1904,14 +1967,15 @@
 		"name": "Роквелл, Норман",
 		"description": "https://telegra.ph/Rokvell-Norman-02-03",
 		"keys": [
-			"paint"
+			"painting",
+			"personalities"
 		]
 	},
 	{
 		"name": "Мондриан",
 		"description": "https://telegra.ph/Mondrian-02-03",
 		"keys": [
-			
+			"painting"
 		]
 	},
 	{
@@ -1925,14 +1989,15 @@
 		"name": "Джесси Оуэнс",
 		"description": "https://telegra.ph/Dzhessi-Ouehns-02-03",
 		"keys": [
-			
+			"sport",
+			"personalities"
 		]
 	},
 	{
 		"name": "Палочники",
 		"description": "https://telegra.ph/Palochniki-02-03",
 		"keys": [
-			
+			"biology"
 		]
 	},
 	{
@@ -1946,7 +2011,8 @@
 		"name": "Альфонс Муха",
 		"description": "https://telegra.ph/Alfons-Muha-02-03",
 		"keys": [
-			
+			"painting",
+			"personalities"
 		]
 	},
 	{
@@ -1960,63 +2026,66 @@
 		"name": "Розеттский камень",
 		"description": "https://telegra.ph/Rozettskij-kamen-02-05",
 		"keys": [
-			
+			"language"
 		]
 	},
 	{
 		"name": "Розуэлльский инцидент",
 		"description": "https://telegra.ph/Rozuehllskij-incident-02-05",
 		"keys": [
-			
+			"myth"
 		]
 	},
 	{
 		"name": "Римские каникулы",
 		"description": "https://telegra.ph/Rimskie-kanikuly-02-05",
 		"keys": [
-			
+			"cinema"
 		]
 	},
 	{
 		"name": "Ретиарий",
 		"description": "https://telegra.ph/Retiarij-02-05",
 		"keys": [
-			
+			"history"
 		]
 	},
 	{
 		"name": "Рентген, Вильгельм",
 		"description": "https://telegra.ph/Rentgen-Vilgelm-02-05",
 		"keys": [
-			
+			"phys",
+			"personalities"
 		]
 	},
 	{
 		"name": "Ремингтон № 1",
 		"description": "https://telegra.ph/Remington--1-02-05",
 		"keys": [
-			
+			"inventions"
 		]
 	},
 	{
 		"name": "Расёмон",
 		"description": "https://telegra.ph/Rasyomon-02-05",
 		"keys": [
-			"film"
+			"cinema"
 		]
 	},
 	{
 		"name": "Рембо, Артюр",
 		"description": "https://telegra.ph/Rembo-Artyur-02-05",
 		"keys": [
-			"literature"
+			"literature",
+			"personalities"
 		]
 	},
 	{
 		"name": "Рембрант",
 		"description": "https://telegra.ph/Rembrant-02-05",
 		"keys": [
-			"paint"
+			"painting",
+			"personalities"
 		]
 	},
 	{
@@ -2044,7 +2113,7 @@
 		"name": "Гаммельнский крысолов",
 		"description": "https://telegra.ph/Gammelnskij-krysolov-02-09",
 		"keys": [
-			
+			"myth"
 		]
 	},
 	{
@@ -2058,7 +2127,7 @@
 		"name": "Гексли, Томас",
 		"description": "https://telegra.ph/Geksli-Tomas-02-09",
 		"keys": [
-			
+			"biology"
 		]
 	},
 	{
@@ -2072,49 +2141,51 @@
 		"name": "Геркулесовы столбы",
 		"description": "https://telegra.ph/Gerkulesovy-stolby-02-09",
 		"keys": [
-			
+			"geography"
 		]
 	},
 	{
 		"name": "Герника",
 		"description": "https://telegra.ph/Gernika-02-09",
 		"keys": [
-			"paint"
+			"painting"
 		]
 	},
 	{
 		"name": "Герострат",
 		"description": "https://telegra.ph/Gerostrat-02-09",
 		"keys": [
-			"history"
+			"history",
+			"personalities"
 		]
 	},
 	{
 		"name": "Гиббон, Эдуард",
 		"description": "https://telegra.ph/Gibbon-EHduard-02-09",
 		"keys": [
-			
+			"history",
+			"personalities"
 		]
 	},
 	{
 		"name": "Гибли",
 		"description": "https://telegra.ph/Gibli-02-09",
 		"keys": [
-			
+			"cinema"
 		]
 	},
 	{
 		"name": "Гномон",
 		"description": "https://telegra.ph/Gnomon-02-09",
 		"keys": [
-			
+			"inventions"
 		]
 	},
 	{
 		"name": "Голова лошади",
 		"description": "https://telegra.ph/Golova-loshadi-02-09",
 		"keys": [
-			"film"
+			"cinema"
 		]
 	},
 	{
@@ -2128,28 +2199,30 @@
 		"name": "Гонг",
 		"description": "https://telegra.ph/Gong-02-09",
 		"keys": [
-			
+			"music"
 		]
 	},
 	{
 		"name": "Гринвич",
 		"description": "https://telegra.ph/Grinvich-02-09",
 		"keys": [
-			
+			"geography"
 		]
 	},
 	{
 		"name": "Гус, Ян",
 		"description": "https://telegra.ph/Gus-YAn-02-09",
 		"keys": [
-			"history"
+			"history",
+			"personalities"
 		]
 	},
 	{
 		"name": "Замбони",
 		"description": "https://telegra.ph/Zamboni-02-10",
 		"keys": [
-			"sport"
+			"sport",
+			"inventions"
 		]
 	},
 	{
@@ -2163,14 +2236,14 @@
 		"name": "Арман Давид",
 		"description": "https://telegra.ph/Arman-David-02-10",
 		"keys": [
-			
+			"history"
 		]
 	},
 	{
 		"name": "Тюльпаномания",
 		"description": "https://telegra.ph/Tyulpanomaniya-02-10",
 		"keys": [
-			
+			"economics"
 		]
 	},
 	{
@@ -2191,7 +2264,7 @@
 		"name": "Дадаизм",
 		"description": "https://telegra.ph/Dadaizm-02-10",
 		"keys": [
-			
+			"painting"
 		]
 	},
 	{
@@ -2205,28 +2278,29 @@
 		"name": "«Дождь,пар и скорость»",
 		"description": "https://telegra.ph/Dozhdpar-i-skorost-02-14",
 		"keys": [
-			
+			"painting"
 		]
 	},
 	{
 		"name": "Правило Миранды",
 		"description": "https://telegra.ph/Pravilo-Mirandy-02-15",
 		"keys": [
-			
+			"paradox"
 		]
 	},
 	{
 		"name": "Дамасская сталь",
 		"description": "https://telegra.ph/Damasskaya-stal-02-16",
 		"keys": [
-			"history"
+			"history",
+			"inventions"
 		]
 	},
 	{
 		"name": "Дарвин, Чарльз Роберт",
 		"description": "https://telegra.ph/Darvin-CHarlz-Robert-02-16",
 		"keys": [
-			
+			"personalities"
 		]
 	},
 	{
@@ -2240,35 +2314,36 @@
 		"name": "Дельфийский оракул",
 		"description": "https://telegra.ph/Delfijskij-orakul-02-16",
 		"keys": [
-			
+			"myth"
 		]
 	},
 	{
 		"name": "Демосфен",
 		"description": "https://telegra.ph/Demosfen-02-16",
 		"keys": [
-			"history"
+			"history",
+			"personalities"
 		]
 	},
 	{
 		"name": "Дефенестрация",
 		"description": "https://telegra.ph/Defenestraciya-02-16",
 		"keys": [
-			
+			"language"
 		]
 	},
 	{
 		"name": "Дюрер, Альбрехт",
 		"description": "https://telegra.ph/Dyurer-Albreht-02-19",
 		"keys": [
-			
+			"painting"
 		]
 	},
 	{
 		"name": "Дыхание Чейна — Стокса",
 		"description": "https://telegra.ph/Dyhanie-CHejna--Stoksa-02-19",
 		"keys": [
-			
+			"biology"
 		]
 	},
 	{
@@ -2282,7 +2357,7 @@
 		"name": "Доля ангелов",
 		"description": "https://telegra.ph/Dolya-angelov-02-19",
 		"keys": [
-			
+			"biology"
 		]
 	},
 	{
@@ -2296,14 +2371,15 @@
 		"name": "Джеронимо",
 		"description": "https://telegra.ph/Dzheronimo-02-19",
 		"keys": [
-			
+			"personalities"
 		]
 	},
 	{
 		"name": "Дженнер, Эдвард",
 		"description": "https://telegra.ph/Dzhenner-EHdvard-02-19",
 		"keys": [
-			
+			"history",
+			"personalities"
 		]
 	},
 	{
@@ -2317,28 +2393,28 @@
 		"name": "День сурка",
 		"description": "https://telegra.ph/Den-surka-02-19",
 		"keys": [
-			"film"
+			"cinema"
 		]
 	},
 	{
 		"name": "Ё (буква)",
 		"description": "https://telegra.ph/YO-bukva-02-19",
 		"keys": [
-			
+			"language"
 		]
 	},
 	{
 		"name": "Омела",
 		"description": "https://telegra.ph/Omela-02-19",
 		"keys": [
-			
+			"myth"
 		]
 	},
 	{
 		"name": "Они убили Кенни",
 		"description": "https://telegra.ph/Oni-ubili-Kenni-02-19",
 		"keys": [
-			
+			"cinema"
 		]
 	},
 	{
@@ -2359,28 +2435,28 @@
 		"name": "Навахо",
 		"description": "https://telegra.ph/Navaho-02-19",
 		"keys": [
-			
+			"history"
 		]
 	},
 	{
 		"name": "Нансен, Фритьоф",
 		"description": "https://telegra.ph/Nansen-Fritof-02-19",
 		"keys": [
-			
+			"personalities"
 		]
 	},
 	{
 		"name": "Наска",
 		"description": "https://telegra.ph/Naska-02-19",
 		"keys": [
-			
+			"geography"
 		]
 	},
 	{
 		"name": "Невидимая рука рынка",
 		"description": "https://telegra.ph/Nevidimaya-ruka-rynka-02-19",
 		"keys": [
-			
+			"economics"
 		]
 	},
 	{
@@ -2401,7 +2477,7 @@
 		"name": "Новые горизонты",
 		"description": "https://telegra.ph/Novye-gorizonty-02-19",
 		"keys": [
-			
+			"space"
 		]
 	},
 	{
@@ -2415,7 +2491,8 @@
 		"name": "Ньютон, Исаак",
 		"description": "https://telegra.ph/Nyuton-Isaak-02-19",
 		"keys": [
-			"math"
+			"math",
+			"personalities"
 		]
 	},
 	{
@@ -2450,14 +2527,14 @@
 		"name": "«Оксфорд — Кембридж»",
 		"description": "https://telegra.ph/Oksford--Kembridzh-02-19",
 		"keys": [
-			
+			"sport"
 		]
 	},
 	{
 		"name": "Оксфордская запятая",
 		"description": "https://telegra.ph/Oksfordskaya-zapyataya-02-19",
 		"keys": [
-			
+			"language"
 		]
 	},
 	{
@@ -2492,42 +2569,43 @@
 		"name": "Ибаррури, Долорес",
 		"description": "https://telegra.ph/Ibarruri-Dolores-02-19",
 		"keys": [
-			
+			"personalities"
 		]
 	},
 	{
 		"name": "Индекс Биг-Мака",
 		"description": "https://telegra.ph/Indeks-Big-Maka-02-19",
 		"keys": [
-			
+			"economics"
 		]
 	},
 	{
 		"name": "Испорченный телефон",
 		"description": "https://telegra.ph/Isporchennyj-telefon-02-19",
 		"keys": [
-			
+			"language"
 		]
 	},
 	{
 		"name": "Ирландская арфа",
 		"description": "https://telegra.ph/Irlandskaya-arfa-02-19",
 		"keys": [
-			
+			"music"
 		]
 	},
 	{
 		"name": "Ипр",
 		"description": "https://telegra.ph/Ipr-02-19",
 		"keys": [
-			
+			"history",
+			"geography"
 		]
 	},
 	{
 		"name": "Иордан",
 		"description": "https://telegra.ph/Iordan-02-19",
 		"keys": [
-			
+			"geography"
 		]
 	},
 	{
@@ -2562,14 +2640,15 @@
 		"name": "Линия Маннергейма",
 		"description": "https://telegra.ph/Liniya-Mannergejma-02-21",
 		"keys": [
-			
+			"history"
 		]
 	},
 	{
 		"name": "Линдберг, Чарльз",
 		"description": "https://telegra.ph/Lindberg-CHarlz-02-21",
 		"keys": [
-			
+			"history",
+			"personalities"
 		]
 	},
 	{
@@ -2600,42 +2679,42 @@
 		"name": "Луддиты",
 		"description": "https://telegra.ph/Luddity-02-21",
 		"keys": [
-			
+			"history"
 		]
 	},
 	{
 		"name": "Лондонский глаз",
 		"description": "https://telegra.ph/Londonskij-glaz-02-21",
 		"keys": [
-			
+			"geography"
 		]
 	},
 	{
 		"name": "Лихтенштейн",
 		"description": "https://telegra.ph/Lihtenshtejn-02-21",
 		"keys": [
-			
+			"geography"
 		]
 	},
 	{
 		"name": "Задача коммивояжёра",
 		"description": "https://telegra.ph/Zadacha-kommivoyazhyora-02-21",
 		"keys": [
-			
+			"math"
 		]
 	},
 	{
 		"name": "Задача трёх тел",
 		"description": "https://telegra.ph/Zadacha-tryoh-tel-02-21",
 		"keys": [
-			
+			"space"
 		]
 	},
 	{
 		"name": "Закон о трех колосках",
 		"description": "https://telegra.ph/Zakon-o-treh-koloskah-02-21",
 		"keys": [
-			
+			"history"
 		]
 	},
 	{
@@ -2649,28 +2728,29 @@
 		"name": "Звягинцев, Андрей",
 		"description": "https://telegra.ph/Zvyagincev-Andrej-02-21",
 		"keys": [
-			
+			"personalities"
 		]
 	},
 	{
 		"name": "Зелёная книга",
 		"description": "https://telegra.ph/Zelyonaya-kniga-02-21",
 		"keys": [
-			"film"
+			"cinema"
 		]
 	},
 	{
 		"name": "Зелинский, Николай",
 		"description": "https://telegra.ph/Zelinskij-Nikolaj-02-21",
 		"keys": [
-			"history"
+			"history",
+			"personalities"
 		]
 	},
 	{
 		"name": "Земля Санникова",
 		"description": "https://telegra.ph/Zemlya-Sannikova-02-21",
 		"keys": [
-			
+			"geography"
 		]
 	},
 	{
@@ -2691,7 +2771,7 @@
 		"name": "Золотые ворота (мост)",
 		"description": "https://telegra.ph/Zolotye-vorota-most-02-21",
 		"keys": [
-			
+			"geography"
 		]
 	},
 	{
@@ -2705,14 +2785,15 @@
 		"name": "Зорге, Рихард",
 		"description": "https://telegra.ph/Zorge-Rihard-02-21",
 		"keys": [
-			
+			"history",
+			"personalities"
 		]
 	},
 	{
 		"name": "Зубная фея",
 		"description": "https://telegra.ph/Zubnaya-feya-02-21-2",
 		"keys": [
-			
+			"myth"
 		]
 	},
 	{
@@ -2726,49 +2807,49 @@
 		"name": "Малые голландцы",
 		"description": "https://telegra.ph/Malye-gollandcy-02-21",
 		"keys": [
-			
+			"painting"
 		]
 	},
 	{
 		"name": "Манускрипт Войнича",
 		"description": "https://telegra.ph/Manuskript-Vojnicha-02-21",
 		"keys": [
-			
+			"language"
 		]
 	},
 	{
 		"name": "Мафусаил",
 		"description": "https://telegra.ph/Mafusail-02-21",
 		"keys": [
-			
+			"myth"
 		]
 	},
 	{
 		"name": "Маятник Фуко",
 		"description": "https://telegra.ph/Mayatnik-Fuko-02-21",
 		"keys": [
-			
+			"phys"
 		]
 	},
 	{
 		"name": "Марсо, Марсель",
 		"description": "https://telegra.ph/Marso-Marsel-02-21",
 		"keys": [
-			
+			"personalities"
 		]
 	},
 	{
 		"name": "Магдебург",
 		"description": "https://telegra.ph/Magdeburg-02-21",
 		"keys": [
-			
+			"history"
 		]
 	},
 	{
 		"name": "Мэри Сью",
 		"description": "https://telegra.ph/Mehri-Syu-02-21",
 		"keys": [
-			"film"
+			"cinema"
 		]
 	},
 	{
@@ -2796,28 +2877,28 @@
 		"name": "Месснер, Райнхольд",
 		"description": "https://telegra.ph/Messner-Rajnhold-02-21",
 		"keys": [
-			
+			"personalities"
 		]
 	},
 	{
 		"name": "Метод Монте-Карло",
 		"description": "https://telegra.ph/Metod-Monte-Karlo-02-21",
 		"keys": [
-			
+			"math"
 		]
 	},
 	{
 		"name": "Моряк Попай",
 		"description": "https://telegra.ph/Moryak-Popaj-02-21",
 		"keys": [
-			
+			"cinema"
 		]
 	},
 	{
 		"name": "Монмартр",
 		"description": "https://telegra.ph/Monmartr-02-21",
 		"keys": [
-			
+			"geography"
 		]
 	},
 	{
@@ -2831,21 +2912,21 @@
 		"name": "Мона Лиза Джоконда",
 		"description": "https://telegra.ph/Mona-Liza-Dzhokonda-02-21",
 		"keys": [
-			"paint"
+			"painting"
 		]
 	},
 	{
 		"name": "Мой сосед Тоторо",
 		"description": "https://telegra.ph/Moj-sosed-Totoro-02-21",
 		"keys": [
-			"film"
+			"cinema"
 		]
 	},
 	{
 		"name": "Миф о пещере",
 		"description": "https://telegra.ph/Mif-o-peshchere-02-21",
 		"keys": [
-			
+			"philosophy"
 		]
 	},
 	{
@@ -2873,7 +2954,8 @@
 		"name": "Митридат VI Евпатор",
 		"description": "https://telegra.ph/Mitridat-VI-Evpator-02-21",
 		"keys": [
-			"history"
+			"history",
+			"personalities"
 		]
 	},
 	{
@@ -2887,70 +2969,71 @@
 		"name": "Кювье, Жорж",
 		"description": "https://telegra.ph/Kyuve-ZHorzh-02-21",
 		"keys": [
-			
+			"biology"
 		]
 	},
 	{
 		"name": "Кэдди",
 		"description": "https://telegra.ph/Kehddi-02-21",
 		"keys": [
-			
+			"sport"
 		]
 	},
 	{
 		"name": "Культ карго",
 		"description": "https://telegra.ph/Kult-kargo-02-21",
 		"keys": [
-			"history"
+			"history",
+			"psycho"
 		]
 	},
 	{
 		"name": "Куант, Мэри",
 		"description": "https://telegra.ph/Kuant-Mehri-02-21",
 		"keys": [
-			
+			"personalities"
 		]
 	},
 	{
 		"name": "Кулидж, Кассиус",
 		"description": "https://telegra.ph/Kulidzh-Kassius-02-21",
 		"keys": [
-			
+			"personalities"
 		]
 	},
 	{
 		"name": "Круги на полях",
 		"description": "https://telegra.ph/Krugi-na-polyah-02-21",
 		"keys": [
-			
+			"myth"
 		]
 	},
 	{
 		"name": "Кровь, пот и слёзы",
 		"description": "https://telegra.ph/Krov-pot-i-slyozy-02-21",
 		"keys": [
-			
+			"history"
 		]
 	},
 	{
 		"name": "Кринолин",
 		"description": "https://telegra.ph/Krinolin-02-21",
 		"keys": [
-			
+			"inventions"
 		]
 	},
 	{
 		"name": "Криптон",
 		"description": "https://telegra.ph/Kripton-02-21",
 		"keys": [
-			
+			"biology"
 		]
 	},
 	{
 		"name": "Камикадзе",
 		"description": "https://telegra.ph/Kamikadze-02-22",
 		"keys": [
-			
+			"history"
 		]
 	},
 	{
@@ -2964,14 +3047,15 @@
 		"name": "Камень, Ножницы, Бумага",
 		"description": "https://telegra.ph/Kamen-Nozhnicy-Bumaga-02-22",
 		"keys": [
-			
+			"sport"
 		]
 	},
 	{
 		"name": "Камера обскура",
 		"description": "https://telegra.ph/Kamera-obskura-02-22",
 		"keys": [
-			"literature"
+			"literature",
+			"inventions"
 		]
 	},
 	{
@@ -2985,49 +3069,50 @@
 		"name": "Караян, Герберт фон",
 		"description": "https://telegra.ph/Karayan-Gerbert-fon-02-22",
 		"keys": [
-			
+			"music"
 		]
 	},
 	{
 		"name": "Касабланка",
 		"description": "https://telegra.ph/Kasablanka-02-22",
 		"keys": [
-			
+			"cinema"
 		]
 	},
 	{
 		"name": "“Качели” Фрагонара",
 		"description": "https://telegra.ph/Kacheli-Fragonara-02-22",
 		"keys": [
-			
+			"painting"
 		]
 	},
 	{
 		"name": "Квадратура круга",
 		"description": "https://telegra.ph/Kvadratura-kruga-02-22",
 		"keys": [
-			
+			"math"
 		]
 	},
 	{
 		"name": "Кеворкян, Джек",
 		"description": "https://telegra.ph/Kevorkyan-Dzhek-02-22",
 		"keys": [
-			
+			"personalities"
 		]
 	},
 	{
 		"name": "Кембрийский взрыв",
 		"description": "https://telegra.ph/Kembrijskij-vzryv-02-22",
 		"keys": [
-			
+			"history",
+			"biology"
 		]
 	},
 	{
 		"name": "Кипу",
 		"description": "https://telegra.ph/Kipu-02-22",
 		"keys": [
-			
+			"inventions"
 		]
 	},
 	{
@@ -3041,14 +3126,14 @@
 		"name": "Крик Вильгельма",
 		"description": "https://telegra.ph/Krik-Vilgelma-02-22",
 		"keys": [
-			"film"
+			"cinema"
 		]
 	},
 	{
 		"name": "Крик",
 		"description": "https://telegra.ph/Krik-02-22",
 		"keys": [
-			
+			"painting"
 		]
 	},
 	{
@@ -3062,35 +3147,37 @@
 		"name": "Красный гид Мишлен",
 		"description": "https://telegra.ph/Krasnyj-gid-Mishlen-02-22",
 		"keys": [
-			
+			"painting"
 		]
 	},
 	{
 		"name": "Котурны",
 		"description": "https://telegra.ph/Koturny-02-22",
 		"keys": [
-			
+			"painting"
 		]
 	},
 	{
 		"name": "Кот Шрёдингера",
 		"description": "https://telegra.ph/Kot-SHryodingera-02-22",
 		"keys": [
-			"phys"
+			"phys",
+			"paradox"
 		]
 	},
 	{
 		"name": "Кот д'Ивуар",
 		"description": "https://telegra.ph/Kot-dIvuar-02-22",
 		"keys": [
-			
+			"geography"
 		]
 	},
 	{
 		"name": "Корабль Тесея",
 		"description": "https://telegra.ph/Korabl-Teseya-02-22",
 		"keys": [
-			"philosophy"
+			"philosophy",
+			"paradox"
 		]
 	},
 	{
@@ -3104,7 +3191,7 @@
 		"name": "Клакёр",
 		"description": "https://telegra.ph/Klakyor-02-22",
 		"keys": [
-			
+			"painting"
 		]
 	},
 	{
@@ -3118,14 +3205,15 @@
 		"name": "Клуб Григория Федотова",
 		"description": "https://telegra.ph/Klub-Grigoriya-Fedotova-02-23",
 		"keys": [
-			
+			"sport"
 		]
 	},
 	{
 		"name": "Кнорозов, Юрий Валентинович",
 		"description": "https://telegra.ph/Knorozov-YUrij-Valentinovich-02-23",
 		"keys": [
-			
+			"language",
+			"personalities"
 		]
 	},
 	{
@@ -3140,21 +3228,22 @@
 		"name": "Колибри",
 		"description": "https://telegra.ph/Kolibri-02-23",
 		"keys": [
-			
+			"biology"
 		]
 	},
 	{
 		"name": "Колумбово яйцо",
 		"description": "https://telegra.ph/Kolumbovo-yajco-02-23",
 		"keys": [
-			
+			"language",
+			"paradox"
 		]
 	},
 	{
 		"name": "Колыбель Ньютона",
 		"description": "https://telegra.ph/Kolybel-Nyutona-02-23",
 		"keys": [
-			
+			"phys"
 		]
 	},
 	{
@@ -3168,42 +3257,44 @@
 		"name": "Ab ovo",
 		"description": "https://telegra.ph/Ab-ovo-02-23",
 		"keys": [
-			
+			"language"
 		]
 	},
 	{
 		"name": "A.C.A.B.",
 		"description": "https://telegra.ph/ACAB-02-23",
 		"keys": [
-			
+			"language"
 		]
 	},
 	{
 		"name": "Ford Model T",
 		"description": "https://telegra.ph/Ford-Model-T-02-23",
 		"keys": [
-			
+			"inventions"
 		]
 	},
 	{
 		"name": "I'll be back",
 		"description": "https://telegra.ph/Ill-be-back-02-23",
 		"keys": [
-			"film"
+			"cinema",
+			"language"
 		]
 	},
 	{
 		"name": "Kinder, Küche, Kirche, (Kleider)",
 		"description": "https://telegra.ph/Kinder-K%C3%BCche-Kirche-Kleider-02-23",
 		"keys": [
-			"history"
+			"history",
+			"language"
 		]
 	},
 	{
 		"name": "«Something Old, Something New, Something Borrowed, Something Blue»",
 		"description": "https://telegra.ph/Something-Old-Something-New-Something-Borrowed-Something-Blue-02-23",
 		"keys": [
-			
+			"language"
 		]
 	},
 	{
@@ -3224,7 +3315,8 @@
 		"name": "Шакал, Карлос",
 		"description": "https://telegra.ph/SHakal-Karlos-02-23",
 		"keys": [
-			
+			"history",
+			"personalities"
 		]
 	},
 	{
@@ -3238,7 +3330,8 @@
 		"name": "15 минут славы",
 		"description": "https://telegra.ph/15-minut-slavy-02-23",
 		"keys": [
-			"quote"
+			"language",
+			"paradox"
 		]
 	},
 	{
@@ -3259,7 +3352,8 @@
 		"name": "Эффект «зловещей долины»",
 		"description": "https://telegra.ph/EHffekt-zloveshchej-doliny-12-25",
 		"keys": [
-			"psycho"
+			"psycho",
+			"paradox"
 		]
 	},
 	{
@@ -3273,42 +3367,46 @@
 		"name": "Клепсидра",
 		"description": "Водяны́е часы́, клепси́дра — известный со времён ассиро-вавилонян и древнего Египта прибор для измерения промежутков времени в виде цилиндрического сосуда с вытекающей струёй воды. Был в употреблении до XVII века.\n\nПромежуток времени измерялся количеством воды, вытекавшей капля за каплей из малого отверстия, сделанного на дне сосуда. Таковы были водяные часы египтян, вавилонян, древних греков.\n\nУ китайцев, индусов и некоторых других народов Азии, наоборот, — пустой полушаровидный сосуд плавал в большом бассейне и мало-помалу наполнялся водой через малое отверстие (героиня поэмы бросает жемчужину в чашу, чтобы замедлить движение воды).",
 		"keys": [
-			
+			"inventions"
 		]
 	},
 	{
 		"name": "Павлов, Иван Петрович",
 		"description": "https://telegra.ph/Pavlov-Ivan-Petrovich-02-23",
 		"keys": [
-			
+			"biology"
 		]
 	},
 	{
 		"name": "Павлова, Анна Павловна",
 		"description": "https://telegra.ph/Pavlova-Anna-Pavlovna-02-23",
 		"keys": [
-			
+			"painting",
+			"personalities"
 		]
 	},
 	{
 		"name": "Палах, Ян",
 		"description": "https://telegra.ph/Palah-YAn-02-23",
 		"keys": [
-			
+			"history",
+			"personalities"
 		]
 	},
 	{
 		"name": "Палимпсест",
 		"description": "https://telegra.ph/Palimpsest-02-23",
 		"keys": [
-			
+			"history",
+			"language"
 		]
 	},
 	{
 		"name": "Папесса Иоанна",
 		"description": "https://telegra.ph/Papessa-Ioanna-02-23",
 		"keys": [
-			"religion"
+			"religion",
+			"history"
 		]
 	},
 	{
@@ -3329,35 +3427,37 @@
 		"name": "Пауэрс, Фрэнсис Гэри",
 		"description": "https://telegra.ph/Pauehrs-Frehnsis-Gehri-02-23",
 		"keys": [
-			
+			"history",
+			"personalities"
 		]
 	},
 	{
 		"name": "Певец джаза",
 		"description": "https://telegra.ph/Pevec-dzhaza-02-23",
 		"keys": [
-			
+			"cinema"
 		]
 	},
 	{
 		"name": "Пети, Филипп",
 		"description": "https://telegra.ph/Peti-Filipp-02-23",
 		"keys": [
-			
+			"sport",
+			"personalities"
 		]
 	},
 	{
 		"name": "Петя и Волк",
 		"description": "https://telegra.ph/Petya-i-Volk-02-23",
 		"keys": [
-			
+			"music"
 		]
 	},
 	{
 		"name": "Пилтдаунский человек",
 		"description": "https://telegra.ph/Piltdaunskij-chelovek-02-23",
 		"keys": [
-			
+			"history"
 		]
 	},
 	{
@@ -3371,28 +3471,30 @@
 		"name": "Пиросмани, Нико",
 		"description": "https://telegra.ph/Pirosmani-Niko-02-23",
 		"keys": [
-			"music"
+			"music",
+			"personalities"
 		]
 	},
 	{
 		"name": "Писающий мальчик",
 		"description": "https://telegra.ph/Pisayushchij-malchik-02-23",
 		"keys": [
-			
+			"painting"
 		]
 	},
 	{
 		"name": "Плавильный котёл",
 		"description": "https://telegra.ph/Plavilnyj-kotyol-02-23",
 		"keys": [
-			
+			"economics"
 		]
 	},
 	{
 		"name": "Плат, Сильвия",
 		"description": "https://telegra.ph/Plat-Silviya-02-23",
 		"keys": [
-			"literature"	
+			"literature",
+			"personalities"	
 		]
 	},
 	{
@@ -3434,7 +3536,7 @@
 		"name": "Чудеса света",
 		"description": "https://telegra.ph/CHudesa-sveta-02-23",
 		"keys": [
-			
+			"geography"
 		]
 	},
 	{
@@ -3448,7 +3550,7 @@
 		"name": "Пляска смерти",
 		"description": "https://telegra.ph/Plyaska-smerti-02-23",
 		"keys": [
-			
+			"painting"
 		]
 	},
 	{
@@ -3469,14 +3571,14 @@
 		"name": "Поехали",
 		"description": "https://telegra.ph/Poehali-02-23",
 		"keys": [
-			
+			"language"
 		]
 	},
 	{
 		"name": "«Политый поливальщик»",
 		"description": "https://telegra.ph/Polityj-polivalshchik-02-23",
 		"keys": [
-			"film"
+			"cinema"
 		]
 	},
 	{
@@ -3490,21 +3592,21 @@
 		"name": "После нас хоть потоп",
 		"description": "https://telegra.ph/Posle-nas-hot-potop-02-23",
 		"keys": [
-			"quote"
+			"language"
 		]
 	},
 	{
 		"name": "Последнее танго в Париже",
 		"description": "https://telegra.ph/Poslednee-tango-v-Parizhe-02-23",
 		"keys": [
-			"film"
+			"cinema"
 		]
 	},
 	{
 		"name": "Потлач",
 		"description": "https://telegra.ph/Potlach-02-23",
 		"keys": [
-			
+			"history"
 		]
 	},
 	{
@@ -3532,7 +3634,8 @@
 		"name": "Предложение, от которого невозможно отказаться",
 		"description": "https://telegra.ph/Predlozhenie-ot-kotorogo-nevozmozhno-otkazatsya-02-23-2",
 		"keys": [
-			"film"
+			"cinema",
+			"language"
 		]
 	},
 	{
@@ -3546,7 +3649,8 @@
 		"name": "Принцип домино",
 		"description": "https://telegra.ph/Princip-domino-02-23",
 		"keys": [
-			
+			"economics",
+			"paradox"
 		]
 	},
 	{
@@ -3560,28 +3664,31 @@
 		"name": "Принцип Паули",
 		"description": "https://telegra.ph/Princip-Pauli-02-23",
 		"keys": [
-			
+			"phys"
 		]
 	},
 	{
 		"name": "Принцип, Гаврило",
 		"description": "https://telegra.ph/Princip-Gavrilo-02-23",
 		"keys": [
-			"history"
+			"history",
+			"personalities"
 		]
 	},
 	{
 		"name": "Проклятие девятой симфонии",
 		"description": "https://telegra.ph/Proklyatie-devyatoj-simfonii-02-23",
 		"keys": [
-			
+			"music",
+			"myth"
 		]
 	},
 	{
 		"name": "Прокудин - Горский, Сергей Михайлович",
 		"description": "https://telegra.ph/Prokudin---Gorskij-Sergej-Mihajlovich-02-23",
 		"keys": [
-			
+			"inventions",
+			"personalities"
 		]
 	},
 	{
@@ -3596,7 +3703,7 @@
 		"description": "https://telegra.ph/Pust-edyat-pirozhnye-02-23-2",
 		"keys": [
 			"history",
-			"quote"
+			"language"
 		]
 	},
 	{
@@ -3610,14 +3717,15 @@
 		"name": "Путёвка в жизнь",
 		"description": "https://telegra.ph/Putyovka-v-zhizn-02-24",
 		"keys": [
-			
+			"cinema"
 		]
 	},
 	{
 		"name": "Пушкин, Александр Сергеевич",
 		"description": "https://telegra.ph/Pushkin-Aleksandr-Sergeevich-02-24",
 		"keys": [
-			"literature"
+			"literature",
+			"personalities"
 		]
 	},
 	{
@@ -3631,7 +3739,8 @@
 		"name": "Гарринча",
 		"description": " Мануэ́л (Манэ́) Франси́ску дус Са́нтус (более изв. по прозвищу Гарринча) - бразильский футболист, двукратный чемпион мира (1958 и 1962), правый нападающий, считается лучшим правым крайним нападающим в истории футбола. В Бразилии Гарринча считается вторым игроком в истории национального футбола после Пеле.\n\nИзвестен под прозвищами «Кривоногий ангел» и «Радость народа». Он был признан лучшим игроком чемпионата мира 1962 года и славился своей уникальной дриблинговой техникой, несмотря на врожденную асимметрию ног: одна была короче другой на 6 см.",
 		"keys": [
-			"sport"
+			"sport",
+			"personalities"
 		]
 	},
 	{
@@ -3653,7 +3762,8 @@
 		"description": "https://telegra.ph/Klark-Artur-02-24",
 		"keys": [
 			"literature",
-			"space"
+			"space",
+			"personalities"
 		]
 	},
 	{
@@ -3667,7 +3777,8 @@
 		"name": "За́хер-Ма́зох, Леопольд",
 		"description": "https://telegra.ph/Zaher-Mazoh-Leopold-02-27",
 		"keys": [
-			"literature"
+			"literature",
+			"personalities"
 		]
 	},
 	{
@@ -3688,14 +3799,17 @@
 		"name": "Кант, Иммануил",
 		"description": "https://telegra.ph/Kant-Immanuil-03-12",
 		"keys": [
-			"quote"
+			"language",
+			"philosophy",
+			"personalities"
 		]
 	},
 	{
 		"name": "Арчимбольдо, Джузеппе",
 		"description": "https://telegra.ph/Archimboldo-Dzhuzeppe-03-12",
 		"keys": [
-			"paint"
+			"painting",
+			"personalities"
 		]
 	},
 	{
@@ -3709,21 +3823,22 @@
 		"name": "Плиний старший",
 		"description": "https://telegra.ph/Plinij-starshij-03-12",
 		"keys": [
-			"history"
+			"history",
+			"personalities"
 		]
 	},
 	{
 		"name": "Закрой глаза и думай об Англии",
 		"description": "https://telegra.ph/Zakroj-glaza-i-dumaj-ob-Anglii-03-21",
 		"keys": [
-			"quote"
+			"language"
 		]
 	},
 	{
 		"name": "Где Уолли?",
 		"description": "https://telegra.ph/Gde-Uolli-03-21",
 		"keys": [
-			
+			"painting"
 		]
 	},
 	{
@@ -3737,28 +3852,30 @@
 		"name": "«Носорог» Дюрера",
 		"description": "https://telegra.ph/Nosorog-Dyurera-03-23",
 		"keys": [
-			"paint"
+			"painting"
 		]
 	},
 	{
 		"name": "Малкольм Икс",
 		"description": "https://telegra.ph/Malkolm-Iks-03-27",
 		"keys": [
-			
+			"history",
+			"personalities"
 		]
 	},
 	{
 		"name": "Филадельфийский эксперимент",
 		"description": "https://telegra.ph/Filadelfijskij-ehksperiment-03-29",
 		"keys": [
-			
+			"myth"
 		]
 	},
 	{
 		"name": "Кэмпбелл, Джозеф",
 		"description": "https://telegra.ph/Kehmpbell-Dzhozef-03-29",
 		"keys": [
-			"literature"
+			"literature",
+			"personalities"
 		]
 	},
 	{
@@ -3772,21 +3889,22 @@
 		"name": "Проклятие девятой симфонии",
 		"description": "https://telegra.ph/Proklyatie-devyatoj-simfonii-04-05",
 		"keys": [
-			
+			"music",
+			"myth"
 		]
 	},
 	{
 		"name": "Леди Годива",
 		"description": "https://telegra.ph/Ledi-Godiva-04-05",
 		"keys": [
-			
+			"myth"
 		]
 	},
 	{
 		"name": "Колокол Свободы",
 		"description": "https://telegra.ph/Kolokol-Svobody-04-05",
 		"keys": [
-			
+			"history"
 		]
 	},
 	{
@@ -3800,14 +3918,15 @@
 		"name": "Жугдэрдэмидийн Гуррагча",
 		"description": "https://telegra.ph/ZHugdehrdehmidijn-Gurragcha-04-05",
 		"keys": [
-			
+			"space",
+			"personalities"
 		]
 	},
 	{
 		"name": "Аксолотль",
 		"description": "https://telegra.ph/Aksolotl-04-05",
 		"keys": [
-			
+			"biology"
 		]
 	},
 	{
@@ -3821,14 +3940,14 @@
 		"name": "Бульвар Сансет",
 		"description": "https://telegra.ph/Bulvar-Sanset-05-10",
 		"keys": [
-			
+			"cinema"
 		]
 	},
 	{
 		"name": "Синкансэн",
 		"description": "https://telegra.ph/Sinkansehn-05-10",
 		"keys": [
-			
+			"inventions"
 		]
 	},
 	{
@@ -3850,7 +3969,7 @@
 		"name": "Мир Кристины",
 		"description": "https://telegra.ph/Mir-Kristiny-05-10",
 		"keys": [
-			"paint"
+			"painting"
 		]
 	},
 	{
@@ -3864,21 +3983,21 @@
 		"name": "Меандр",
 		"description": "https://telegra.ph/Meandr-05-13",
 		"keys": [
-			
+			"geography"
 		]
 	},
 	{
 		"name": "Мариэ Кондо",
 		"description": "https://telegra.ph/Marieh-Kondo-05-13",
 		"keys": [
-			
+			"personalities"
 		]
 	},
 	{
-		"name": "Джиро д’Италия",
+		"name": "Джиро д'Италия",
 		"description": "https://telegra.ph/Dzhiro-dItaliya-05-13",
 		"keys": [
-			
+			"sport"
 		]
 	},
 	{
@@ -3892,42 +4011,44 @@
 		"name": "Шибболет",
 		"description": "https://telegra.ph/SHibbolet-05-13",
 		"keys": [
-			
+			"language"
 		]
 	},
 	{
 		"name": "Проблема вагонетки",
 		"description": "https://telegra.ph/Problema-vagonetki-05-13",
 		"keys": [
-			"psycho"
+			"psycho",
+			"philosophy"
 		]
 	},
 	{
 		"name": "Чесли Салленбергер",
 		"description": "https://telegra.ph/CHesli-Sallenberger-05-13",
 		"keys": [
-			
+			"history",
+			"personalities"
 		]
 	},
 	{
 		"name": "Десятичная классификация Дьюи",
 		"description": "https://telegra.ph/Desyatichnaya-klassifikaciya-Dyui-05-13",
 		"keys": [
-			
+			"inventions"
 		]
 	},
 	{
 		"name": "Шкала Сковилла",
 		"description": "https://telegra.ph/SHkala-Skovilla-05-15",
 		"keys": [
-			
+			"biology"
 		]
 	},
 	{
 		"name": "Теория разбитых окон",
 		"description": "https://telegra.ph/Teoriya-razbityh-okon-05-15",
 		"keys": [
-			
+			"psycho"
 		]
 	},
 	{
@@ -3955,14 +4076,15 @@
 		"name": "Белый слон Сиама",
 		"description": "https://telegra.ph/Belyj-slon-Siama-07-06",
 		"keys": [
-			"myth"
+			"myth",
+			"history"
 		]
 	},
 	{
 		"name": "Душ Шарко",
 		"description": "https://telegra.ph/Dush-SHarko-07-07",
 		"keys": [
-			
+			"biology"
 		]
 	},
 	{
@@ -3976,7 +4098,8 @@
 		"name": "Мэй Уэст",
 		"description": "https://telegra.ph/Mehj-Uehst-07-07",
 		"keys": [
-			"paint"
+			"painting",
+			"cinema"
 		]
 	},
 	{
@@ -3997,7 +4120,7 @@
 		"name": "Монтессори",
 		"description": "https://telegra.ph/Montessori-07-07-5",
 		"keys": [
-			
+			"personalities"
 		]
 	},
 	{
@@ -4005,7 +4128,7 @@
 		"description": "https://telegra.ph/Peta-07-08-3",
 		"keys": [
 			"religion",
-			"paint"
+			"painting"
 		]
 	},
 	{
@@ -4019,14 +4142,16 @@
 		"name": "Адрианов вал",
 		"description": "https://telegra.ph/Adrianov-val-07-08",
 		"keys": [
-			"history"
+			"history",
+			"geography"
 		]
 	},
 	{
 		"name": "Слеза комсомолки",
 		"description": "https://telegra.ph/Sleza-komsomolki-07-08",
 		"keys": [
-			"literature"
+			"literature",
+			"history"
 		]
 	},
 	{
@@ -4047,14 +4172,14 @@
 		"name": "Гаудеамус",
 		"description": "https://telegra.ph/Gaudeamus-07-10",
 		"keys": [
-			
+			"music"
 		]
 	},
 	{
 		"name": "Премия Дарвина",
 		"description": "https://telegra.ph/Premiya-Darvina-07-19",
 		"keys": [
-			
+			"paradox"
 		]
 	},
 	{
@@ -4068,35 +4193,35 @@
 		"name": "Коза Ностра",
 		"description": "https://telegra.ph/Koza-Nostra-07-26",
 		"keys": [
-			
+			"history"
 		]
 	},
 	{
 		"name": "Тетрамино",
 		"description": "https://telegra.ph/Tetramino-07-22",
 		"keys": [
-			
+			"math"
 		]
 	},
 	{
 		"name": "Эсперанто",
 		"description": "https://telegra.ph/EHsperanto-07-25",
 		"keys": [
-			
+			"language"
 		]
 	},
 	{
 		"name": "Metro-Goldwyn-Mayer",
 		"description": "https://telegra.ph/Metro-Goldwyn-Mayer-07-26",
 		"keys": [
-			"film"
+			"cinema"
 		]
 	},
 	{
 		"name": "Автомат Кемпелена",
 		"description": "https://telegra.ph/Avtomat-Kempelena-07-26",
 		"keys": [
-			
+			"inventions"
 		]
 	},
 	{
@@ -4110,21 +4235,21 @@
 		"name": "Ротко, Марк",
 		"description": "https://telegra.ph/Rotko-Mark-07-27",
 		"keys": [
-			"paint"
+			"painting"
 		]
 	},
 	{
 		"name": "Алькатрас",
 		"description": "https://telegra.ph/Alkatras-07-29",
 		"keys": [
-			
+			"geography"
 		]
 	},
 	{
 		"name": "Колумбийский галстук",
 		"description": "https://telegra.ph/Kolumbijskij-galstuk-07-31",
 		"keys": [
-			
+			"history"
 		]
 	},
 	{
@@ -4138,14 +4263,16 @@
 		"name": "Банановая республика",
 		"description": "https://telegra.ph/Bananovaya-respublika-07-31",
 		"keys": [
-			"geography"
+			"geography",
+			"economics"
 		]
 	},
 	{
 		"name": "Катастрофа шаттла «Челленджер»",
 		"description": "https://telegra.ph/Katastrofa-shattla-CHellendzher-07-31",
 		"keys": [
-			"space"
+			"space",
+			"history"
 		]
 	},
 	{
@@ -4159,21 +4286,21 @@
 		"name": "Ваканда, вибраниум",
 		"description": "https://telegra.ph/Vakanda-vibranium-08-02",
 		"keys": [
-			
+			"cinema"
 		]
 	},
 	{
 		"name": "Кольцо нибелунга",
 		"description": "https://telegra.ph/Kolco-nibelunga-08-03",
 		"keys": [
-			
+			"music"
 		]
 	},
 	{
 		"name": "Уотергейтский скандал",
 		"description": "https://telegra.ph/Uotergejtskij-skandal-08-08",
 		"keys": [
-			
+			"economics"
 		]
 	},
 	{
@@ -4188,56 +4315,60 @@
 		"name": "Меркатор, Герард",
 		"description": "https://telegra.ph/Merkator-Gerard-08-09",
 		"keys": [
-			
+			"geography",
+			"personalities"
 		]
 	},
 	{
 		"name": "Доллары",
 		"description": "https://telegra.ph/Dollary-08-09",
 		"keys": [
-			
+			"economics"
 		]
 	},
 	{
 		"name": "Доктор Ноу",
 		"description": "https://telegra.ph/Doktor-Nou-08-11",
 		"keys": [
-			
+			"cinema"
 		]
 	},
 	{
 		"name": "Марсель Дюшан",
 		"description": "https://telegra.ph/Marsel-Dyushan-08-20",
 		"keys": [
-			
+			"painting",
+			"personalities"
 		]
 	},
 	{
 		"name": "Ксантиппа",
 		"description": "https://telegra.ph/Ksantippa-08-20",
 		"keys": [
-			
+			"personalities"
 		]
 	},
 	{
 		"name": "Сатоси Накамото",
 		"description": "https://telegra.ph/Satosi-Nakamoto-08-27",
 		"keys": [
-			
+			"inventions",
+			"personalities"
 		]
 	},
 	{
 		"name": "Туннельный синдром",
 		"description": "https://telegra.ph/Tunnelnyj-sindrom-08-29",
 		"keys": [
-			
+			"biology"
 		]
 	},
 	{
 		"name": "Дурова, Надежда",
 		"description": "https://telegra.ph/Durova-Nadezhda-09-22",
 		"keys": [
-			"history"
+			"history",
+			"personalities"
 		]
 	},
 	{
@@ -4248,54 +4379,55 @@
 		]
 	},
 	{
-		"name": "Мицар и Алькор",
+		"name": "Мицар и Алькор",
 		"description": "https://telegra.ph/Micar-i-Alkor-10-01",
 		"keys": [
-			
+			"space"
 		]
 	},
 	{
 		"name": "Голдберг, Руб",
 		"description": "https://telegra.ph/Goldberg-Rub-10-03",
 		"keys": [
-			
+			"personalities"
 		]
 	},
 	{
 		"name": "Габсбургская губа",
 		"description": "https://telegra.ph/Gabsburgskaya-guba-10-05",
 		"keys": [
-			"history"
+			"history",
+			"biology"
 		]
 	},
 	{
 		"name": "Скрипка Энгра",
 		"description": "Фразеологизм, означающий хобби или второе призвание человека, которое он практикует с большой любовью и мастерством, не будучи его основной профессией. Он происходит от легенды о французском художнике Жан-Огюсте-Доминике Энгра, который, будучи талантливым живописцем, также профессионально играл на скрипке. Происхождение: Выражение возникло из-за увлечения художника Энгра игрой на скрипке, которой он занимался с упоением и на высоком уровне, наряду с живописью. Значение: Оно стало метафорой для обозначения любого увлечения, которое не является основным занятием человека, но которому он посвящает много времени и сил, достигая в нём большого мастерства. Другие значения: Выражение «Скрипка Энгра» также используется для обозначения одноимённой знаменитой фотографии Ман Рэя (1924), где на женское тело наложены контуры скрипки, а также короткометражного фильма 1939 года.",
-		"keys": []
+		"keys": ["painting"]
 	}
 	,
 	{
 		"name": "Кинцуги",
 		"description": "Кинцуги (яп. 金継ぎ — золотая заплатка), или кинцукурой (яп. 金繕い — золотой ремонт), — японское искусство реставрации керамических изделий с помощью лака, полученного из сока лакового дерева (уруси), смешанного с золотым, серебряным или платиновым порошком. Философская основа искусства кинцуги заключается прежде всего в том, что поломки и трещины неотъемлемы от истории объекта и поэтому не заслуживают забвения и маскировки.",
-		"keys": []
+		"keys": ["painting"]
 	}
 	,
 	{
 		"name": "Умами",
 		"description": "Ума‌ми (яп. «приятный вкус») — вкус высокобелковой пищи, выделяемый в самостоятельный, пятый вкус в Китае, Японии и других странах Дальнего Востока. Вкус умами можно примерно описать как долгоиграющий обволакивающий «мясной» или «бульонный», у слова умами нет перевода — на английском, испанском и французском это понятие также описывается словом «умами». С химической точки зрения, этот вкус — ощущение рецепторами, присутствующими на языке у людей и других животных, карбоксилатного аниона глутаминовой кислоты.\n\nПервым идентифицировал умами химик Кикунаэ Икэда (яп. 池田 菊苗 икэда кикунаэ), профессор Токийского университета, в 1908 году. Он выяснил, что глутаматы являются причиной приятного вкуса бульона из комбу. Икэда обратил внимание на то, что вкус бульона даси отличается от солёного, сладкого, кислого и горького, и назвал новый вкус умами.",
-		"keys": []
+		"keys": ["biology"]
 	}
 	,
 	{
 		"name": "Щегол (картина)",
 		"description": "Щегол» (нид. Het puttertje) — картина голландского художника Карела Фабрициуса, написанная в 1654 году. В настоящее время картина находится в собрании Маурицхёйса в Гааге, куда она попала в 1896 году. На картеине изображён черноголовый щегол (Carduelis carduelis), сидящий на кормушке и удерживаемый при помощи цепи. Внизу картины находится подпись художника и дата C fabritivs 1654.\n\nВ XVII веке щеглы были популярными домашними питомцами, поскольку их можно было дрессировать — научить набирать воду и переносить её в миниатюрном ведре. Название картины на голландском языке (нид. Het puttertje) является отсылкой к этому факту и дословно переводится как «маленький водонос».",
-		"keys": ["paint"]
+		"keys": ["painting"]
 	}
 	,
 	{
 		"name": "Атилла",
 		"description": "Аттила — вождь гуннов V века, прославившийся как завоеватель и полководец, объединивший множество племён и создавший обширное государство. Современники прозвали его «бичом Божьим» за жестокость и опустошительные походы на Римские империи, включая вторжения в Галлию (451 г.) и Северную Италию (452 г.). Легенды рассказывают о его смерти в брачную ночь после победы над Западной Римской империей.\n\nЗначимые моменты:\n\n- **Создание державы гуннов**: Объединение разнородных племён (гуннов, тюркских, германских, славянских и др.) от Рейна до Волги.\n- **Бич Божий**: Прозвище от жестоких набегов на территории Римских империй.\n- **Военные походы**: В 451 году вторгся в Галлию и потерпел поражение, в 452 году разграбил Италию, но отступил из-за чумы и встреч с папой Львом I.\n- **Смерть**: Погиб в 453 году от кровоизлияния в мозг.\n- **Наследие**: Символ завоевателя и вождя-захватчика, память о нём сохранилась в германском эпосе.",
-		"keys": ["history"]
+		"keys": ["history", "personalities"]
 	}
 	,
 	{
@@ -4305,7 +4437,7 @@
 			"Домреми: родная деревня Жанны д'Арк",
 			"Орлеанская дева: получила это прозвище за освобождение города Орлеан от осады в 1429 году, что подняло боевой дух французов"
 		],
-		"keys": ["history"]
+		"keys": ["history", "personalities"]
 	}
 	,
 	{
@@ -4323,8 +4455,34 @@
 		"description": "Мацуо Басё (1644 год, Осака, провинция Сэтцу) — японский поэт, теоретик стиха, сыгравший большую роль в становлении поэтического жанра хайку.",
 		"associations": [
 			"Прозвище: Басё (芭蕉) — литературный псевдоним, в переводе означающий «банановое дерево»",
-			"Хокку про лягушку: Cамое известное японское стихотворение:`\n\tСтарый пруд!\n\tПрыгнула лягушка.\n\tВсплеск воды..`"
+			"Хокку про лягушку: Самое известное японское стихотворение:`\n\tСтарый пруд!\n\tПрыгнула лягушка.\n\tВсплеск воды..`"
 		],
 		"keys": ["literature"]
+	}
+	,
+	{
+		"name": "Аввакум",
+		"description": "Аввакум (1620–1682) — центральная фигура русского церковного раскола XVII века, протопоп, идеолог и самый яркий лидер старообрядческого движения. Знаменит как непримиримый противник церковных реформ патриарха Никона и царя Алексея Михайловича, за что был сослан и провёл около 15 лет в земляной тюрьме в Пустозерске, где написал главные свои сочинения, и в итоге был казнён через сожжение.\n\nРеформы Никона (исправление богослужебных книг по греческим образцам, изменение обрядов, например, троеперстное крестное знамение вместо двуперстного) Аввакум и его сторонники восприняли как ересь и отступление от истинной веры. Его борьба была не только религиозной, но и социально-культурной — защитой традиционного русского уклада от «новшеств» и светской власти, вмешивающейся в духовные дела. Главный литературный памятник — его автобиографическое «Житие», которое считается одним из вершин древнерусской литературы, написанное ярким, образным, часто простонародным языком.",
+		"associations": [
+			"Ссылка",
+			"Церковный раскол и старообрядчество",
+			"Консерватизм, движение против прогресса",
+			"Двуперстное крестное знамение, два пальца",
+			"Священномученик, смерть через сожжение в срубе (сруб - самодельная изба)",
+			"Автобиографическое «Житие протопопа Аввакума»",
+			"Боярыня Морозова - сторонница Аввакума"
+		],
+		"keys": ["history", "personalities"]
+	}
+	,
+	{
+		"name": "Клипер",
+		"description": "Кли́пер (от англ. clipper — «стригущий» или нид. klipper) — парусное или парусно-паровое торговое, реже военное судно XIX и XX веков с развитым парусным вооружением и особыми, острыми, «режущими воду» (англ. clip) обводами корпуса, как правило, — трёхмачтовое судно.",
+		"associations": [
+			"Чайные гоонки: гонки кли́перов с грузом чая по торговому пути из Китая в Англию и с грузом опиума из Англии в Китай.",
+			"Гончие псы, псы океана: популярные прозвища",
+			"Катти Сарк: самый известный и единственный сохранившийся трёхмачтовый композитный парусный клипер XIX века. Был построен в 1869 году  по заказу одного из крупнейших лондонских чаеторговцев второй половины XIX века Джона («Джока») Уиллиса. «Cutty Sark» значит «Короткая рубашка». Название отсылает к прозвищу легендарной шотландской ведьмы Нэн «Короткая рубашка», которая изображена в носовой фигуре судна (полураздетая молодая женщина, держащая в руке конский хвост)"
+		],
+		"keys": ["history", "geography"]
 	}
 ]

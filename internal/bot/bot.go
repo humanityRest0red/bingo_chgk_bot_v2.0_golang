@@ -21,7 +21,7 @@ func mapArticles() map[int]models.Article {
 	}
 	result := make(map[int]models.Article, len(ArticlesSlice))
 	for i, a := range ArticlesSlice {
-		result[i] = a
+		result[i+1] = a
 	}
 
 	return result

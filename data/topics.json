@@ -1,6 +1,6 @@
 [
 	{
-		"name": "Христианство",
+		"name": "Религия",
 		"key": "religion"
 	},
 	{
@@ -9,11 +9,11 @@
 	},
 	{
 		"name": "Картины",
-		"key": "paint"
+		"key": "painting"
 	},
 	{
-		"name": "Фильмы",
-		"key": "film"
+		"name": "Кино",
+		"key": "cinema"
 	},
 	{
 		"name": "Музыка",
@@ -56,7 +56,27 @@
 		"key": "philosophy"
 	},
 	{
-		"name": "Цитаты",
-		"key": "quote"
+		"name": "Биология/химия",
+		"key": "biology"
+	},
+	{
+		"name": "Техника/Изобретения",
+		"key": "inventions"
+	},
+	{
+		"name": "Лингвистика",
+		"key": "language"
+	},
+	{
+		"name": "Экономика",
+		"key": "economics"
+	},
+	{
+		"name": "Персоналии",
+		"key": "personalities"
+	},
+	{
+		"name": "Парадоксы",
+		"key": "paradox"
 	}
 ]
