@@ -362,12 +362,9 @@ func handleCallback(bot *tgbotapi.BotAPI, update tgbotapi.Update) error {
 	}
 
 	if strings.HasPrefix(callbackData, "article:") {
-		fmt.Println(callbackData)
 		indStr := callbackData[len("article:"):]
-		fmt.Println(indStr)
-
 		ind, _ := strconv.Atoi(indStr)
-		if ind > len(ArticlesSlice) || ind < 0 {
+		if ind > len(ArticlesSlice) || ind <= 0 {
 			return nil
 		}
 		return sendArticle(bot, update.CallbackQuery.Message, ArticlesMap[ind])

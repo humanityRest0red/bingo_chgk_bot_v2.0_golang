@@ -33,7 +33,7 @@
 	},
 	{
 		"name": "Физика",
-		"key": "phys"
+		"key": "physics"
 	},
 	{
 		"name": "География",
@@ -60,7 +60,7 @@
 		"key": "biology"
 	},
 	{
-		"name": "Техника/Изобретения",
+		"name": "Изобретения",
 		"key": "inventions"
 	},
 	{
@@ -72,11 +72,11 @@
 		"key": "economics"
 	},
 	{
-		"name": "Персоналии",
+		"name": "Личности",
 		"key": "personalities"
 	},
 	{
-		"name": "Парадоксы",
-		"key": "paradox"
+		"name": "Культура",
+		"key": "Culture"
 	}
 ]
