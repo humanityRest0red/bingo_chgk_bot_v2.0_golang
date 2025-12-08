@@ -14,8 +14,9 @@ const helpText = `Команды:
 // /find {выражение} - поиск статьи по выражению`
 
 const (
-	pageChangePrefix = "changePage:"
-	topicsPrefix     = "topic:"
+	pageChangePrefix         = "changePage:"
+	alphabetPageChangePrefix = "alphchangePage:"
+	topicsPrefix             = "topic:"
 )
 
 var (
@@ -30,6 +31,22 @@ func createPageChangeCommand(pageNumber int) string {
 func extractPageNumber(callbackData string) (int, error) {
 	var pageNumber int
 	n, err := fmt.Sscanf(callbackData, "changePage:%d", &pageNumber)
+	if err != nil {
+		return 0, err
+	}
+	if n != 1 {
+		return 0, fmt.Errorf("не удалось извлечь номер страницы из: %s", callbackData)
+	}
+	return pageNumber, nil
+}
+
+func createAlphabetPageChangeCommand(pageNumber int) string {
+	return fmt.Sprintf("%s%d", alphabetPageChangePrefix, pageNumber)
+}
+
+func extractAlphabetPageNumber(callbackData string) (int, error) {
+	var pageNumber int
+	n, err := fmt.Sscanf(callbackData, "alphchangePage:%d", &pageNumber)
 	if err != nil {
 		return 0, err
 	}

@@ -69,6 +69,19 @@ func FilteredArticles(key string) ([]Article, error) {
 	return filteredArticles, nil
 }
 
+func SortedAricles() ([]Article, error) {
+	articles, err := GetArticles()
+	if err != nil {
+		return nil, err
+	}
+
+	slices.SortFunc(articles, func(a, b Article) int {
+		return strings.Compare(a.Name, b.Name)
+	})
+
+	return articles, nil
+}
+
 func FilteredByWordArticles(substr string) []Article {
 	filteredArticles := []Article{}
 	if substr != "" {

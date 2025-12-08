@@ -18,6 +18,8 @@ import (
 
 var Answers = make(map[int64]string, 4)
 
+const recordsPerPage = 25
+
 func handleCommand(bot *tgbotapi.BotAPI, update tgbotapi.Update) error {
 	// var text string
 	var err error
@@ -175,9 +177,9 @@ func sendArticle(bot *tgbotapi.BotAPI, message *tgbotapi.Message, article models
 
 func buildKeyboard() tgbotapi.ReplyKeyboardMarkup {
 	var (
-		buttonsTexts = []string{ /*"Бинго", */ "Список статей", "Рандомная статья", "Статьи по темам"}
+		buttonsTexts = []string{"Статьи по дате", "Статьи по алфавиту", "Рандомная статья", "Разделы"}
 		cols         = 2
-		rows         = len(buttonsTexts)/cols + 1
+		rows         = len(buttonsTexts) / cols // + 1
 		buttons      = make([][]tgbotapi.KeyboardButton, rows)
 	)
 
@@ -191,17 +193,17 @@ func buildKeyboard() tgbotapi.ReplyKeyboardMarkup {
 
 func handleButtonPress(bot *tgbotapi.BotAPI, update tgbotapi.Update) error {
 	switch update.Message.Text {
-	// case "Бинго":
-	// response = models.Link("Бинго", bingoLink)
-	case "Список статей":
+	case "Статьи по дате":
 		return printArticles(bot, update)
+	case "Статьи по алфавиту":
+		return printArticlesByAlphabet(bot, update)
 	case "Рандомная статья":
 		article, err := models.RandomArticle()
 		if err != nil {
 			return err
 		}
 		return sendArticle(bot, update.Message, article)
-	case "Статьи по темам":
+	case "Разделы":
 		selectTopics(bot, update)
 		return nil
 	default:
@@ -213,12 +215,14 @@ func printArticles(bot *tgbotapi.BotAPI, update tgbotapi.Update) error {
 	return displayPage(bot, update, 1) // pageNumber = 1
 }
 
+func printArticlesByAlphabet(bot *tgbotapi.BotAPI, update tgbotapi.Update) error {
+	return displayPageByAlphabet(bot, update, 1) // pageNumber = 1
+}
+
 func displayPage(bot *tgbotapi.BotAPI, update tgbotapi.Update, pageNumber int) error {
 	var err error
-	const recordsPerPage = 30
 
-	articles, _ := models.GetArticles()
-	articlesCount := len(articles)
+	articlesCount := len(ArticlesMap)
 
 	pagesCount := int(math.Ceil(float64(articlesCount) / float64(recordsPerPage)))
 
@@ -226,14 +230,16 @@ func displayPage(bot *tgbotapi.BotAPI, update tgbotapi.Update, pageNumber int) e
 		return nil
 	}
 
-	startIndex := articlesCount - 1 - (pageNumber-1)*recordsPerPage
-	endIndex := max(articlesCount-1-pageNumber*recordsPerPage, 0)
+	startIndex := min(articlesCount-(pageNumber-1)*recordsPerPage, articlesCount)
+	endIndex := max(articlesCount-pageNumber*recordsPerPage, 0)
+
 	var text string
 	for i := startIndex; i > endIndex; i-- {
-		text += fmt.Sprintf("%v. %s\n", articlesCount-i, articles[i].Link())
+		article := ArticlesMap[i]
+		text += fmt.Sprintf("%v. %s\n", articlesCount-i+1, article.Link())
 	}
 
-	markup := buildInlineKeyboard(pageNumber, pagesCount)
+	markup := buildInlineKeyboardArticlesByDate(pageNumber, pagesCount)
 
 	if update.CallbackQuery == nil {
 		msg := tgbotapi.NewMessage(update.Message.Chat.ID, text)
@@ -264,7 +270,58 @@ func displayPage(bot *tgbotapi.BotAPI, update tgbotapi.Update, pageNumber int) e
 	return nil
 }
 
-func buildInlineKeyboard(currentPage, totalPages int) tgbotapi.InlineKeyboardMarkup {
+func displayPageByAlphabet(bot *tgbotapi.BotAPI, update tgbotapi.Update, pageNumber int) error {
+	var err error
+
+	articles, _ := models.SortedAricles()
+	articlesCount := len(articles)
+
+	pagesCount := int(math.Ceil(float64(articlesCount) / float64(recordsPerPage)))
+
+	if pageNumber < 1 || pageNumber > pagesCount {
+		return nil
+	}
+
+	startIndex := (pageNumber - 1) * recordsPerPage
+	endIndex := min(startIndex+recordsPerPage, articlesCount)
+
+	var text string
+	for i := startIndex; i < endIndex; i++ {
+		text += fmt.Sprintf("%v. %s\n", i+1, articles[i].Link())
+	}
+
+	markup := buildInlineKeyboardArticlesByAlphabet(pageNumber, pagesCount)
+
+	if update.CallbackQuery == nil {
+		msg := tgbotapi.NewMessage(update.Message.Chat.ID, text)
+		msg.ParseMode = tgbotapi.ModeMarkdown
+		msg.ReplyMarkup = markup
+		if _, err := bot.Send(msg); err != nil {
+			return fmt.Errorf("ошибка при отправке сообщения: %v", err)
+		}
+	} else {
+		callbackQuery := update.CallbackQuery
+		_, err = bot.AnswerCallbackQuery(tgbotapi.CallbackConfig{
+			CallbackQueryID: callbackQuery.ID,
+			Text:            "Ваш ответ",
+			ShowAlert:       false,
+		})
+		if err != nil {
+			err = fmt.Errorf("ошибка при ответе на callback: %v", err)
+			return err
+		}
+
+		editedMsg := tgbotapi.NewEditMessageText(callbackQuery.Message.Chat.ID, callbackQuery.Message.MessageID, text)
+		editedMsg.ParseMode = tgbotapi.ModeMarkdown
+
+		editedMsg.ReplyMarkup = &markup
+		bot.Send(editedMsg)
+	}
+
+	return nil
+}
+
+func buildInlineKeyboardArticlesByDate(currentPage, totalPages int) tgbotapi.InlineKeyboardMarkup {
 	keyboard := tgbotapi.InlineKeyboardMarkup{
 		InlineKeyboard: [][]tgbotapi.InlineKeyboardButton{
 			{
@@ -282,6 +339,24 @@ func buildInlineKeyboard(currentPage, totalPages int) tgbotapi.InlineKeyboardMar
 	return keyboard
 }
 
+func buildInlineKeyboardArticlesByAlphabet(currentPage, totalPages int) tgbotapi.InlineKeyboardMarkup {
+	keyboard := tgbotapi.InlineKeyboardMarkup{
+		InlineKeyboard: [][]tgbotapi.InlineKeyboardButton{
+			{
+				tgbotapi.NewInlineKeyboardButtonData("◀", createAlphabetPageChangeCommand(currentPage-1)),
+				tgbotapi.NewInlineKeyboardButtonData(fmt.Sprintf("%d/%d", currentPage, totalPages), "null"),
+				tgbotapi.NewInlineKeyboardButtonData("▶", createAlphabetPageChangeCommand(currentPage+1)),
+			},
+			{
+				tgbotapi.NewInlineKeyboardButtonData("⏮ В начало", createAlphabetPageChangeCommand(1)),
+				tgbotapi.NewInlineKeyboardButtonData("В конец ⏭", createAlphabetPageChangeCommand(totalPages)),
+			},
+		},
+	}
+
+	return keyboard
+}
+
 func handleCallback(bot *tgbotapi.BotAPI, update tgbotapi.Update) error {
 	defer bot.AnswerCallbackQuery(tgbotapi.NewCallback(update.CallbackQuery.ID, ""))
 	callbackData := update.CallbackQuery.Data
@@ -292,6 +367,14 @@ func handleCallback(bot *tgbotapi.BotAPI, update tgbotapi.Update) error {
 			return fmt.Errorf("ошибка при извлечении номера страницы: %v", err)
 		}
 		return displayPage(bot, update, pageNumber)
+	}
+
+	if strings.HasPrefix(callbackData, alphabetPageChangePrefix) {
+		pageNumber, err := extractAlphabetPageNumber(callbackData)
+		if err != nil {
+			return fmt.Errorf("ошибка при извлечении номера страницы: %v", err)
+		}
+		return displayPageByAlphabet(bot, update, pageNumber)
 	}
 
 	if strings.HasPrefix(callbackData, topicsPrefix) {
