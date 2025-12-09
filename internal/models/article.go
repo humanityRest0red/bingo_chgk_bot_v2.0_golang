@@ -3,11 +3,14 @@ package models
 import (
 	"encoding/json"
 	"io"
+	"log"
 	"math/rand/v2"
 	"os"
 	"slices"
 	"strconv"
 	"strings"
+	"sync"
+	"time"
 )
 
 type Article struct {
@@ -17,6 +20,10 @@ type Article struct {
 	Associations []string `json:"associations"`
 	Keys         []string `json:"keys"`
 }
+
+var ArticlesSlice, _ = GetArticles()
+var ArticlesMap = mapArticles()
+var mu sync.Mutex
 
 func (a *Article) Link() string {
 	return a.Name + " /" + strconv.Itoa(a.Index)
@@ -69,10 +76,7 @@ func FilteredArticles(key string) ([]Article, error) {
 }
 
 func SortedAricles() ([]Article, error) {
-	articles, err := GetArticles()
-	if err != nil {
-		return nil, err
-	}
+	articles := ArticlesSlice
 
 	slices.SortFunc(articles, func(a, b Article) int {
 		return strings.Compare(a.Name, b.Name)
@@ -85,8 +89,7 @@ func FilteredByWordArticles(substr string) []Article {
 	filteredArticles := []Article{}
 	if substr != "" {
 		substr = strings.ToLower(substr)
-		articles, _ := GetArticles()
-		for _, article := range articles {
+		for _, article := range ArticlesSlice {
 			if strings.Contains(strings.ToLower(article.Name), substr) ||
 				strings.Contains(strings.ToLower(article.Description), substr) {
 				filteredArticles = append(filteredArticles, article)
@@ -102,13 +105,8 @@ func FilteredByWordArticles(substr string) []Article {
 }
 
 func RandomArticle() (Article, error) {
-	articles, err := GetArticles()
-	if err != nil {
-		return Article{}, err
-	}
-
-	i := rand.IntN(len(articles))
-	return articles[i], nil
+	i := rand.IntN(len(ArticlesSlice))
+	return ArticlesSlice[i], nil
 }
 
 func GetArticles() ([]Article, error) {
@@ -139,4 +137,27 @@ func GetArticles() ([]Article, error) {
 	}
 
 	return articles, nil
+}
+
+func mapArticles() map[int]Article {
+	if len(ArticlesSlice) == 0 {
+		log.Fatalln("empty articles")
+	}
+	result := make(map[int]Article, len(ArticlesSlice))
+	for i, a := range ArticlesSlice {
+		result[i+1] = a
+	}
+
+	return result
+}
+
+func UpdateArticles() {
+	for {
+		mu.Lock()
+		ArticlesSlice, _ = GetArticles()
+		ArticlesMap = mapArticles()
+		mu.Unlock()
+		log.Println("Articles updated")
+		time.Sleep(1 * time.Minute)
+	}
 }

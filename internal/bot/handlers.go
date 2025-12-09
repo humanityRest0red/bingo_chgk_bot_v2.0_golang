@@ -46,9 +46,9 @@ func handleCommand(bot *tgbotapi.BotAPI, update tgbotapi.Update) error {
 			return err
 		}
 
-		article, exists := ArticlesMap[n]
+		article, exists := models.ArticlesMap[n]
 		if !exists {
-			return sendMessage(bot, update.Message.Chat.ID, fmt.Sprintf("Последняя на данный момент  опубликованная статья — /%d", len(ArticlesMap)))
+			return sendMessage(bot, update.Message.Chat.ID, fmt.Sprintf("Последняя на данный момент  опубликованная статья — /%d", len(models.ArticlesMap)))
 		}
 
 		return sendArticle(bot, update.Message, article)
@@ -222,7 +222,7 @@ func printArticlesByAlphabet(bot *tgbotapi.BotAPI, update tgbotapi.Update) error
 func displayPage(bot *tgbotapi.BotAPI, update tgbotapi.Update, pageNumber int) error {
 	var err error
 
-	articlesCount := len(ArticlesMap)
+	articlesCount := len(models.ArticlesMap)
 
 	pagesCount := int(math.Ceil(float64(articlesCount) / float64(recordsPerPage)))
 
@@ -235,7 +235,7 @@ func displayPage(bot *tgbotapi.BotAPI, update tgbotapi.Update, pageNumber int) e
 
 	var text string
 	for i := startIndex; i > endIndex; i-- {
-		article := ArticlesMap[i]
+		article := models.ArticlesMap[i]
 		text += fmt.Sprintf("%v. %s\n", articlesCount-i+1, article.Link())
 	}
 
@@ -447,10 +447,10 @@ func handleCallback(bot *tgbotapi.BotAPI, update tgbotapi.Update) error {
 	if strings.HasPrefix(callbackData, "article:") {
 		indStr := callbackData[len("article:"):]
 		ind, _ := strconv.Atoi(indStr)
-		if ind > len(ArticlesSlice) || ind <= 0 {
+		if ind > len(models.ArticlesSlice) || ind <= 0 {
 			return nil
 		}
-		return sendArticle(bot, update.CallbackQuery.Message, ArticlesMap[ind])
+		return sendArticle(bot, update.CallbackQuery.Message, models.ArticlesMap[ind])
 	}
 
 	// if strings.HasPrefix(callbackData, "timer:") {

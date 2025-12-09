@@ -3,8 +3,6 @@ package bot
 import (
 	"fmt"
 	"log"
-	"sync"
-	"time"
 
 	"bingo-chgk-bot-v2.0-golang/internal/models"
 	tgbotapi "github.com/go-telegram-bot-api/telegram-bot-api"
@@ -12,38 +10,11 @@ import (
 
 // var userResponses = make(map[int64]chan string)
 
-var ArticlesSlice, _ = models.GetArticles()
-var ArticlesMap = mapArticles()
-var mu sync.Mutex
-
-func mapArticles() map[int]models.Article {
-	if len(ArticlesSlice) == 0 {
-		log.Fatalln("empty articles")
-	}
-	result := make(map[int]models.Article, len(ArticlesSlice))
-	for i, a := range ArticlesSlice {
-		result[i+1] = a
-	}
-
-	return result
-}
-
-func updateArticles() {
-	for {
-		mu.Lock()
-		ArticlesSlice, _ = models.GetArticles()
-		ArticlesMap = mapArticles()
-		mu.Unlock()
-		log.Println("Articles updated")
-		time.Sleep(1 * time.Minute)
-	}
-}
-
 func BotRun() {
 	bot, updates := botInitMust()
 	var err error
 
-	go updateArticles()
+	go models.UpdateArticles()
 
 	for update := range updates {
 		go func(update tgbotapi.Update) {
