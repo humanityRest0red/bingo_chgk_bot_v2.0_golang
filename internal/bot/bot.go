@@ -4,15 +4,16 @@ import (
 	"fmt"
 	"log"
 	"sync"
+	"time"
 
 	"bingo-chgk-bot-v2.0-golang/internal/models"
 	tgbotapi "github.com/go-telegram-bot-api/telegram-bot-api"
 )
 
+// var userResponses = make(map[int64]chan string)
+
 var ArticlesSlice, _ = models.GetArticles()
 var ArticlesMap = mapArticles()
-
-var userResponses = make(map[int64]chan string)
 var mu sync.Mutex
 
 func mapArticles() map[int]models.Article {
@@ -27,33 +28,48 @@ func mapArticles() map[int]models.Article {
 	return result
 }
 
+func updateArticles() {
+	for {
+		mu.Lock()
+		ArticlesSlice, _ = models.GetArticles()
+		ArticlesMap = mapArticles()
+		mu.Unlock()
+		log.Println("Articles updated")
+		time.Sleep(1 * time.Minute)
+	}
+}
+
 func BotRun() {
 	bot, updates := botInitMust()
 	var err error
 
+	go updateArticles()
+
 	for update := range updates {
-		if update.Message == nil && update.CallbackQuery == nil {
-			continue
-		}
-
-		if update.CallbackQuery != nil {
-			log.Printf("[%s] Callback: %s", update.CallbackQuery.From.UserName, update.CallbackQuery.Data)
-			err = handleCallback(bot, update)
-		} else {
-			log.Printf("[%s] Message: %s", update.Message.From.UserName, update.Message.Text)
-
-			// collectResponses(update)
-
-			if update.Message.IsCommand() {
-				err = handleCommand(bot, update)
-			} else {
-				err = handleButtonPress(bot, update)
+		go func(update tgbotapi.Update) {
+			if update.Message == nil && update.CallbackQuery == nil {
+				return
 			}
-		}
 
-		if err != nil {
-			log.Println(err)
-		}
+			if update.CallbackQuery != nil {
+				log.Printf("[%s] Callback: %s", update.CallbackQuery.From.UserName, update.CallbackQuery.Data)
+				err = handleCallback(bot, update)
+			} else {
+				log.Printf("[%s] Message: %s", update.Message.From.UserName, update.Message.Text)
+
+				// collectResponses(update)
+
+				if update.Message.IsCommand() {
+					err = handleCommand(bot, update)
+				} else {
+					err = handleButtonPress(bot, update)
+				}
+			}
+
+			if err != nil {
+				log.Println(err)
+			}
+		}(update)
 	}
 }
 

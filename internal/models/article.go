@@ -5,7 +5,6 @@ import (
 	"io"
 	"math/rand/v2"
 	"os"
-	"path/filepath"
 	"slices"
 	"strconv"
 	"strings"
@@ -113,12 +112,12 @@ func RandomArticle() (Article, error) {
 }
 
 func GetArticles() ([]Article, error) {
-	path, err := filepath.Abs(ArticlesDataFilePath)
+	err := getFile(articlesDataFilePath, articlesFileURL)
 	if err != nil {
 		return nil, err
 	}
 
-	file, err := os.OpenFile(path, os.O_RDONLY, 0644)
+	file, err := os.OpenFile(articlesDataFilePath, os.O_RDONLY, 0644)
 	if err != nil {
 		return nil, err
 	}

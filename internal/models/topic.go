@@ -14,7 +14,12 @@ type Topic struct {
 }
 
 func GetTopics() ([]Topic, error) {
-	file, err := os.Open(TopicsDataFilePath)
+	err := getFile(topicsDataFilePath, topicsFileURL)
+	if err != nil {
+		return nil, err
+	}
+
+	file, err := os.Open(topicsDataFilePath)
 	if err != nil {
 		return nil, err
 	}
